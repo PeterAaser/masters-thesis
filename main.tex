@@ -1,0 +1,33 @@
+%% Master Thesis Template
+%% Please update the specification through this link: https://daim.idi.ntnu.no/howto_thesis_submission.pdf
+
+\documentclass[pdftex,10pt,b5paper,twoside]{book}
+\usepackage[lmargin=25mm,rmargin=25mm,tmargin=27mm,bmargin=30mm]{geometry}
+
+\input{latex/docsetup.tex}
+
+\begin{document}
+
+%% PART 1
+%%The title page will be automatically generated and added by the DAIM system
+\input{latex/dedication.tex}		%% Optional
+
+%% PART 2
+\input{latex/summary.tex}		%% Optional
+\input{latex/preface.tex}		%% Optional
+\input{latex/list.tex}			%% Generate TOC, list of tables, and list of figures automatically
+\input{latex/abbreviations.tex}	%% Optional
+
+%% PART 3 -- The Chapters
+\input{latex/chapter1.tex}		%% Edit each chapter
+\input{latex/chapter2.tex}
+\input{latex/chapter3.tex}
+\input{latex/chapter4.tex}
+\input{latex/chapter5.tex}
+\input{latex/chapter6.tex}
+
+%% PART 4
+\input{latex/references.tex}	%% Edit your references in "mylib.bib"
+\input{latex/appendix.tex}		%% Optional
+
+\end{document}
