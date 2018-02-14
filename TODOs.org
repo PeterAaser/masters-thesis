@@ -1,0 +1,55 @@
+* Mastern
+
+* Thoughts
+  Struktur, hvordan burde jeg strukturere introduksjon av MEAME og SHODAN?
+  
+* Introduction
+* Background
+** EIM
+   Gunnar anbefaler egen seksjon på EIM i background, mer emphasis på fysisk vs digitalt
+   Er for så vidt ikke helt enig her, men man skal høre på erfarne fjellfolk heter det.
+
+* Now
+* Later
+** Make diagrams for the closed loop example
+* Done
+
+* Funnies og quotes
+** Matrix 
+   Morpheus: What is real? How do you define 'real'? If you're talking about
+   what you can feel, what you can smell, what you can taste and see, then
+   'real' is simply electrical signals interpreted by your brain.
+
+* Gunnar structure notes
+** Intro
+*** Goal
+    Mer explicit på top down vs bottom up
+    EIM ved mecobo
+    
+    kontrast mecobo analog-digital mot neuro-digital
+*** "background"
+    Få inn symbolsk logikk sammen med hw vekst
+    
+    På avalanches, få frem parallelitet og self organizing, men uten purpose dvs computation.
+*** related work
+*** method
+    
+** Background
+*** Complex systems
+    Ta CA ruten? Sipper -> Langton -> Adaptive systems??
+    
+    Flytte wolfram opp til general computation biten med turing machine etc.
+    
+    Finne cite på turing completeness for CA
+    
+*** EIM
+    Med CA ↑ får vi criticality, vise til materie, særlig nascence som bruker samme tech (MEA)?
+*** Neruo
+    Skriv om mtp at nevro dyttes lenger bak
+*** RC
+    ???
+*** Hybrid bio-digital
+    
+** Cyborg
+*** Skikkelig beskrivelse
+*** Implement
