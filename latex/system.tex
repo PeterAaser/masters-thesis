@@ -1,0 +1,61 @@
+\chapter{An RC Cyborg Platform}
+This chapter provides an overview of the components comprising the final system.
+fig??? shows an early idealized version of the cyborg which remains the core
+focus of the system. In this ideal cyborg an interface connects the biological
+nerual network to an ANN readout layer, which in turn controls a robot whose
+input is processed and relayed back to the neural network. With this guiding
+principle the final system has been designed with the following components.
+\begin{description}
+\item[Core Reservoir Interface]\mbox{}\\
+  Responsible for providing a bdirectional bridge between the reservoir and the
+  outside world.
+\item[Data Processing]\mbox{}\\
+  Processes the signals from the biological neural network, as well as the sensory
+  input from the robot to a neuro-compatible format.
+\item[Agent Control]\mbox{}\\
+  Embodies the biological neural network in a robot, either artificial or real.
+\end{description}
+These components are enough to satisfy the ideal version of the cyborg, but for
+a cyborg to function in a practical setting additional components are necessary: 
+\begin{description}
+\item[Communication]\mbox{}\\
+  While the Core Reservoir Interface provides a bidirectional bridge, it is the
+  Communications module that extends that bridge to any machine connected to a
+  network.
+\item[Recording]\mbox{}\\
+  Data from reservoirs is stored in a database, making experiment data
+  accessible to any computer connected to the network.
+\item[Online Reconfiguration]\mbox{}\\
+  The Online Reconfiguration module is responsible for providing the cyborg with
+  a filter that interprets the data from the biological neural network which is
+  achieved by reconfiguring the filter when the system is running to adapt to
+  the current reservoir.
+\end{description}
+Together these components form a system, whose architecture shown in fig. ???
+looks quite different from the ideal cyborg.
+
+% MEAME and SHODAN should be introduced here
+% This needs to be backed up with a much better figure
+% Consider the below a description of how to make the diagrams etc
+\section{A Closed Loop Example}
+The final architecture is quite extensive compared to the ideal version, but it
+still exists to provide a closed loop embodiment of the neural network. To give
+an idea of how the system is used it is necessary with an example run.
+\paragraph{Setup}
+The user accesses a web interface provided by the main server (SHODAN) and
+configures the experiment. This entails setting up a database recording,
+selecting filter and parameters and selecting what sort of agent should be running.
+\paragraph{Launch}
+Once the experiment is configured the main server contacts the lab computer (MEAME)
+and requests data acquisition to start. MEAME creates a TCP socket which holds
+the data read from the reservoir.
+\paragraph{Execution}
+After setup is done the 
+\section{SHODAN}
+
+\cleardoublepage
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "../main"
+%%% End:

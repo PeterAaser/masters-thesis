@@ -1,0 +1,116 @@
+\chapter{Background}
+\section{Complex Systems}
+% Her følger jeg CS -> RC på samme måte som backgrounden i semproj. Mye mulig at
+% det ikke er riktig eller nødvendig.
+\emph{
+  In this body of work references are made to computations done
+  by both artificial and real neurons. To make the distinction
+  between these cases clear all computation done by computer
+  simulated approximations of neurons will be prefixed as
+  artificial.
+}\\
+Creating a bridge between machine and neural culture is not
+useful in itself without a way to interpret the electrical activity measured
+from the network, and a way to encode information as electrical pulses to be
+transmitted back to the network. To harness the computational power of neural
+networks it is necessary to employ a simplified model of neurons capable of
+describing how they self-organize into computationally capable networks, but
+leaving out the implementation details.
+In this endeavor it is very helpful that nature, through the process of
+evolution seems predisposed to creating systems that in many ways exhibit
+behavior similar to the brain.
+Eco-systems, ant-hills and social networks have much in common: They all exhibit
+complex non-linear behavior where the global behavior of the system cannot be
+traced back to a single part.
+Furthermore, their behavior is certainly not designed, but has arisen from
+millions of years of evolution.
+In these \emph{Complex Systems} positive feedback can loops amplify small
+perturbations into cascading effects, changing the entire system, while negative
+feedback loops may cause other states to be relatively stable, resulting in
+multiple meta-stable states, so called \emph{attractors}, that give the system some
+measure of order.\\
+The first step in creating a theoretical framework for bridging the gap between
+neuron and machine is then to study simpler bio-inspired models exhibiting this
+complex behavior, such as \emph{cellular automata}.
+A cellular automaton is a model of a single cell that will change its state based only on
+its immediate neighbors. They are capable of solving global problems such
+as contour-extraction \cite{sipper_emergence_1999}, establishing that local interactions can
+produce interesting global behavior.\\
+Cellular automata are even sufficiently powerful to express a turing machine,
+but as Sipper puts it: ``This is perhaps the quintessential example of a slow
+bullet train: embedding a sequential universal Turing machine within the
+highly parallel cellular-automaton model.''
+Embeddeding turing machines into cellular automatas is of little use, but it's
+useful to know that cellular automata are sufficiently powerful if we are to
+apply it as a model for the processes governing neural networks.
+The real power of cellular automatas as a model for neural networks is how they
+model the \emph{phase transitions} in behavior (i.e dynamics).
+In Langton's pioneering paper \emph{Computation on the Edge of Chaos} \cite{langton_computation_1990} 
+the system dynamics of cellular automata are shown to follow phase transitions
+similar to physical matter.
+Langton explored the rule space of cellular automata and found that the ratio
+between transitions that led to cell death and life had similarities to
+temperature in physical systems.
+As expected, rules which tended to favor cell death led to static or periodic
+systems, while rules favoring life over death led to chaotic systems.
+More interstingly is what happened when the rules favored life and death
+equally.
+In these systems which exists at the border between orderly and chaotic systems
+Langton found a \emph{critical} phase where the system was neither chaotic nor
+ordered.
+It is important to note that Langton did not seek to solve a specific problem
+with his automatons, but to explore which automatas capable of supporting
+universal computation, hypothesized by Wolfram \cite{wolfram_universality_1984}.
+Criticality applies to any dynamic system, not just cellular automata, and the
+study of adaptive networks \cite{sayama_modeling_2013} suggests that many
+systems exhibit a homeostatic regulation of system dynamics to ensure that it
+stays in the critical phase, including neurons
+\cite{bornholdt_topological_2000}.
+\section{Evolution In Materio}
+aaa
+\section{Reservoir Computing}
+bbb
+\section{Neurons As Computers}
+% Hva jeg vil få frem:
+% En kjapp intro av nevroner
+% Hvordan jeg ser nevroner som enkle noder som kommuniserer elektrisk uten å ta
+% hensyn til det underliggende elektrokjemiske systemet.
+% Hvordan nevroner selv-organiserer seg, og hvordan struktur påvirke adferd, som
+% igjen påvirker videre vekst (noe som er veldig veldig interessant!!)
+% Beskrive hvordan spiking fører til kjedereaksjoner
+% Beskrive hvordan vi kan koble oss på nevronene vha elektriske signaler.
+Even a single neuron is an extremely complex system when compared to the
+transistor. Together they form vast interconnected networks where information is
+exchanged using electrochemical signals. A fundamental difference between
+neurons and conventional computers is that these networks have not been
+designed, they do not come with a blueprint, and they constantly modify
+themselves in response to the environment. Due to the complexities of this
+process it is completely necessary to restrict ourselves to a simple model of
+the neuron, leaving genetic activations and chemical pathways to the
+neurologists and chemists. In order to understand how neurons can assemble into
+complex networks capable of thought one must of course understand the underlying
+chemical and biological principles, but from a computer scientists perspective
+these are mere implementation details necessitated by existing in a physical
+universe. Were the physical laws altered the chemical pathways would surely
+differ, but the resulting behavior would probably [According to who?] still be
+similar to our universe. In this viewpoint, the very essence of neurons is their
+ability to self-organize into structures in a bottom-up fashion in a complex
+interplay between behavior and form. Following this rationale the neuron will be
+seen as a simple node in a network, communicating using electrical pulses,
+so-called spikes or action potentials. These spikes are short bursts of
+electricity which after firing causes a quick refactory period in which the
+firing cell will not respond to stimuli.
+When fired these spikes stimulates connected neurons, which may in turn
+release their charge causing a signal to cascade in a feedback loop.
+These electrical pulses can be seen as the ``language'' of neurons, and by
+measuring electrical activity and stimulating the network using electrodes, it
+is possible to set up two-way communication between a machine and a cluster of
+neurons.
+
+\section{}
+\cleardoublepage
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "../main"
+%%% End:

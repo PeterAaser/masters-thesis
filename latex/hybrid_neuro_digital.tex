@@ -1,0 +1,81 @@
+\chapter{Making Of A Cyborg}
+This chapter describes the physical components, biological and mechanical, used
+to create a cyborg.
+\section{Concept}
+A biological neural network is grown in a \textit{MEA}, short for \textit{micro electrode
+ array} which contains electrodes which interface with neurons using electrical signals.
+These MEAs are then \emph{embodied} in a physical robot which is controlled by
+the electrical signals as shown in [ref cyborg concept] This system is a
+\textit{closed loop}, it does not require any outside intervention, such as a
+human controller using a joystick to operate, it's simply driven by the neurons
+response to what the sensors of the machine senses.
+\section{Platform}
+Providing an interface between neurons and a computer allows using neural
+network for computation, however it is impractical to move the neural cultures
+outside of the laboratory. Rather than moving the cell cultures outside the safe
+confines of the incubator, the robot and cell cultures are linked over a network
+connection.
+Thanks to this decoupling the cell cultures do not have to be embedded in a
+physical robot, instead they can be interfaced with any robot connected to the
+internet, and even to virtual robots that only exist as a simulation.
+
+Similar network architectures have been implemented, in
+[Cite Application] a neuron culture is used to control a simple
+wall-avoiding robot as a proof of concept.
+In contrast with previous work the robot used in the NTNU cyborg project is a
+sophisticated robot which is programmed to move by itself, follow a person, take a selfie
+with someone and upload it to facebook, and even perform a secret handshake.
+By utilizing an already functioning robot as a host the cyborg project can focus
+on extending the capabilities of the robot, making it a true hybrid between
+digital and cellular computing.
+% \begin{figure}[h!]
+%     %\centering
+%     \includegraphics[width=\linewidth]{images/kybrg.jpg}
+%     \caption{The NTNU cyborg}
+%     \label{fig:cyborg}
+% \end{figure}
+\section{Growing Neurons In Vitro}
+The neuron cultures used in the cyborg are being grown in MEAs
+at the department of neuroscience.
+The MEAs are seeded with neural stem cells of either human or rat origin which
+then spontaneously form networks.
+At seeding there is no network at all, only a ``soup'' of dissociated neurons
+which over the course of several weeks start forming networks.
+As the networks starts ``maturing'' a common phenomenon is neurons firing
+monotonic spikes automatically.
+The activity from these so-called pacemaker neurons can be seen in \ref{fig:pacemaker}.
+In the figure each cell corresponds to one of the electrodes as seen in
+\ref{fig:cellular_networks}, however at this stage the monotonic spiking
+activity tends to be transient, starting and stopping randomly.
+\section{Neuron Interfacing Hardware}
+The hardware used to interface with neuron cultures for the cyborg is an
+\textit{MEA2100} system purchased from multichannel systems. 
+The MEA2100 system is built to conduct in-vitro experiments electrically active
+cell cultures such as neurons.
+The principal components of the MEA2100 systems are:
+\section{Micro Electrode Array}
+Introduced in the previous chapter, the \textit{MEA} is equipped with an array
+of microscopic electrodes capable of sensing and delivering voltages to and from
+nearby neurons.
+\ref{fig:generic_MEA} shows an empty MEA,
+\ref{fig:st_olav_MEA} shows an MEA used by the department of neuroscience with a live neuron culture.
+\section{Headstage}
+The electrodes of the MEAs are measured and stimulated by the headstage which
+contains the necessary high precision electronics needed for microvolt range readings.
+\ref{fig:headstage} shows the same type of headstage used in this paper along
+with an MEA.
+\section{Interface board}
+The interface board connects to up to two head-stages and is responsible for interfacing
+with the data acquisition computer, as well as auxiliary equipment such as temperature
+controls.
+The interface board has two modes of operation.
+In the first mode the interface board processes and filters data from up to two
+headstages as shown in \ref{fig:IFB_regular} which can then be acquired on a normal
+computer connected via USB.
+In the second mode of operation a Texas instruments TMS320C6454 digital signal
+processor is activated which can then be interfaced with using the secondary USB
+port as shown in \ref{fig:IFB_DSP}
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "../main"
+%%% End:
