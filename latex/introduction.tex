@@ -2,15 +2,15 @@
 \epigraph{They're trying to understand what space is. That's tough for them.
 They break distances down into concentrations of chemicals. For them, space is a
 range of taste intensities.}{Greg Bear, Blood Music}
+%
 Countless manhours have been spent improving the design and manufacturing
 process of the digital computer, creating more and more complex architectures
-capable of operating at ever greater speeds while maintaining stability, as even
-a single glitch can cause the program to crash.
+capable of operating at ever greater speeds.
 %
-Neurons on the other hand have no architectural blueprint to follow, but still
-organize themselves into networks capable of solving complex tasks, with far
-greater energy efficiency, robustness and parallellism than any designed
-processor.
+Neurons are not subject to this top down design philosophy, yet through a
+process of self organization they are capable of forming networks capable of
+solving complex tasks, with far greater energy efficiency, robustness and
+parallellism than any designed processor.
 %
 Inspired by work done in the field of material computing systems such as the
 mecobo platform of nascence [citation needed], living neural networks grown from
@@ -51,25 +51,23 @@ similarly to human reasoning.
 As complex as they are, each component in a processor has an obvious purpose
 (such as adding numbers) and like clockwork these parts work together to execute
 the program.
-The brain on the other hand is the result of a self-organizing process forming a
-network where each component works in parallel leading to a global behavior much
-greater than the sum of its parts.
-In order to understand the difference, it is quite revealing that humans are so
-bad at simple arithmetic compared to the processor.
-This is because unlike processors, there is no adder neuron, thus our ability to
-add numbers is a property that arises from the collective behavior of neurons,
-and cannot be traced back to any single neuron. The goal of the
-processor designer is to provide a component capable of addition, while the
-``goal'' of the neurons is to create a network whose dynamics are capable of
-responding to any input, including arithmetic.
+The fundamental difference between the processor and the brain then is that the
+as complex as the processor is, its complexity is a linear function of its
+components. To understand how a floating point multiplier works it is not
+necessary to understand the rest of the processor. This principle of
+superposition can not be applied to the brain, attempting to understand how the
+brain works by studying a single neuron or cluster neglects the global
+interaction, nothing in the brain makes sense in isolation!
 \\ \\
-
+In spite of these weaknesses the Von Neumann architecture has been so ubiquitous
+that other approaches have been dubbed \cite{Unconventional Computing}.
 Unconvential computing, as implied by the name, comes in many forms such as
-buckets of water \cite{fernando_pattern_2003}, or blobs of carbon nanotubes [cite nascence].
-These approaches utilize the inherent computation that happens in all physical
-processes.
+buckets of water \cite{fernando_pattern_2003}, or blobs of carbon nanotubes
+[cite nascence]. 
+These approaches seek to utilize the self organizing properties of naturally
+occuring processes in physical systems.
 % Introduces how computation occurs "naturally"
-Consider the effort spent modelling and simulating snow [Cite SIGGRAPH frozen
+As an example, consider the effort spent modelling and simulating snow [Cite SIGGRAPH frozen
 paper] used in motion pictures such as Disney's frozen. Dozens of machines in
 large rendering farms spend weeks rendering the snow in final movie, however if
 you bring some dynamite and a helicopter nature will gladly provide you with an
@@ -78,31 +76,41 @@ avalanche ``for free''.\\
 % Problem: I want to introduce reservoir computing here too, and it's just not
 % meshing well with the narrative of reservoir computing. Also the whole
 % avalanche thing feels too lengthy as it is now
-Motion pictures aside, all natural
-processes, going from order to entropy are performing calculations, the only
-difference between avalanches and silicone processors from a computational
-standpoint is the fact that the silicone processor has been shaped in such a way
-that the process happens in an orderly, controlled fashion. Avalanches are
-unlikely to have a big impact on the computing world.
-Computation may occur, but it is far too unstructured to have any
-practical use. Still, the processes governing an avalanche are not that
-different from the processes happening in the primordial soup, save for one key
-difference, in the primordial soup life formed, and with life came evolution.
+It's hard to argue that avalanches are computational processes, but they are
+vastly parallel and self organized in contrast to the simulated avalanche in
+which each particle is meticulously rendered sequentially for each frame.
+Avalanches are unlikely to dethrone the Von Neumann approach, just because they
+are expensive to calculate does not mean the process can easily be reversed.
+%
+Still, the interesting properties of avalanches from a computational standpoint
+are not different from properties of the processes happening in the primordial
+soup, save for one key difference. in the primordial soup life formed, and with
+life came evolution.
+%
 What is the difference between an avalanche and slime mould? While it's
 certainly relevant to mention that an avalanche might crush you, from a
 computational standpoint the difference is that the process that unfolds in
-slime mould serves a purpose. The slime mould seeks food which allows it to
+slime mould serves a \emph{purpose}.
+The slime mould seeks food which allows it to
 spread and propagate its genes. In short, it responds to its environment,
-reacting to sources of food and avoiding danger. Indeed, the slime mould can be
-directly applied to solve computational problems, such as Adamatzky's
-application of mould for road planning [Cite Adamatzky Mould Paper]. The
-interconnected nature of life and computation is perhaps best shown in DNA,
-which can even be directly utilized in computations such as in Adlemans DNA
-computer [Cite Adleman].\\
-Still, the most impressive example of computation is the human brain, vastly
-outperforming silicone computers in complex tasks such as the manufacturing of
-funny internet referential humor. 
-% hehe
+reacting to sources of food and avoiding danger.
+Toffoli [Cite Toffoli] argues that ``Nothing makes
+sense in computing except in the light of evolution'', in his eponymous paper,
+and he would likely conclude that an avalanche is not a computational process,
+but the slime mould is!
+%
+Indeed, the slime mould can be directly applied to solve computational problems,
+such as Adamatzky's application of mould for road planning [Cite Adamatzky Mould
+Paper].
+%
+Whether or not Toffoli is right or not, it's revealing that the cornerstone of
+biological evolution, DNA, in itself has impressive computational capabilities,
+and as Adleman [Cite DNA comp paper] showed, easily lends itself to solving hard
+problems.
+%
+It is this process that over billions of years has produced the human brain,
+capable of extraordinary feats and an excellent s                     arstki
+\\ \\
 The vast complexity of the human brain has made it a very difficult subject to
 study and copy. Rather than understanding the human brain as a whole a more
 feasible approach is to understand the underlying processes that allow neural
