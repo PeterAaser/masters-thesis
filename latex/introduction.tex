@@ -7,10 +7,10 @@ Countless manhours have been spent improving the design and manufacturing
 process of the digital computer, creating more and more complex architectures
 capable of operating at ever greater speeds.
 %
-Neurons are not subject to this top down design philosophy, yet through a
-process of self organization they are capable of forming networks capable of
-solving complex tasks, with far greater energy efficiency, robustness and
-parallellism than any designed processor.
+The brain is not subject to this top down design philosophy, yet through a
+process of self organization neurons are capable of forming highly complex
+networks capable of solving complex tasks, with far greater energy efficiency,
+robustness and parallellism than any designed processor.
 %
 Inspired by work done in the field of material computing systems such as the
 mecobo platform of nascence [citation needed], living neural networks grown from
@@ -20,96 +20,89 @@ with a digital computer, forming a hybrid neuro-digital system.
 This system utilizes the theoretical framework of \emph{Reservoir Computing} to
 help translate between the digital and biological parts of the system, allowing
 it to solve simple tasks as a proof of concept.\\ \\
+\section{Complexity}
 In the 50's and 60's there was much optimism in the burgeoning field of
 artificial intelligence. In 1965 H. A. Simon claimed ``machines will be capable,
 within twenty years, of doing any work a man can
 do.''\cite{vardi_artificial_nodate} , while Marvin Minsky boldly claimed in 1967
 that ``Within a generation ... the problem of creating 'artificial intelligence'
 will substantially be solved.'' \cite{noauthor_marvin_nodate}.
-These claims seem ridiculous now, but at the time the optimism made sense. After
-all great strides was made in symbolic programming, computers had finally become
-powerful enough to efficiently manipulate logic symbols such as predicates,
-negations and implications. With these programs the machine could inferr
-conclusions based on previously known information using symbolic logic,
-mimmicking the high level reasoning that humans are capable of. While the
-computers at the time were only capable of very simple logic inference, such as
-concluding the grass was wet based on prior knowledge it had recently rained, it
-was believed that the machines ability to infer would grow at the same pace as
-processor speeds.
-The driving force behind the great leaps made in symbolic computation was the
-exponential growth in transistors per area, dubbed moore's law.
-This growth allowed processors to maintain exponential performance increases
-without straying from the fundamental Von Neumann architecture, sequentially
-performing instructions to manipulate memory.
-With these performance gains yesteryears intractable problems were turned into
-routine operations, and AI it was thought, was no different. Why then did Minsky's
-predictions fail so badly?
-In short, processors are \emph{designed} in a top down fashion to perform
-an instruction set of logical operations, which in turn allows us to design and run programs on them,
-for instance programs that operate on logical propositions superficially
-similarly to human reasoning.
-As complex as they are, each component in a processor has an obvious purpose
-(such as adding numbers) and like clockwork these parts work together to execute
-the program.
-The fundamental difference between the processor and the brain then is that the
-as complex as the processor is, its complexity is a linear function of its
-components. To understand how a floating point multiplier works it is not
-necessary to understand the rest of the processor. This principle of
-superposition can not be applied to the brain, attempting to understand how the
-brain works by studying a single neuron or cluster neglects the global
-interaction, nothing in the brain makes sense in isolation!
-\\ \\
-In spite of these weaknesses the Von Neumann architecture has been so ubiquitous
-that other approaches have been dubbed \cite{Unconventional Computing}.
+Had they chosen to predict any other field, such as logistics, information
+sharing or communications their statements would have been prophetic and
+visionary, so why did artificial intelligence turn out so differently?
+%
+To answer, consider the approaches the researchers employed:\\
+The researchers sought to make machines that could use logic similar to that of
+high level human thinking.
+%
+Therefore, it followed that the machine had to be programmed with rules
+governing logic in order to reach sound conclusions.
+%
+To represent the prior and deduced knowledge, the researchers designed
+programming languages such as lisp that could accurately describe these
+operations.
+%
+In order to actually execute these lisp programs hardware had to be created,
+supporting the primitive operations such as addition, subtraction and loading
+from memory.
+Regardless of the underlying platform a lisp program did not change meaning, and
+the binary adder in the heart of the processor never interacted with the
+floating point adder. In short, each piece of the puzzle was self contained,
+and the \emph{complexity} of the system was similar to that of the sum of its
+parts, which made it feasible to build large systems.
+%
+Nature, on the other hand, applies a completely different method.
+Complex structures appear with no blueprint, arising from a process of
+self-organization driven by a set of growth rules. This self organizing process
+is capable of producing incredibly complex, robust and diverse structures whose
+functionality arises not from specialized components working in isolation, but
+from the interaction of many components.
+%
+Applying the superposition principle to the processor makes sense, it allows us
+to study each individual component in isolation before investigating how they
+interact.
+%
+On the other hand, applying the superposition principle to nature leaves us
+blind to the fact that the purpose of most components is to interact rather than
+performing a specific function.
+\section{Computation}
+The invention of the digital computer will be remembered as one of, if not the
+most significant technological advances of mankind.
+This is fitting, because it very clearly demonstrates the differences in
+approach between the top down engineering approach of humans, and the self
+organization of nature.
+Since the components of a processor and a program is isolated and specialized it
+is completely necessary that each component behaves reliably, as even the
+slightest miscalculation can throw the whole system off balance.
+Because of this a processor has to run all its instructions in an ordered
+fashion, parallelism can at best be achieved by running sequential programs at
+the same time.
+In spite of these weaknesses, the digital computer is so ubiquitus
+that other approaches have been dubbed \emph{Unconventional Computing}.
 Unconvential computing, as implied by the name, comes in many forms such as
 buckets of water \cite{fernando_pattern_2003}, or blobs of carbon nanotubes
 [cite nascence]. 
-These approaches seek to utilize the self organizing properties of naturally
-occuring processes in physical systems.
+These approaches seek to utilize the self organizing collective behaviors of
+naturally occuring processes in physical systems, utilizing the interactions
+that arise from the collective behavior of the system to perform calculations,
+rather than the calculated sequential activation of specialized heterogenous
+components of traditional digital computers.
 % Introduces how computation occurs "naturally"
-As an example, consider the effort spent modelling and simulating snow [Cite SIGGRAPH frozen
-paper] used in motion pictures such as Disney's frozen. Dozens of machines in
-large rendering farms spend weeks rendering the snow in final movie, however if
-you bring some dynamite and a helicopter nature will gladly provide you with an
-avalanche ``for free''.\\
-% Discuss the difficulties of this computation
-% Problem: I want to introduce reservoir computing here too, and it's just not
-% meshing well with the narrative of reservoir computing. Also the whole
-% avalanche thing feels too lengthy as it is now
-It's hard to argue that avalanches are computational processes, but they are
-vastly parallel and self organized in contrast to the simulated avalanche in
-which each particle is meticulously rendered sequentially for each frame.
-Avalanches are unlikely to dethrone the Von Neumann approach, just because they
-are expensive to calculate does not mean the process can easily be reversed.
+%-------------
+As an example, consider the effort spent modelling and simulating snow [Cite
+SIGGRAPH frozen paper] used in motion pictures such as Disney's frozen. Dozens
+of machines in large rendering farms spend weeks rendering the snow in final
+movie, however if you bring some dynamite and a helicopter nature will gladly
+provide you with an avalanche ``for free''.\\
 %
-Still, the interesting properties of avalanches from a computational standpoint
-are not different from properties of the processes happening in the primordial
-soup, save for one key difference. in the primordial soup life formed, and with
-life came evolution.
+Toffoli argues that ``Nothing makes sense in computing except in the light of
+evolution'' \cite{tommaso_toffoli_nothing_nodate}, 
+%------------
 %
-What is the difference between an avalanche and slime mould? While it's
-certainly relevant to mention that an avalanche might crush you, from a
-computational standpoint the difference is that the process that unfolds in
-slime mould serves a \emph{purpose}.
-The slime mould seeks food which allows it to
-spread and propagate its genes. In short, it responds to its environment,
-reacting to sources of food and avoiding danger.
-Toffoli [Cite Toffoli] argues that ``Nothing makes
-sense in computing except in the light of evolution'', in his eponymous paper,
-and he would likely conclude that an avalanche is not a computational process,
-but the slime mould is!
 %
-Indeed, the slime mould can be directly applied to solve computational problems,
-such as Adamatzky's application of mould for road planning [Cite Adamatzky Mould
-Paper].
-%
-Whether or not Toffoli is right or not, it's revealing that the cornerstone of
-biological evolution, DNA, in itself has impressive computational capabilities,
-and as Adleman [Cite DNA comp paper] showed, easily lends itself to solving hard
-problems.
-%
-It is this process that over billions of years has produced the human brain,
-capable of extraordinary feats and an excellent s                     arstki
+Perhaps the crowning achievement of evolution is the human brain, capable of
+performing vastly complex tasks, however only recently has understanding the
+brain from a computational perspective become feasible.
 \\ \\
 The vast complexity of the human brain has made it a very difficult subject to
 study and copy. Rather than understanding the human brain as a whole a more

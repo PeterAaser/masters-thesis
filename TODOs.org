@@ -1,18 +1,18 @@
 * Mastern
 
-* Thoughts
-  Struktur, hvordan burde jeg strukturere introduksjon av MEAME og SHODAN?
-  
-* Introduction
-* Background
-** EIM
-   Gunnar anbefaler egen seksjon på EIM i background, mer emphasis på fysisk vs digitalt
-   Er for så vidt ikke helt enig her, men man skal høre på erfarne fjellfolk heter det.
-
 * Now
+** TODO Forbedre Neuro computing background
 * Later
-** Make diagrams for the closed loop example
+** TODO Forbedre RC background
+*** TODO Skaff figurer
+*** TODO Skriv om lineær vs ulineær output classifiers
+
+** TODO Lag TODOs for hovedinnhold
 * Done
+** DONE Skriv RC subchapter
+
+   
+
 
 * Funnies og quotes
 ** Matrix 
@@ -20,6 +20,7 @@
    what you can feel, what you can smell, what you can taste and see, then
    'real' is simply electrical signals interpreted by your brain.
 
+   
 * Gunnar structure notes
 ** Intro
 *** Goal
@@ -53,3 +54,9 @@
 ** Cyborg
 *** Skikkelig beskrivelse
 *** Implement
+
+* Gunnar diskuser
+** Om lineær vs ulineær
+   Gunnar er enig i at reservoirer ikke nødvendigvis må ha en lineær output.
+   Mitt eksempel er temporalitet, men f.eks mer effektivitet i trening på et problem, 
+   eller i det hele tatt å løse oppgaven er jo ikke helt dumt.

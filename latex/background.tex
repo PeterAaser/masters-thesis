@@ -1,7 +1,5 @@
 \chapter{Background}
 \section{Complex Systems}
-% Her følger jeg CS -> RC på samme måte som backgrounden i semproj. Mye mulig at
-% det ikke er riktig eller nødvendig.
 \emph{
   In this body of work references are made to computations done
   by both artificial and real neurons. To make the distinction
@@ -13,22 +11,44 @@ Creating a bridge between machine and neural culture is not
 useful in itself without a way to interpret the electrical activity measured
 from the network, and a way to encode information as electrical pulses to be
 transmitted back to the network. To harness the computational power of neural
-networks it is necessary to employ a simplified model of neurons capable of
-describing how they self-organize into computationally capable networks, but
+networks it is necessary to employ a simplified model of neurons which is capable of
+describing how they self-organize into computationally capable networks, while leaving out
 leaving out the implementation details.
-In this endeavor it is very helpful that nature, through the process of
-evolution seems predisposed to creating systems that in many ways exhibit
-behavior similar to the brain.
-Eco-systems, ant-hills and social networks have much in common: They all exhibit
-complex non-linear behavior where the global behavior of the system cannot be
+Rather than starting with modeling neurons, which are, at least from our point of view, the
+apex of evolution, simpler biological systems can be studied.
+While nature exhibits a staggering diversity in both form and function there are
+also many fundamental similarities, after all they have all emerged from
+the same evolutionary processes.
+Eco-systems, ant-hills and social networks all exhibit
+complex non-linear behavior, where the global behavior of the system cannot be
 traced back to a single part.
-Furthermore, their behavior is certainly not designed, but has arisen from
-millions of years of evolution.
+Natures acceptance of non-linearity fundamentally differs from products
+engineered and designed by humans.
+Our designs carefully contain complexity: We carefully design large systems out of
+individual heterogonous components which can be understood in isolation,
+creating clockworks where the complexity is a sum of parts.
+In all of natures systems the behavior global behavior arises ultimately from
+the interplay of homogenous components.
+While these homogenous components may organize themselves into complex
+specialized units such as the heart, these complex components not only consist
+of homogenous cells, they are also assembled by locally interacting cells with
+no blueprint, knowledge, or even an appreciation of the scale that the final
+complex component will operate in.
+This process of \emph{self organization} is by necessity highly robust. While
+every heart has the same functionality, pumping blood, there are no two
+identical hearts, even in identical twins there are variations, should you look
+carefully enough.
+%
+% En setning her som knytter teksten over med den under. Rydd opp i teksten
+% under litt for å passe med teksten over.
+%
+\\
 In these \emph{Complex Systems} positive feedback can loops amplify small
 perturbations into cascading effects, changing the entire system, while negative
 feedback loops may cause other states to be relatively stable, resulting in
 multiple meta-stable states, so called \emph{attractors}, that give the system some
 measure of order.\\
+% Setningen under lider litt av at enklere modeller allerede har blitt motivert
 The first step in creating a theoretical framework for bridging the gap between
 neuron and machine is then to study simpler bio-inspired models exhibiting this
 complex behavior, such as \emph{cellular automata}.
@@ -66,10 +86,80 @@ study of adaptive networks \cite{sayama_modeling_2013} suggests that many
 systems exhibit a homeostatic regulation of system dynamics to ensure that it
 stays in the critical phase, including neurons
 \cite{bornholdt_topological_2000}.
-\section{Evolution In Materio}
-aaa
 \section{Reservoir Computing}
-bbb
+The theory behind complex systems provides us with a useful model of biological
+computation with emphasis on how a \emph{computational substrate} can be
+achieved.
+If the fundamental purpose of a neuron is to create networks exhibiting the same
+complexity behavior as Langton's automatas then harnessing the computational
+capabilities of these simple models is a first step towards interfacing and
+understanding neurons.
+Clearly designing a cellular computer in a top down manner is intractable due to
+the intricate and unpredictable relation between cause and effect.
+The best we could realistically achieve with the typical top down approach is
+implementing a turing machine which would be both slow and incredibly brittle.
+Seemingly, classifying the neural culture as a complex system has not provided
+any useful tools for understanding how to interact with it, on the other hand it
+makes this task seem futile.
+However, in computer science the recent field of
+\emph{reservoir computing} has emerged, embracing the complexity and unpredictability
+of certain complex systems.
+In reservoir computing, a complex systems is used as a \textit{reservoir}
+\cite{schrauwen_overview_2007} which
+``acts as a complex nonlinear dynamic filter that transforms the
+input signals using a high-dimensional temporal map, not unlike the operation
+of an explicit, temporal kernel function.''\\
+
+% cite on SVMs?
+In order to explain, schrauwen makes a comparison to how source
+vector machines work: The reservoir acts as a kernel, projecting input into a
+high-dimensional feature space.
+Figure ??? shows this technique, note that the regression performed upon the
+feauture space is a simple linear regression, an important point both in SVMs
+and reservoir computing.
+
+% ??? figure skal være fra schrauwen
+Figure ??? shows a typical reservoir computing setup which follows a similar
+method of operation as the SVM in figure ???.
+The reservoir serves as the high dimensional feature space, while the output
+layer is only capable of linearly separating the resulting dynamics.
+
+Schrauwen points out two major differences between SVMs and RCs.
+First, SVMs only implicitly expands the input to high dimensional space in order
+to make the problem tractable, while reservoirs do not.
+Secondly, kernels are not capable of handling temporal signals.
+
+The second difference is very important, it is what allows reservoirs to
+implicitly encode temporal signals in their dynamics, making reservoirs a
+natural fit for tasks such as speech recognition.
+% cite Biologically Plausible Speech Recognition with LSTM Neural Nets Alex
+% Graves, Douglas Eck, Nicole Beringer, Juergen Schmidhuber
+
+In other terms, the properties that make complex systems so hard to work with
+such as sensitivity to initial conditions also allow them to discern very subtle
+nuances in input, and their complex behavioral patterns causes the systems to
+change their behavior to new input based on previous input.
+
+In light of this, asking how to build a computer using Langton's automatons is
+the wrong question, instead the focus should be on how exploit the computation
+that is already occuring.\\
+There are many examples of reservoirs which have been successfully exploited:
+In \cite{jaeger_adaptive_2003} an \textit{echo state network} 
+is utilized to solve classification problems.
+More esoteric reservoirs have been used, for instance in
+\cite{natschlager_liquid_2002} the idea of reservoir computing is taken quite
+literally using a bucket of water as a reservoir.\\
+
+\subsection{Linear and nonlinear output layers}
+
+\section{Evolution In Materio}
+In the previous section no distinction has been made between systems that exist
+in the simulated world of a computer, and the physically occuring systems found
+in nature.
+Even in the early days of computing however, long before reservoir computing,
+research into the computational capabilities inherent in physical matter.
+% ratio club etc
+
 \section{Neurons As Computers}
 % Hva jeg vil få frem:
 % En kjapp intro av nevroner
