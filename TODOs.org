@@ -2,14 +2,26 @@
 
 * Now
 ** TODO Forbedre Neuro computing background
+** TODO Skriv om software infrastructure
+** TODO Spør Gunnar om hva han tenker om å sette opp requirements for RC system
+   Ønsker å ha noe som kan til forveksling likne på en API i scala. 
+   Kanskje specce en API i scala som food for thought?
+** TODO Spør Gunnar om detaljnivå wrt SHODAN/MEAME
+   Hvor mye beskrivelse trenger egentlig en database?
+   Kan jeg skrive om hvorfor metadata er viktig, potensiale for analyse?
+   Skal jeg nevne fs2, minneforbruk, streaming generelt?
+   Er det relevant med klaging over elendige APIer?
 * Later
+** TODO Skriv ferdig EiM
+** TODO Skriv initial software infrastructure del
+** TODO Skriv initial RC software del
 ** TODO Forbedre RC background
 *** TODO Skaff figurer
 *** TODO Skriv om lineær vs ulineær output classifiers
 
-** TODO Lag TODOs for hovedinnhold
 * Done
 ** DONE Skriv RC subchapter
+** DONE Skriv initial hardware chapter
 
    
 
