@@ -77,14 +77,20 @@ to a single register, meaning this task is better handled at a higher level.
 SHODAN is a reservoir computing system, developed to be able to handle any
 reservoir as long as the necessary transformations between reservoir output and
 perturbing are supplied.
+Although SHODAN is reservoir agnostic, a significant portion of the code is
+specific to neural cultures and communicating with MEAME, thus SHODAN is not a
+framework in the traditional sense.
+While all the subcomponents are reservoir agnostic, the main focus will be on
+the specific implementations for interfacing with neural cultures.
 SHODAN is comprised of the following subsystems:
-% Data acquisition
+(Figure here???)
+% Reservoir interface
 % Data storage/playback
 % Frontend
 % Agent control
 % meme storage
 % ???
-
+\subsection{Data Acquisition}
 \cleardoublepage
 
 %%% Local Variables:

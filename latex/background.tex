@@ -1,5 +1,4 @@
 \chapter{Background}
-\section{Complex Systems}
 \emph{
   In this body of work references are made to computations done
   by both artificial and real neurons. To make the distinction
@@ -7,55 +6,74 @@
   simulated approximations of neurons will be prefixed as
   artificial.
 }\\
-Creating a bridge between machine and neural culture is not
-useful in itself without a way to interpret the electrical activity measured
-from the network, and a way to encode information as electrical pulses to be
-transmitted back to the network. To harness the computational power of neural
-networks it is necessary to employ a simplified model of neurons which is capable of
-describing how they self-organize into computationally capable networks, while leaving out
-leaving out the implementation details.
-Rather than starting with modeling neurons, which are, at least from our point of view, the
-apex of evolution, simpler biological systems can be studied.
-While nature exhibits a staggering diversity in both form and function there are
-also many fundamental similarities, after all they have all emerged from
-the same evolutionary processes.
-Eco-systems, ant-hills and social networks all exhibit
-complex non-linear behavior, where the global behavior of the system cannot be
-traced back to a single part.
-Natures acceptance of non-linearity fundamentally differs from products
-engineered and designed by humans.
-Our designs carefully contain complexity: We carefully design large systems out of
-individual heterogonous components which can be understood in isolation,
-creating clockworks where the complexity is a sum of parts.
-In all of natures systems the behavior global behavior arises ultimately from
-the interplay of homogenous components.
-While these homogenous components may organize themselves into complex
-specialized units such as the heart, these complex components not only consist
-of homogenous cells, they are also assembled by locally interacting cells with
-no blueprint, knowledge, or even an appreciation of the scale that the final
-complex component will operate in.
-This process of \emph{self organization} is by necessity highly robust. While
-every heart has the same functionality, pumping blood, there are no two
-identical hearts, even in identical twins there are variations, should you look
-carefully enough.
+The underlying goal of the thesis, performing computations with neurons serves
+as a red thread throughout the background chapter.
+To create a cyborg, it is necessery to create a bridge between machine and
+neural cultures.
+This bridge must provide a medium which can be understood by both neural tissue
+and the computer, analogous to how humans communicate with soundwaves and visual
+cues.
+Once a medium has been established, the real challenge presents itself, namely
+that of finding a common ``language''.
+The topics discussed in this section serves to motivate how this goal can be
+achieved is structured as follows:
+First \emph{Complex Systems} are introduced as a framework to discuss the computational
+capabilities in a wide range of systems that exhibit system dynamics similar to
+that of neurons.
+Next, \emph{Evolution in Materio}, EiM for short, introduces computation done in
+unstructured matter through the process of evolution.
+The goals of EiM are closely aligned to the goal of this thesis, as both study
+massively parallel computation happening in physical matter shaped by the
+process of evolution.
+Next section, \emph{Neurons As Computers}, gives a basic overview of neurons,
+and more importantly motivates narrowing the scope of how neurons will be
+modeled, a necessity considering the size of the field and the background of the author.
+Finally, \emph{Reservoir Computing} is introduced, tying together the previous
+sections by introducing a framework of thought capable of tapping into the
+computational properties of neural networks.
+
+\section{Complex Systems}
+TODO: Introduser Adaptive networks, siter Sayama: "Modeling complex systems with
+adaptive networks"\\ \\
 %
-% En setning her som knytter teksten over med den under. Rydd opp i teksten
-% under litt for å passe med teksten over.
+Nature, unlike humans, does not shy away from complexity.
+Since complexity in itself is not the goal of evolution (evolution has no goal), 
+it is interesting to note that systems that arise from a process of evolution
+display much more complexity than human-designed systems, and the study of these
+systems provide useful models and terminology for describing and understanding
+how neural networks form.
 %
-\\
-In these \emph{Complex Systems} positive feedback can loops amplify small
-perturbations into cascading effects, changing the entire system, while negative
-feedback loops may cause other states to be relatively stable, resulting in
-multiple meta-stable states, so called \emph{attractors}, that give the system some
-measure of order.\\
-% Setningen under lider litt av at enklere modeller allerede har blitt motivert
-The first step in creating a theoretical framework for bridging the gap between
-neuron and machine is then to study simpler bio-inspired models exhibiting this
-complex behavior, such as \emph{cellular automata}.
-A cellular automaton is a model of a single cell that will change its state based only on
-its immediate neighbors. They are capable of solving global problems such
-as contour-extraction \cite{sipper_emergence_1999}, establishing that local interactions can
-produce interesting global behavior.\\
+The study of these \emph{Complex Systems} is a broad, cross-disciplinary field.
+To see why, consider that most fields deal with systems, be they financial,
+chemical, social or electrical in nature.
+All of these fields feature systems in which the global behavior \emph{Emerges}
+from local interaction of individual components through a process of \emph{Self
+  Organization}.
+These behavior of these systems exhibit a complexity that is greater than the
+sum of complexity of its individual components, i.e the relationship between the
+complexity of the system and its constituent components is \emph{Non Linear}.
+Common for these systems is therefore the futility of reductionism since the
+interesting aspects of the system only occurs when components interact.
+Although complex systems are not ordered or linear, they are not chaotic either.
+%
+Unlike chaotic systems, complex systems contain \emph{Attractors}, states that
+are relatively stable.
+Fig [Strange attractor] shows the \emph{Strange Attractor}, a pattern formed by
+a particle in a vector field that orbits two attractors, arbitrarily switching
+between them.
+In complex systems both dampening and amplifying feedback loops form.
+The dampening loops allow the system to fall into the attractors, while the
+amplifying loops can amplify minor perturbations, eventually causing a cascading
+feedback loop moving the system to a different attractor.\\
+%
+The immediate benefit of classifying neural cultures as a complex systems is
+that studying simpler models of complex systems can act as a stepping stone.
+A simple, biological inspired model capable of exhibiting complex behavior is
+the \emph{Cellular Automaton}, a discrete model of a single cell which changes
+between a discrete set of states based only on its immediate neighbors.
+Together they are capable of solving global problems such
+as contour-extraction \cite{sipper_emergence_1999}, providing an example of
+local interactions producing interesting global behavior.\\
 Cellular automata are even sufficiently powerful to express a turing machine,
 but as Sipper puts it: ``This is perhaps the quintessential example of a slow
 bullet train: embedding a sequential universal Turing machine within the
@@ -64,8 +82,9 @@ Embeddeding turing machines into cellular automatas is of little use, but it's
 useful to know that cellular automata are sufficiently powerful if we are to
 apply it as a model for the processes governing neural networks.
 The real power of cellular automatas as a model for neural networks is how they
-model the \emph{phase transitions} in behavior (i.e dynamics).
-In Langton's pioneering paper \emph{Computation on the Edge of Chaos} \cite{langton_computation_1990} 
+model the \emph{Phase Transitions} in behavior (i.e dynamics).
+In Langton's pioneering paper \emph{Computation on the Edge of Chaos}
+\cite{langton_computation_1990}
 the system dynamics of cellular automata are shown to follow phase transitions
 similar to physical matter.
 Langton explored the rule space of cellular automata and found that the ratio
@@ -86,60 +105,149 @@ study of adaptive networks \cite{sayama_modeling_2013} suggests that many
 systems exhibit a homeostatic regulation of system dynamics to ensure that it
 stays in the critical phase, including neurons
 \cite{bornholdt_topological_2000}.
+
+\section{Evolution In Materio}
+Classifying neurons as a complex system has not gotten us closer to a solution
+for interfacing with them in a meaningful way it seems.
+However, one useful conclusion is that neurons work nothing like human designed
+conventional computers, and that to understand how neurons compute we should
+look at more \emph{unconventional computing}, specifically work done on physical
+matter.
+Two pioneers in this field were the british duo Pask and Beer which studied how
+unstructured matter could be used to perform computational tasks.
+In the introduction Toffolis statement that computation does not make sense
+except in the light of evolution seems to contradict this notion of computation,
+but evolution is not reserved only for nature.
+
+% TODO: Cite
+In one experiment [cite ???] the duo used silver in an acidic solution which would form
+short-lived silver filaments when subjected to electric currents.
+From our perspective of computation, it was not before they tuned the parameters
+of the system in order to evolve a tone discriminator that the system could
+truly be classified as a computing one.
+Evolution in materio represents a very different approach than conventional
+processors.
+While it is impossible to program unstructured matter with imperative
+instructions like in a conventional computer, we can nonetheless ``instruct''
+the material computer in a declarative matter by specifying what sort of result
+we are after and letting the evolutionary process handle the rest.
+Material computing gives us a much better model of how neurons can compute:
+Material computation happens on a massively parallel scale, it occurs in a
+substrate where all structure is self-organized rather than imposed by a
+designer, and both are products of evolution.\\
+
+TODO: Write about Odd Rune's stuff, clean up and add citations.
+
+\section{Neurons As Computers}
+It might seem that the previous section has provided the key to unlocking the
+computational power of neural cultures.
+This line of thinking neglects the fact that neurons have already been shaped by
+the process of evolution over billions of years, indeed neural cultures can be
+viewed as the result of an EiM experiment a billion years in the making.
+Our goal is not to apply the principle of EiM to neural cultures, but it does
+provide an interesting angle:
+When Pask and Beer tweaked their silver solution to discriminate tones, they did
+viewed the solution as a black box, and only its performance on the task at hand
+was evaluated.
+While evolution does not optimize for a specific functionality the black box
+approach is similar.
+Just like Pask and Beer did not consider the exact inner workings of silver
+filaments, it is necessary to apply the black box liberally when approaching
+neurons.
+
+% I really like the gist of this, but I'm very unsure about the phrasing.
+If the neuron was the result of an EiM experiment, the ideal model of the neuron
+would be the criteria used to evaluate fitness, eschewing all implementation
+details.
+Of course, no such criterias exist, evolution does not have a plan, but it
+illustrates why as much as possible of the cells inner working will be
+considered to be inside a black box.
+
+% Another thing missing is of course how to utilize neurons.
+
+\subsection{Neurons}
+The neuron, or nerve cell, is the basic building block of both the human brain
+and the nerve system.
+There are many types of neurons in the human body, but to reduce the scope the
+focus of this thesis is a simplified model of the neurons that make up the
+brain.
+The model neuron, shown in fig [a figure of a neuron] consists of three parts:
+The body, \emph{Soma}, the \emph{Dendritic network} and an \emph{Axon}.
+The dendritic network acts as a receptor sensing electrical activity around the
+neuron, while the axon transmits electric pulses to neighboring cells.
+The connection between two neurons is called a \emph{Synapse}.
+Axons and dendritic networks are themselves vastly complex, and viewing them as
+simple electrical transmitters neglects the importance of neurotransmitters.
+However, given the strong correlation between neurotransmitter concentrations and
+electrical activity is considered part of the black box.
+When the neuron is sufficiently excited by electrical activity it will fire an
+electrical pulse that travels along the axon, which in turn stimulate other
+neurons.
+Together neurons form networks in a complex interplay between topology and behavior:
+The behavior of the network decides its behavior, and the behavior in turn
+causes some synapses to wither, and others to form in a process that is not well
+understood.
+The model used for the neuron for the rest of this paper is a node in an
+\emph{Adaptive Network} which communicates through electrical pulses.
+The missing part in our model is the underlying rules that dictates the growth
+of the network.
+
 \section{Reservoir Computing}
-The theory behind complex systems provides us with a useful model of biological
-computation with emphasis on how a \emph{computational substrate} can be
-achieved.
-If the fundamental purpose of a neuron is to create networks exhibiting the same
-complexity behavior as Langton's automatas then harnessing the computational
-capabilities of these simple models is a first step towards interfacing and
-understanding neurons.
-Clearly designing a cellular computer in a top down manner is intractable due to
-the intricate and unpredictable relation between cause and effect.
-The best we could realistically achieve with the typical top down approach is
-implementing a turing machine which would be both slow and incredibly brittle.
-Seemingly, classifying the neural culture as a complex system has not provided
-any useful tools for understanding how to interact with it, on the other hand it
-makes this task seem futile.
-However, in computer science the recent field of
-\emph{reservoir computing} has emerged, embracing the complexity and unpredictability
-of certain complex systems.
+So far we have arrived at a model of the neuron as a complex adaptive network
+which can be interfaced with using electrical signals, but the fundamental issue
+of actually utilizing neurons for computing remains.
+%
+The final piece of the puzzle comes in the form of \emph{Reservoir Computing}, a
+technique developed to exploit the dynamics of complex systems.
+If the fundamental rule governing the neuron is to create networks exhibiting
+the same complexity behavior as Langton's automatas then harnessing the
+computational capabilities of these simple models is a first step towards
+interfacing and understanding neurons.
+%
+% Clearly designing a cellular computer in a top down manner is intractable due to
+% the intricate and unpredictable relation between cause and effect.
+% The best we could realistically achieve with the typical top down approach is
+% implementing a turing machine which would be both slow and incredibly brittle.
+% Seemingly, classifying the neural culture as a complex system has not provided
+% any useful tools for understanding how to interact with it, on the other hand it
+% makes this task seem futile.
+% However, in computer science the recent field of
+% \emph{reservoir computing} has emerged, embracing the complexity and unpredictability
+% of certain complex systems.
 In reservoir computing, a complex systems is used as a \textit{reservoir}
 \cite{schrauwen_overview_2007} which
 ``acts as a complex nonlinear dynamic filter that transforms the
 input signals using a high-dimensional temporal map, not unlike the operation
 of an explicit, temporal kernel function.''\\
-
 % cite on SVMs?
-In order to explain, schrauwen makes a comparison to how source
-vector machines work: The reservoir acts as a kernel, projecting input into a
-high-dimensional feature space.
-Figure ??? shows this technique, note that the regression performed upon the
+In order to explain, schrauwen makes a comparison to the the machine learning
+technique of source vector machines work, as shown in fig [rm 1]:
+The reservoir acts as a kernel, projecting input into a high-dimensional feature space.
+Figure [rm 1] shows this technique, note that the regression performed upon the
 feauture space is a simple linear regression, an important point both in SVMs
 and reservoir computing.
-
-% ??? figure skal være fra schrauwen
-Figure ??? shows a typical reservoir computing setup which follows a similar
-method of operation as the SVM in figure ???.
+%
+Figure [rm 2] shows a typical reservoir computing setup which follows a similar
+method of operation as the SVM in figure [rm 1]
 The reservoir serves as the high dimensional feature space, while the output
 layer is only capable of linearly separating the resulting dynamics.
-
+%
 Schrauwen points out two major differences between SVMs and RCs.
 First, SVMs only implicitly expands the input to high dimensional space in order
 to make the problem tractable, while reservoirs do not.
 Secondly, kernels are not capable of handling temporal signals.
-
+%
 The second difference is very important, it is what allows reservoirs to
 implicitly encode temporal signals in their dynamics, making reservoirs a
 natural fit for tasks such as speech recognition.
 % cite Biologically Plausible Speech Recognition with LSTM Neural Nets Alex
 % Graves, Douglas Eck, Nicole Beringer, Juergen Schmidhuber
-
+% 
 In other terms, the properties that make complex systems so hard to work with
 such as sensitivity to initial conditions also allow them to discern very subtle
 nuances in input, and their complex behavioral patterns causes the systems to
 change their behavior to new input based on previous input.
-
+%
 In light of this, asking how to build a computer using Langton's automatons is
 the wrong question, instead the focus should be on how exploit the computation
 that is already occuring.\\
@@ -151,51 +259,8 @@ More esoteric reservoirs have been used, for instance in
 literally using a bucket of water as a reservoir.\\
 
 \subsection{Linear and nonlinear output layers}
+TODO: Elaborate on the use of linear vs nonlin classifiers.
 
-\section{Evolution In Materio}
-In the previous section no distinction has been made between systems that exist
-in the simulated world of a computer, and the physically occuring systems found
-in nature.
-Even in the early days of computing however, long before reservoir computing,
-research into the computational capabilities inherent in physical matter.
-% ratio club etc
-
-\section{Neurons As Computers}
-% Hva jeg vil få frem:
-% En kjapp intro av nevroner
-% Hvordan jeg ser nevroner som enkle noder som kommuniserer elektrisk uten å ta
-% hensyn til det underliggende elektrokjemiske systemet.
-% Hvordan nevroner selv-organiserer seg, og hvordan struktur påvirke adferd, som
-% igjen påvirker videre vekst (noe som er veldig veldig interessant!!)
-% Beskrive hvordan spiking fører til kjedereaksjoner
-% Beskrive hvordan vi kan koble oss på nevronene vha elektriske signaler.
-Even a single neuron is an extremely complex system when compared to the
-transistor. Together they form vast interconnected networks where information is
-exchanged using electrochemical signals. A fundamental difference between
-neurons and conventional computers is that these networks have not been
-designed, they do not come with a blueprint, and they constantly modify
-themselves in response to the environment. Due to the complexities of this
-process it is completely necessary to restrict ourselves to a simple model of
-the neuron, leaving genetic activations and chemical pathways to the
-neurologists and chemists. In order to understand how neurons can assemble into
-complex networks capable of thought one must of course understand the underlying
-chemical and biological principles, but from a computer scientists perspective
-these are mere implementation details necessitated by existing in a physical
-universe. Were the physical laws altered the chemical pathways would surely
-differ, but the resulting behavior would probably [According to who?] still be
-similar to our universe. In this viewpoint, the very essence of neurons is their
-ability to self-organize into structures in a bottom-up fashion in a complex
-interplay between behavior and form. Following this rationale the neuron will be
-seen as a simple node in a network, communicating using electrical pulses,
-so-called spikes or action potentials. These spikes are short bursts of
-electricity which after firing causes a quick refactory period in which the
-firing cell will not respond to stimuli.
-When fired these spikes stimulates connected neurons, which may in turn
-release their charge causing a signal to cascade in a feedback loop.
-These electrical pulses can be seen as the ``language'' of neurons, and by
-measuring electrical activity and stimulating the network using electrodes, it
-is possible to set up two-way communication between a machine and a cluster of
-neurons.
 \cleardoublepage
 
 %%% Local Variables:

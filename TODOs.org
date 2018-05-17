@@ -1,7 +1,10 @@
 * Mastern
 
 * Now
-** TODO Forbedre Neuro computing background
+** DONE Skriv om CS background til å reflektere endring i kappitelstruktur.
+   
+* Now-ish
+** TODO Les Bar Yam, se over complexity i intro
 ** TODO Skriv om software infrastructure
 ** TODO Spør Gunnar om hva han tenker om å sette opp requirements for RC system
    Ønsker å ha noe som kan til forveksling likne på en API i scala. 
@@ -11,9 +14,8 @@
    Kan jeg skrive om hvorfor metadata er viktig, potensiale for analyse?
    Skal jeg nevne fs2, minneforbruk, streaming generelt?
    Er det relevant med klaging over elendige APIer?
-* Later
-** TODO Skriv ferdig EiM
 ** TODO Skriv initial software infrastructure del
+* Later
 ** TODO Skriv initial RC software del
 ** TODO Forbedre RC background
 *** TODO Skaff figurer
@@ -22,6 +24,9 @@
 * Done
 ** DONE Skriv RC subchapter
 ** DONE Skriv initial hardware chapter
+** DONE Bytt rekkefølge på EIM og res comp
+** DONE Skriv ferdig EiM
+** DONE Forbedre Neuro computing background
 
    
 
@@ -72,3 +77,5 @@
    Gunnar er enig i at reservoirer ikke nødvendigvis må ha en lineær output.
    Mitt eksempel er temporalitet, men f.eks mer effektivitet i trening på et problem, 
    eller i det hele tatt å løse oppgaven er jo ikke helt dumt.
+
+   
