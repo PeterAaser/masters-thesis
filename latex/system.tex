@@ -1,4 +1,4 @@
-\chapter{30000 Lines Of Code}
+\chapter{Software Infrastructure}
 \epigraph{Look at you, hacker. A pathetic creature of meat and bone. Panting and
 sweating as you run through my corridors. How can you challenge a perfect
 immortal machine?}
@@ -12,33 +12,67 @@ The following section contains an overview of the design philosophy, and an
 overview of the individual components which are discussed in the remainder of
 the chapter.
 \section{Design Philosophy}
-As alluded to in the discussion of physical vs virtual robot in the previous
-chapter, modularizing the cyborg is important not only as a practical matter.
-While the chief purpose of the software system is to interface with neurons, the
-design does not require this.
-In fact, the guiding principle of the software system is to serve as a general
-reservoir computing system, where neurons serve as one of many possible reservoirs.
-This deviates from the conceptual cyborg presented in the previous chapter as
-the current design does not require a feed forward neural net to be used to
-process reservoir output.\\
-% The basic requirements of the design are the following:
-% \begin{description}
-% \item [Reservoir Data Acquisition] For some generic reservoir $R$ the 
-% \item [Reservoir Data Transformation] ???
-% \item [Agent thingy] ???
-% \item [Sensor Transformation] ???
-% \item [Reservoir Perturbation] ???
-% \end{description}
-\\
-% Discuss auxillary concerns such as user interaction and storage (and
-% possibilities wrt storage)
+%
+The physical cyborg is a loosely coupled system.
+By communicating over network the neurons are not tied to a specific robot,
+whatever lies beyond the network socket does not impact the lab setup.
+%
+Mirroring the physical setup, the software has a strong focus on loose coupling,
+allowing different parts to be swapped out as long as interfaces between
+components are adhered to.
+%
+A consequence of this design is, as described in the previous chapter, that the
+``robot'' part of the cyborg can be swapped out, allowing different simulated
+environments in addition to supporting physical robots.
+A less obvious consequence is that the neural networks can be swapped out with
+any other reservoir.
+While the chief purpose of the software system is to interface with neurons,
+being able to use a different reservoir is helpful both for testing and tuning
+the software system, and for quantitatively investigating the differences between
+neural cultures and other model reservoirs.
+%
+In short, the software architecture puts high emphasis on generic modular
+components, and some parts are closer to a generic reservoir computing
+framework, but most emphasis will be put on the neuron specific parts.
+\subsection{Architecture}
+An overview of the system architecture is shown in \ref{figOverview}.
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.5\textwidth]{fig/rm/sw_arc.jpg}
+  \caption{Rough sketch.
+    Should indicate the use of TCP/IP.
+    Should show user interface.
+    Final version will be done in inkscape.
+  }
+  \label{figOverview}
+\end{figure}
+The figure shows the closed dataloop, from neural measurements to perturbations.
+First the data acquisition module collects voltage measurements from the neural
+tissue, making it available over TCP/IP to any connected machine.
+%
+Next, the clients filtering module filters the raw waveform data, isolating
+neural activity transformating high resolution waveform data into a simple
+boolean spike or no spike format.
+%
+This spike data is then fed into the reservoir computer which outputs data to
+the robot control module.
+The format of this data is not specified, but for the robots used in this
+project it is simply a single value specifying the desired turn rate.
+%
+Finally, the robot control module outputs sensory data, which is translated into
+perturbations, i.e induced voltage spikes in the MEA.
+These requests are transmitted over TCP/IP back to the reservoir.
+%
+Other than the core dataflow loop, the software system also presents a frontend
+for the user to set up experiments and visualize the waveforms and a database
+for storing and playing recorded data.
 \subsection{Implementation}
 The system today is comprised of two separate projects, \emph{MEAME} and
-\emph{SHODAN}.
-The first project, MEAME, a ``clever'' pun on the similarity on the words MEA
-and ``meme'', is responsible for interfacing with the lab software,
-thus in the framework of the design philosophy it serves as an implementation
-of a single reservoir.
+\emph{SHODAN} as seen in \ref{figOverview}.
+Both projects have been implemented by the author specifically for the cyborg
+project, and are available on github.
+%
+%
 \section{MEAME}
 The MEAME project is responsible for handling the tasks closest to the neural
 reservoir, and is therefore installed on a computer directly connected to the
@@ -46,11 +80,6 @@ MEA2100 system.
 MEAME is split into two subsystems, both exposed by a unified \emph{REST
   interface}, enabling access to the lab equipment via a protocol built on top
 of HTTP.
-
-% TODO: Legg til git linker
-Both MEAME and MEAME-DSP are available online, and have been implemented by the
-author of this thesis.\\
-
 The data acquisition part of MEAME is responsible for configuring recording
 parameters such as samplerate and starting or stopping recordings.
 It is built on top of a very thin windows only API provided by the equipment vendor, making
@@ -58,39 +87,52 @@ it abundantly clear that the cyborg project is pushing the equipment far beyond
 its intended use, which at the same time is a point of pride and pain.
 Once the data acquisition equipment has been configured MEAME exposes the
 recorded data as a single continous stream which can be accessed via TCP.
-Figure ??? shows the format of this data stream, which must be demultiplexed by
-the receiver in order to separate data into the 60 individual channels.
+Figure \ref{figLayout} shows the format of this data stream with only 3
+electrodes, which must be demultiplexed by the receiver in order to separate
+data into the 60 individual channels.
 In order to stimulate the neurons, the HTTP interface can also handle stimuli
 requests, which are executed on a realtime capable digital signal processor
 which is embedded on the lab equipment itself.
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.5\textwidth]{fig/rm/waveform_segmentation.jpg}
+  \caption{Rough sketch.
+    Shows how data is transmitted.
+  }
+  \label{figLayout}
+\end{figure}
 \subsection{MEAME-DSP}
 When MEAME receives a stimuli request this is communicated to the DSP through a
 simple protocol implemented by directly writing to registers.
-The DSP maintains a list of \emph{Stim groups} which contain a list of electrode
+The DSP maintains a list of \emph{stim groups} which contain a list of electrode
 numbers and a desired frequency.
-Additionally the DSP is responsible for uploading which pattern to use when
-stimulating an electrode, however the DSP itself does not expose an API for this
-purpose since uploading a stimulus pattern simply consists of writing repeatedly
-to a single register, meaning this task is better handled at a higher level.
-
+Additionally the DSP is responsible for uploading which \emph{stimulus pattern}
+to use when stimulating an electrode, however the DSP itself does not expose an
+API for this purpose since uploading a stimulus pattern simply consists of
+writing repeatedly to a single register, meaning this task is better handled at
+a higher level.
+A visual representation is given in \ref{figWaves} showing two stimulus groups.
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.5\textwidth]{fig/rm/dsp_config.jpg}
+  \caption{Rough sketch.
+    Some wavez
+  }
+  \label{figWaves}
+\end{figure}
 \section{SHODAN}
-SHODAN is a reservoir computing system, developed to be able to handle any
-reservoir as long as the necessary transformations between reservoir output and
-perturbing are supplied.
-Although SHODAN is reservoir agnostic, a significant portion of the code is
-specific to neural cultures and communicating with MEAME, thus SHODAN is not a
-framework in the traditional sense.
-While all the subcomponents are reservoir agnostic, the main focus will be on
-the specific implementations for interfacing with neural cultures.
-SHODAN is comprised of the following subsystems:
-(Figure here???)
-% Reservoir interface
-% Data storage/playback
-% Frontend
-% Agent control
-% meme storage
-% ???
-\subsection{Data Acquisition}
+As shown in \ref{figOverview}, SHODAN is responsible for storage, filtering,
+generating perturbations and maintaining the core RC loop.
+To manage experiments SHODAN exposes a user interface that can be accessed in a
+web-browser, allowing configuration of experiment parameters via the MEAME API,
+real-time visualization of data and initiating experiments.
+After an experiment has started SHODAN configures MEAME and starts streaming
+data from MEAME.
+This data is then consumed by the filtering module, which transforms the
+high resolution voltage waveform data acquired from MEAME into a boolean format
+discerning wether an electrode is spiking or not.
+At the heart of SHODAN is the core RC loop which will be detailed next chapter.
+% I don't know what to say here.
 \cleardoublepage
 
 %%% Local Variables:

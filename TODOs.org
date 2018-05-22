@@ -1,27 +1,38 @@
 * Mastern
 
 * Now
-** DONE Skriv om CS background til å reflektere endring i kappitelstruktur.
+** TODO Skriv om software infrastructure
+** TODO Skriv initial RC software del
    
 * Now-ish
+** TODO Bedre intro for Making of a cyborg
+* Later
+** TODO Forbedre RC background
+*** TODO Skaff figurer
+*** TODO Skriv om lineær vs ulineær output classifiers
+    
+* Maybe
 ** TODO Les Bar Yam, se over complexity i intro
-** TODO Skriv om software infrastructure
-** TODO Spør Gunnar om hva han tenker om å sette opp requirements for RC system
+   
+* Diskus
+** TODO sette opp requirements for RC system
    Ønsker å ha noe som kan til forveksling likne på en API i scala. 
    Kanskje specce en API i scala som food for thought?
-** TODO Spør Gunnar om detaljnivå wrt SHODAN/MEAME
+** TODO detaljnivå wrt SHODAN/MEAME
    Hvor mye beskrivelse trenger egentlig en database?
    Kan jeg skrive om hvorfor metadata er viktig, potensiale for analyse?
    Skal jeg nevne fs2, minneforbruk, streaming generelt?
    Er det relevant med klaging over elendige APIer?
-** TODO Skriv initial software infrastructure del
-* Later
-** TODO Skriv initial RC software del
-** TODO Forbedre RC background
-*** TODO Skaff figurer
-*** TODO Skriv om lineær vs ulineær output classifiers
+** TODO Siste del av introduction
+   Sånn det ser ut nå er jeg ikke helt sikker på hva jeg ønsker å oppnå.
+   Diskuter med Gunnar hva som er essensielt.
 
+** TODO Gjør Making Of A Cyborg nytta?
+** TODO Slutten av system flyter ikke bra.
+   
+   
 * Done
+** DONE Skriv om CS background til å reflektere endring i kappitelstruktur.
 ** DONE Skriv RC subchapter
 ** DONE Skriv initial hardware chapter
 ** DONE Bytt rekkefølge på EIM og res comp
@@ -29,49 +40,6 @@
 ** DONE Forbedre Neuro computing background
 
    
-
-
-* Funnies og quotes
-** Matrix 
-   Morpheus: What is real? How do you define 'real'? If you're talking about
-   what you can feel, what you can smell, what you can taste and see, then
-   'real' is simply electrical signals interpreted by your brain.
-
-   
-* Gunnar structure notes
-** Intro
-*** Goal
-    Mer explicit på top down vs bottom up
-    EIM ved mecobo
-    
-    kontrast mecobo analog-digital mot neuro-digital
-*** "background"
-    Få inn symbolsk logikk sammen med hw vekst
-    
-    På avalanches, få frem parallelitet og self organizing, men uten purpose dvs computation.
-*** related work
-*** method
-    
-** Background
-*** Complex systems
-    Ta CA ruten? Sipper -> Langton -> Adaptive systems??
-    
-    Flytte wolfram opp til general computation biten med turing machine etc.
-    
-    Finne cite på turing completeness for CA
-    
-*** EIM
-    Med CA ↑ får vi criticality, vise til materie, særlig nascence som bruker samme tech (MEA)?
-*** Neruo
-    Skriv om mtp at nevro dyttes lenger bak
-*** RC
-    ???
-*** Hybrid bio-digital
-    
-** Cyborg
-*** Skikkelig beskrivelse
-*** Implement
-
 * Gunnar diskuser
 ** Om lineær vs ulineær
    Gunnar er enig i at reservoirer ikke nødvendigvis må ha en lineær output.
@@ -79,3 +47,14 @@
    eller i det hele tatt å løse oppgaven er jo ikke helt dumt.
 
    
+* Abstract
+* Intro
+* Background
+* Making Of A Cyborg
+  Burde kanskje introdusere mer av hvordan dataen ser ut
+  Må ha litt mer bakgrunn fra tidligere efforts
+  "building on ... the conceptual ... "
+* Software Infrastructure
+  Jeg vil fokusere så lite som mulig på implementationsdetalj her.
+* RC subsystem
+* Diskus etc
