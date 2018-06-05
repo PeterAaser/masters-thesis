@@ -8,7 +8,7 @@ biological and mechanical.
 TODO: Write good text here.
 In [Cite AHDNN] researchers created 
 \section{Concept}
-Shown in figure [rm 3] a conceptual cyborg is shown.
+In figure \ref{cyborgOverviewSimple} the conceptual cyborg is shown.
 This conceptual cyborg is comprised of three main components: An \emph{MEA}, short
 for \emph{Micro Electrode Array} in which a biological neural network is grown.
 A \emph{neural interface}, allowing two-way communication between the neural network and
@@ -20,45 +20,56 @@ a feed forward neural network, controlling the direction of the robot.
 Simultaneously data retrieved from the sensors of the robot are processed in a
 feedback processor and fed back to the neural network.
 The conceptual cyborg is a closed loop system: The only input to the system is
-what the sensors perceive which the cyborg must act upon.\\
-The major challenges involved in realizing the cyborg is divided into two major
-areas.
-Firstly, the infrastructure, comprising of everything from moving data between
-computers, to the neurons themselves must be constructed and implemented.
-This challenge can in turn be divided into software and hardware, the latter
-being the focus of this chapter.
-The second challenge is actually configuring the artificial feed forward neural
-network such that the cyborg does something that we deem useful.
-This task is done in software, and will be covered together with the software
-part of the first challenge in the next chapter.
-\section{Platform Architecture}
-The centerpiece of the cyborg is the neural culture, but for all their
-robustness they cannot survive long outside the laboratory, and should therefore
-not be physically connected to the robot.
-While this decoupling the neural cultures from the physical robot is a practical
-necessity, it also has far reaching consequences on the design space, and even
-philosophical ramifications.
-The decoupling between culture and machine means that the primary focus is to
-expose the neural neural interface to the rest of the world, which is done over
-network in this project.
-With this architecture the robot itself becomes less interesting, it does not
-even have to be a physical robot at all, in fact all work presented in this
-thesis has been done with a fully virtual robot.
-% TODO: mer applications
-% Similar network architectures have been implemented, in [Cite Application] a
-% neuron culture is used to control a simple wall-avoiding robot as a proof of
-% concept.
+what the sensors perceive which the cyborg must act upon.
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=1\textwidth]{fig/cyborg_overview.png}
+  \caption{A simple conceptual cyborg.}
+  \label{cyborgOverviewSimple}
+\end{figure}
+
+\section{Architecture}
+As shown in fig \ref{figOverview}, the actual cyborg adds a lot of parts
+compared to the initial concept.
+This overview focuses on the main data loop, depicted as red and green lines,
+with red denoting the data pipeline from the reservoir to the reservoir
+computer, and green from reservoir computer to reservoir.
+This design expands on the initial concept, fleshing out the ``interface'' box
+in \ref{cyborgOverviewSimple} and substituting ANN with the more
+general notions of reservoir output filter.
+The expanded architecture reveals a very important detail in the final design,
+which is that the data loop between the reservoir computer and the reservoir
+extends over network.
+This design choice allows the neural cultures to be safely stored in a
+laboratory, which has ramications both in a practical and philosophical sense.
+By decoupling the reservoir and reservior computer, the neurons are not
+restricted to a single robot.
+In fact, the robot does not have to be a physical robot, it can be fully virtual
+without the neurons noticing any difference.
+Additionally, the reservoir computer can interface with any reservoir as long as
+the interfaces are adhered to, allowing other reservoirs to be used in place of
+the neurons, both for testing purposes, and to compare the capabilities of
+different reservoirs.
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=1\textwidth]{fig/wb/system_overview.jpg}
+  \caption{Rough sketch.
+    Should indicate the use of TCP/IP.
+    Should show user interface.
+    Final version will be done in inkscape.
+  }
+  \label{figOverview}
+\end{figure}
+
 \section{Wetware}
 As opposed to hardware and software, the term wetware describes system
 components of biological origin, i.e ``wet'' components.
 The wetware of the cyborg is thus the neural networks which are being grown in
-MEAs at the department of neuroscience.
+MEAs at the department of neuroscience located at St.Olavs research hospital.
 The MEAs are seeded with neural stem cells of either human or rat origin which
 then spontaneously form networks.
 At seeding there is no network at all, only a ``soup'' of dissociated
 neurons which over the course of several weeks start forming networks.
-As the networks starts ``maturing'' a common phenomenon is neurons firing
-monotonic spikes automatically.
 The activity from these so-called pacemaker neurons can be seen in
 \ref{fig:pacemaker}.
 In the figure each cell in the grid corresponds to one of the
@@ -67,48 +78,275 @@ monotonic spiking activity tends to be transient, starting and stopping
 randomly.
 
 % TODO: Legg til info om complexity, graf fra johannes(?)
-\section{Neural Interface}
-An \textit{MEA2100} system has been purchased from the lab equipment vendor
-multichannel systems GmbH.
-This system system is built to conduct in-vitro experiments electrically active
-cell cultures such as neurons contained in micro electrode arrays.
-Essentially, the MEA2100 provides very precise electrodes for inducing voltage
-and measuring.
-In addition to voltage and current the equipment comes with temperature controls
-allowing neural cultures to survive for prolonged experiments, allowing
-experiments on live neurons to last up to 30 minutes.
-The essential components of the MEA2100 neural interface as shown in fig ??? are
-as follows:
-
-\subsection{Micro Electrode Array}
-Shown in fig [Stock photo of MEA] the \textit{MEA}s used in the cyborg project has been procured
-from multichannel systems.
-These MEAs feature 60 electrodes (with one of these serving as reference
-voltage).
+\subsection{Neural Interface}
+The \emph{Neural Interface} is the bridge between the biological and digital,
+responsible for providing a convenient API for reading out digital waveform data
+and inducing stimuli.
+Although not intended for use in close loop systems, the \textit{MEA2100}
+system features the necessary hardware to implement a neural interface with the
+necessary functionality for a closed loop system.
+The MEA2100 is built to conduct in-vitro experiments electrically active cell
+cultures such as neurons contained in micro electrode arrays by measuring and
+and inducing voltages with its high precision electrodes.
+In addition to voltage and current the MEA2100 system comes with a life support
+module, allowing neural cultures to survive for prolonged experiments for up to
+30 minutes.
+Figure \ref{figNI}[rm 12] shows a physical overview of the components that make up the
+neural interface, which is also marked in \ref{figOverview}.
+\subsubsection{Micro Electrode Array}
+% Shown in fig [Stock photo of MEA] the \textit{MEA}s used in the cyborg project has been procured
+% from multichannel systems.
+Shown in \ref{figNI}, an MEA containing a neural culture is slotted into the
+headstage for measurements.
+Not shown however is that the MEA can easily be removed, and is in fact one of
+many MEAs which are kept in an incubator when not experimented on.
+These MEAs feature 60 electrodes, which when accounting for the reference
+electrode provides 59 individual measurement and stimuli points, evenly spaced
+out in a grid.
 Each MEA is seeded with a neural culture, meaning that once seeded an MEA will
-be the host of a single culture, each capable of living for over a year.
+be the host of a single culture, each capable of living for over a year, like
+the culture shown in \ref{frank}.
+
 % TODO: Upon adding figure, move the kool story about frank the tank to the
 % subtext
-Fig [Microscope pic of Frank] shows a seeded MEA, nicknamed ``Frank'' as a play on frankensteins
-monster due to it's tendency to develop \emph{Organoids}, small proto-organs
-with structures similar to eyes and other sensor organs.
-\subsection{Headstage}
-The headstage is responsible for performing the actual readings and stimuli on
-the MEA.
-The electrodes of the MEAs are measured and stimulated by
-the headstage which contains the necessary high precision electronics needed for
-microvolt range readings.
-Fig [Some hardware pics from the lab] shows the headstage used by the cyborg project.
-\subsection{Interface board}
-The interface board connects to up to two head-stages
-and is responsible for interfacing with the data acquisition computer, as well
-as auxiliary equipment such as temperature controls. The interface board has two
-modes of operation. In the first mode the interface board processes and filters
-data from up to two headstages as shown in \ref{fig:IFB_regular} which can then
-be acquired on a normal computer connected via USB. In the second mode of
-operation a Texas instruments TMS320C6454 digital signal processor is activated
-which can then be interfaced with using the secondary USB port as shown in
-\ref{fig:IFB_DSP}
+% Fig [Microscope pic of Frank] shows a seeded MEA, nicknamed ``Frank'' as a play on frankensteins
+% monster due to it's tendency to develop \emph{Organoids}, small proto-organs
+% with structures similar to eyes and other sensor organs.
+\subsubsection{Headstage}
+Equipped with 60 high precision electrodes, shown in \ref{openHeadstage}, the
+headstage can connect to an MEA when inserted into the measuerement bay of the
+headstage.
+Thanks to the headstage each MEA is relatively expendable as they need only
+provide electrodes, leaving the measuerement to the headstage.
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=1\textwidth]{fig/hs_placeholder.png}
+  \caption{
+    A placeholder for an open headstage showing the electrodes.
+  }
+  \label{openHeadstage}
+\end{figure}
+\subsubsection{Interface board}
+The interface board connects to up to two head-stages and is responsible for
+interfacing with the data acquisition computer, as well as auxiliary equipment
+such as temperature controls.
+For this project, the most interesting feature of the IFB is a user programmable
+digital signal processor, which can access the raw stream of data from the
+headstage and issue stimuli.
+% Texas Instruments TMS320C6454 digital signal processor
+\section{Software}
+Creating a cyborg is a massive undertaking, thus a quite extensive software
+suite has been created to make research feasible.
+As the system architecture overview \ref{figOverview} hints, the software is the
+main body of work performed for this thesis.
+Another important detail is the strong emphasis on the dataflow which is what
+connect the individual components.
+What goes on inside a component is less relevant compared to the transformation
+of data, visible from the outside.
+Finally, the figure shows a division between two systems, MEAME and SHODAN.
+MEAME runs close to the neural cultures, residing on the DSP and lab computer,
+and is specialized to interface with the MEA2100 system specifically.
+SHODAN on the other hand resides on the other side of the ``network chasm'', and
+is closer to a framework, capable of handling any reservoir as long as the
+necessary transformations are implemented.
+
+\subsection{MEAME}
+An overview of MEAME is shown in \ref{figMEAME}, revealing that MEAME internally
+consists of two distinct subprojects exposed by a unified REST interface.
+While typically REST interfaces imply that a service is public, the MEAME REST
+interface is only intended to be used by SHODAN.
+%
+Behind the REST interface there are two modules, data acquisition and DSP interface.
+%
+The data acquisition module is responsible for configuring recording parameters
+such as samplerate and starting or stopping recordings, while the DSP interface
+provides a very thin layer of abstraction for writing to the DSP memory.
+%
+Both these modules are built on top of a very thin API provided the equipment
+vendor, making it clear that the closed loop cyborg system is pushing the
+equipment further than the vendor intended, for better or worse.
+%
+In addition to the REST interface MEAME exposes raw TCP sockets, outputting the
+raw waveform data once the lab equipment has been configured.
+%
+The format of the raw output is shown in figure \ref{figLayout}, which must be
+demultiplexed by the receiver in order to separate data into individual
+electrode readouts, referred to as \emph{channels}.
+%
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.5\textwidth]{fig/rm/meame.jpg}
+  \caption{Rough sketch.
+    nice MEAME
+    TODO: Flesh out the DSP box with RPC handler a la MCS USB .dll
+  }
+  \label{figMEAME}
+\end{figure}
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.5\textwidth]{fig/rm/waveform_segmentation.jpg}
+  \caption{Rough sketch.
+    Shows how data is transmitted.
+  }
+  \label{figLayout}
+\end{figure}
+\subsubsection{MEAME-DSP}
+Housed on the IFB, the DSP is not in use during normal operation and thus fully
+user programmable.
+Communication between MEAMEs DSP interface and the DSP itself is done with a
+primitive remote procedure call system, implemented using shared memory on the
+DSP.
+When SHODAN wishes to execute a DSP procedure this is done by submitting a list
+of memory writes via the REST interface, and then reading a special register
+that is incremented when the procedure call has been executed by the DSP,
+indicating that a new call can be executed, and that return data is valid and
+can be safely read.
+This rather thin API is admissable because of the fact that MEAME is only
+accessed by SHODAN which internally translates procedure calls to memory writes
+and reads.
+The stim control module maintains a list of \emph{stim groups} which contain a
+list of electrode numbers and a desired frequency.
+Consequentially, stimulating neurons is done by specifying which electrodes
+should be stimulated, and at which frequency, rather than explicitly sending a
+signal whenever stimuli should be applied.
+A visual representation is given in \ref{figWaves} showing two stimulus groups
+and the resulting stimulus applied.
+The stimulus group configuration also specifies a pattern for each group, sine
+and square respectively.
+These patterns can be uploaded by directly writing to memory from SHODAN, but
+for this project simple square waves are adequate.
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.5\textwidth]{fig/rm/dsp_config.jpg}
+  \caption{Rough sketch.
+    Some wavez
+  }
+  \label{figWaves}
+\end{figure}
+\subsection{SHODAN}
+As shown in \ref{figOverview}, SHODAN is responsible for storage, filtering,
+generating perturbations and maintaining the core RC loop.
+During an experiment SHODAN can be divided into two parts, reservoir interfacing
+shown in \ref{figSHODANiface}, and and the core RC loop shown in \ref{???}.
+The former can in turn be subdivided into input and output processing with
+regards to the main RC loop.
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.5\textwidth]{fig/rm/SHODAN_interface.jpg}
+  \caption{Rough sketch.
+    Some wavez
+  }
+  \label{figSHODANiface}
+\end{figure}
+\subsubsection{Input Processing}
+The MEAME comms interfacing module mirrors the corresponding interface exposed
+by MEAME, consuming raw waveform data over a TCP connection and configuring
+experiment parameters and issuing stimuli requests using a HTTP client.
+The channel demultiplexer splits the raw datastream from the TCP sockets into
+individual channels as described in \ref{figWaves} before entering the filtering
+module.
+The filtering module is responsible for translating the raw waveforms to a
+format that can be utilized by the main RC loop.
+The currently implemented filter does a basic ``spike detection'' transform
+as shown in \ref{figSpikeDetect}.
+When a certain voltage threshold is reached a spike is recorded and the detector
+is disabled for a short cooldown period before it can detect the next spike.
+The spikes are then input into a moving average filter, smoothing out the
+staccato spike/no spike filter output to the amount of spikes that has happened
+between $t$ and $t - \Delta t$ where $\Delta t$ is on the order of 100ms to 1000ms.
+The final input to the core RC loop is a vector of values, one for each channel
+that can be periodically sampled.
+As the data crosses the boundary to the core RC loop, its shape reveals little
+facts about its origin.
+For any other reservoir it would be just as natural to translate the output
+dynamics to a vector of scalars, thus for any reservoir the filter module is
+what translates from specific to generic.
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.5\textwidth]{fig/rm/wf_transform.jpg}
+  \caption{Rough sketch.
+    Some wavez
+  }
+  \label{figWaves}
+\end{figure}
+\subsubsection{Output Processing}
+Being the dual of the Input processor, the output processor does the same thing
+in reverse, transforming data from generic to specific.
+In the figure \ref{figSHODANiface} the output of the main RC loop is shown as a
+list of distances, but that is merely the interpretation of data, the underlying
+shape is just the same as the output of the filter from the input processor: a
+vector of scalars.
+Since the goal of the project is to create a cyborg the focus is naturally on
+robotics, virtual or not, but the main RC loop can just as well handle other
+tasks such as classifying images, and the resulting output would still be
+expressed as a vector of scalars.
+Figure \ref{figGenericSpecific} shows this duality between the input and output
+processor: Just as the input processor masks the identity of the reservoir from
+the core RC loop, the output processor masks the identity of the task being
+performed!\par
+The datapath of the output processor is rather similar to the input processor
+with the perturbation transform module serving the same purpose as the filter in
+reverse, turning scalars into frequency ranges.
+In the figure an additional module is shown, transforming a stim request into a
+set of memory writes for the DSP as described in the MEAME section, but this is
+just a practical matter added for completeness.
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.5\textwidth]{fig/rm/lol_generics.jpg}
+  \caption{Rough sketch.
+  }
+  \label{figGenericSpecific}
+\end{figure}
+\subsubsection{Core RC Loop}
+In the conceptual cyborg \ref{cyborgOverviewSimple} all of the software
+described previously can be fit into the interface between the ANN and MEA.
+The core of the reservoir computing system is the ANN readout and the robot
+control module, but the concept leaves out a very important piece of the puzzle:
+How can the correct ANN readout layer be chosen?
+The Core RC loop consists of three components, the robot control, the RC
+filter, and the reservoir performance evaluator.
+Just as the robot control does not have to be an actual robot, the RC filter
+can employ any filter, it does not need to be an ANN.
+The last module is what separates SHODAN from a classical reservoir computer.
+In classical reservoir computing the reservoirs themselves are fairly static,
+exhibiting little changes in behaviour over time.
+A reservoir computer using a random boolean network can store an RBN in memory
+and access this data to reconstruct the experiment at any time.
+This simplifies the task of training the RC output layer since the reservoir
+will not change between runs.
+Unlike digital RBNs, neural cultures have no reset button, their behaviour
+changes both long term and short term.
+Long term, a cluster of neurons might ``emigrate'' away from an electrode, new
+connections form and old connections wither.
+This process happens over days and weeks, but change also happens on a short
+basis, both due to natural fluctuation, and because of the fact that no two
+experiments are truly independendent, there are no ways to make neurons forget
+and revert to previous behaviour.
+The solution to this problem is to back link the robot control to the RC filter
+via a performance evaluation module, creating a feedback loop capable of coping
+with the moving target presented by a neural culture.\par
+\subsection{Storage And User Interface}
+This section will feature the UI and a description of the database system and
+the sort of offline analysis that can be done.
+It's not that interesting, but it is significant.
+%
+\section{Current State}
+MEAME and SHODAN are both still in development and are far from complete.
+All functionality described in this chapter has been implemented and is in a
+running state, but the stimuli control module that is responsible for applying
+voltage to the electrodes does not work correctly.
+This means that the closed loop system does not work at all until the issue can
+be fixed.
+This frustrating issue reflects how the closed loop system goes far beyond the
+intended use for the lab equipment, which is marred by poor software and
+nonsensical documentation, meaning development is often a process of
+reverse-engineering.
+While this flaw means the system does not fulfill its purpose, it's enough to
+verify that the remaining modules work.
+Recordings can be made and played back, which means that MEAME/SHODAN is already
+able to provide a better storage solution than the vendor provided solution.
+% Hur dur
 %%% Local Variables:
 %%% mode: latex
 %%% TeX-master: "../main"

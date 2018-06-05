@@ -1,11 +1,11 @@
-* Mastern
+* Neste gang
+  Skriv videre på CX i background
+  Introduser wolframs hierarki, så flyter alt bedre uansett.
 
 * Now
-** TODO Skriv om software infrastructure
-** TODO Skriv initial RC software del
-   
+  
 * Now-ish
-** TODO Bedre intro for Making of a cyborg
+** TODO Bedre intro for Chap3
 * Later
 ** TODO Forbedre RC background
 *** TODO Skaff figurer
@@ -15,23 +15,18 @@
 ** TODO Les Bar Yam, se over complexity i intro
    
 * Diskus
-** TODO sette opp requirements for RC system
-   Ønsker å ha noe som kan til forveksling likne på en API i scala. 
-   Kanskje specce en API i scala som food for thought?
-** TODO detaljnivå wrt SHODAN/MEAME
-   Hvor mye beskrivelse trenger egentlig en database?
-   Kan jeg skrive om hvorfor metadata er viktig, potensiale for analyse?
-   Skal jeg nevne fs2, minneforbruk, streaming generelt?
-   Er det relevant med klaging over elendige APIer?
-** TODO Siste del av introduction
+** DONE Siste del av introduction
    Sånn det ser ut nå er jeg ikke helt sikker på hva jeg ønsker å oppnå.
    Diskuter med Gunnar hva som er essensielt.
-
-** TODO Gjør Making Of A Cyborg nytta?
-** TODO Slutten av system flyter ikke bra.
    
+   Kom frem til at det å legge til et bilde med nevroner i intro hjelper med å 
+   få frem at dette er et fysisk system.
+
    
 * Done
+** DONE Skriv om chap 3 og 4 til et stort chapter
+** DONE Lag en mer comprehensive figur for system overview
+** DONE Legg til neuro fig i intro
 ** DONE Skriv om CS background til å reflektere endring i kappitelstruktur.
 ** DONE Skriv RC subchapter
 ** DONE Skriv initial hardware chapter
@@ -50,11 +45,13 @@
 * Abstract
 * Intro
 * Background
-* Making Of A Cyborg
-  Burde kanskje introdusere mer av hvordan dataen ser ut
-  Må ha litt mer bakgrunn fra tidligere efforts
-  "building on ... the conceptual ... "
-* Software Infrastructure
-  Jeg vil fokusere så lite som mulig på implementationsdetalj her.
-* RC subsystem
-* Diskus etc
+** TODO Sjekk at toffoli quote har blitt introdusert  
+* Chap 1
+** TODO Få med at kun virtuell robot brukes
+   
+* Chap 2
+* Chap 3
+* Figurer
+** OverView
+*** TODO Legg til stiplede 'boundaries'
+*** TODO Kryssreferer med conceptual cyborg

@@ -1,51 +1,63 @@
 \chapter{Background}
-\emph{
-  In this body of work references are made to computations done
-  by both artificial and real neurons. To make the distinction
-  between these cases clear all computation done by computer
-  simulated approximations of neurons will be prefixed as
-  artificial.
-}\\
-The underlying goal of the thesis, performing computations with neurons serves
-as a red thread throughout the background chapter.
-To create a cyborg, it is necessery to create a bridge between machine and
-neural cultures.
-This bridge must provide a medium which can be understood by both neural tissue
-and the computer, analogous to how humans communicate with soundwaves and visual
-cues.
-Once a medium has been established, the real challenge presents itself, namely
-that of finding a common ``language''.
-The topics discussed in this section serves to motivate how this goal can be
-achieved is structured as follows:
+Creating a cyborg is a massive cross disciplinary effort, and if a scope is not
+clearly defined the background runs the risk of becoming equally massive.
+The goal of the thesis is to create a hybrid neuro-digital system capable of
+controlling a simple robot, and by extension to create a ``bridge'' between
+neural and digital.
+Each section in the background shares this bridge as a red thread, and
+consequently topics that are not directly related to the thesis' goal are discarded.
+The background is laid out as follows:
 First \emph{Complex Systems} are introduced as a framework to discuss the computational
 capabilities in a wide range of systems that exhibit system dynamics similar to
 that of neurons.
+Modeling neurons as a complex systems is a first step towards establishing a
+common ``language'' between neural activity and digital logic.
+%
 Next, \emph{Evolution in Materio}, EiM for short, introduces computation done in
 unstructured matter through the process of evolution.
 The goals of EiM are closely aligned to the goal of this thesis, as both study
 massively parallel computation happening in physical matter shaped by the
 process of evolution.
-Next section, \emph{Neurons As Computers}, gives a basic overview of neurons,
-and more importantly motivates narrowing the scope of how neurons will be
-modeled, a necessity considering the size of the field and the background of the author.
+%
+Next section, \emph{Neurons As Computers} introduces neurons with a strong focus
+on their computational capabilities.
+Building on the EiM section, this section motivates a necessary reduction of
+scope, proposing a simplified model of the computing neuron and a medium of
+communication between neuron and digital.
+%
 Finally, \emph{Reservoir Computing} is introduced, tying together the previous
-sections by introducing a framework of thought capable of tapping into the
-computational properties of neural networks.
-
+sections by introducing the framework of reservoir computing in order to
+establish a common ``language'' between neural cultures and digital.
 \section{Complex Systems}
-TODO: Introduser Adaptive networks, siter Sayama: "Modeling complex systems with
-adaptive networks"\\ \\
+% TODO: Introduser Adaptive networks, siter Sayama: "Modeling complex systems with
+% adaptive networks"\\ \\
 %
 Nature, unlike humans, does not shy away from complexity.
-Since complexity in itself is not the goal of evolution (evolution has no goal), 
-it is interesting to note that systems that arise from a process of evolution
-display much more complexity than human-designed systems, and the study of these
-systems provide useful models and terminology for describing and understanding
-how neural networks form.
+On all scales, from entire ecosystems and social networks, anthills, neural
+tissue and the gene regulatory networks in single cells nature exhibits dizzying
+complexity.
 %
-The study of these \emph{Complex Systems} is a broad, cross-disciplinary field.
-To see why, consider that most fields deal with systems, be they financial,
-chemical, social or electrical in nature.
+Unlike a swiss watch which consists of many complex parts that operate in a
+simple way, these system exhibit complexity in their \emph{interactions}.
+%
+From an evolutionary standpoint this makes sense.
+A system whose behavior rises from interaction is less dependent on each
+individual part, giving rise to robust systems that can adapt to change.
+Robustness is necessary for evolution to because it provides a \emph{fitness
+landscape} that evolution can ``maneuver''.
+%
+From a systems perspective the brain has much more in common with an anthill
+than a processor, to understand neural cultures a good first step is to look at
+other systems with complex interaction.\par
+%
+%
+The study of these \emph{Complex Systems} is a broad, cross-disciplinary field,
+not restricted to biological systems.
+%
+In [cite Bar Yam Dynamics of complex systems] Bar-Yam suggests that complex
+systems is a convergence point for all disciplines that deal with systems as
+shown in \ref{figBarYam}.
+%
 All of these fields feature systems in which the global behavior \emph{Emerges}
 from local interaction of individual components through a process of \emph{Self
   Organization}.
@@ -54,8 +66,78 @@ sum of complexity of its individual components, i.e the relationship between the
 complexity of the system and its constituent components is \emph{Non Linear}.
 Common for these systems is therefore the futility of reductionism since the
 interesting aspects of the system only occurs when components interact.
-Although complex systems are not ordered or linear, they are not chaotic either.
+It is difficult to pin down exactly what a complex system is, so before
+venturing further a practical example is in order.
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=1\textwidth]{fig/BarYamCX.png}
+  \caption{From Bar Yam book.}
+  \label{figCX}
+\end{figure}
+\subsubsection{Cellular Automata}
+A \emph{Cellular Automaton}\footnote{Singular: Automaton, Plural: Automata}
+is a simple discrete model of a single cell which changes between a discrete set
+of states based only on its immediate neighbors.
+Figure \ref{figCA22} shows an example of a \emph{rule set}, or \emph{transition
+  table} for a cellular automaton with only two states which over several step
+forms a pattern.
+Clearly some global behavior emerges from local interaction, do all transition
+tables lead to complex systems?
 %
+Stephen Wolfram suggests classifying the behavior of cellular automata into four
+classes [cite wolfram yo]:
+\begin{description}
+\item [Class I] evolves to a homogeneous state.
+\item [Class II] evolves to simple separated periodic structures.
+\item [Class III] yields chaotic aperiodic patterns.
+\item [Class IV] yields complex patterns of localized structures
+\end{description}
+%
+The behavior shown in \ref{figCA22} fits in the second category, outside of the
+complex category, so clearly self organization is not enough.
+%
+In Langton's pioneering paper \emph{Computation on the Edge of Chaos}
+\cite{langton_computation_1990} the space of possible transition tables for one
+dimensional cellular automata with two states, such as \ref{figCA22} is explored.
+For each transition table Langton calculated the ratio of states that lead to
+``death'' to ``life'' (white and black cell respectively).
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=1\textwidth]{fig/Langtons_egg2.png}
+  \caption{Langtons egg}
+  \label{figCAegg}
+\end{figure}
+
+
+the system dynamics of cellular automata are shown to follow phase transitions
+similar to physical matter.
+Langton explored the rule space of cellular automata and found that the ratio
+between transitions that led to cell death and life had similarities to
+temperature in physical systems.
+As expected, rules which tended to favor cell death led to static or periodic
+systems, while rules favoring life over death led to chaotic systems.
+More interstingly is what happened when the rules favored life and death
+equally.
+In these systems which exists at the border between orderly and chaotic systems
+Langton found a \emph{critical} phase where the system was neither chaotic nor
+ordered.
+
+
+Together they are capable of solving global problems such
+as contour-extraction \cite{sipper_emergence_1999}, providing an example of
+local interactions producing interesting global behavior.\par
+Cellular automata are even sufficiently powerful to express a turing machine,
+but as Sipper puts it: ``This is perhaps the quintessential example of a slow
+bullet train: embedding a sequential universal Turing machine within the
+highly parallel cellular-automaton model.''
+Embeddeding turing machines into cellular automatas is of little use, but it's
+useful to know that cellular automata are sufficiently powerful if we are to
+apply it as a model for the processes governing neural networks.
+The real power of cellular automatas as a model for neural networks is how they
+model the \emph{Phase Transitions} in behavior (i.e dynamics).
+
+
+% Langton burde faktisk komme inn allerede her.
 Unlike chaotic systems, complex systems contain \emph{Attractors}, states that
 are relatively stable.
 Fig [Strange attractor] shows the \emph{Strange Attractor}, a pattern formed by
@@ -64,16 +146,24 @@ between them.
 In complex systems both dampening and amplifying feedback loops form.
 The dampening loops allow the system to fall into the attractors, while the
 amplifying loops can amplify minor perturbations, eventually causing a cascading
-feedback loop moving the system to a different attractor.\\
+feedback loop moving the system to a different attractor.\par
 %
-The immediate benefit of classifying neural cultures as a complex systems is
-that studying simpler models of complex systems can act as a stepping stone.
-A simple, biological inspired model capable of exhibiting complex behavior is
+%
+%
+% The immediate benefit of classifying neural cultures as a complex systems is
+% that studying simpler models of complex systems can act as a stepping stone.
+% A simple, biological inspired model capable of exhibiting complex behavior is
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=1\textwidth]{fig/ca22.png}
+  \caption{Should add a time axis to drive the point home that these are 1D}
+  \label{figCA22}
+\end{figure}
 the \emph{Cellular Automaton}, a discrete model of a single cell which changes
 between a discrete set of states based only on its immediate neighbors.
 Together they are capable of solving global problems such
 as contour-extraction \cite{sipper_emergence_1999}, providing an example of
-local interactions producing interesting global behavior.\\
+local interactions producing interesting global behavior.\par
 Cellular automata are even sufficiently powerful to express a turing machine,
 but as Sipper puts it: ``This is perhaps the quintessential example of a slow
 bullet train: embedding a sequential universal Turing machine within the
