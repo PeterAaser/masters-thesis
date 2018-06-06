@@ -1,8 +1,6 @@
 * Neste gang
-  Skriv videre på CX i background
-  Introduser wolframs hierarki, så flyter alt bedre uansett.
+  Snakk med Gunnar om CX biten
 
-* Now
   
 * Now-ish
 ** TODO Bedre intro for Chap3

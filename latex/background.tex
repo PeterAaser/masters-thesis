@@ -30,171 +30,152 @@ sections by introducing the framework of reservoir computing in order to
 establish a common ``language'' between neural cultures and digital.
 \section{Complex Systems}
 % TODO: Introduser Adaptive networks, siter Sayama: "Modeling complex systems with
-% adaptive networks"\\ \\
+% adaptive networks"
 %
+% How nature deals with CX:
 Nature, unlike humans, does not shy away from complexity.
 On all scales, from entire ecosystems and social networks, anthills, neural
 tissue and the gene regulatory networks in single cells nature exhibits dizzying
 complexity.
 %
-Unlike a swiss watch which consists of many complex parts that operate in a
-simple way, these system exhibit complexity in their \emph{interactions}.
+The complexity of a systems behavior is orthogonal to how \emph{complicated} it
+is.
+A swiss watch for instance is made up of hundreds of different parts that all
+come together in a specific way, but its behavior is easy to predict, and can be
+easily modeled.
+While most systems found in nature are both complicated and complex it is an
+important distinction, complex systems are hard to predict, complicated systems
+are hard to understand.
 %
-From an evolutionary standpoint this makes sense.
+From an evolutionary standpoint natures favoring of complex behavior makes sense.
 A system whose behavior rises from interaction is less dependent on each
 individual part, giving rise to robust systems that can adapt to change.
 Robustness is necessary for evolution to because it provides a \emph{fitness
-landscape} that evolution can ``maneuver''.
+landscape} that evolution can maneuver.
 %
-From a systems perspective the brain has much more in common with an anthill
-than a processor, to understand neural cultures a good first step is to look at
-other systems with complex interaction.\par
-%
-%
+From a systems perspective then, the brain has much more in common with an anthill
+than a processor and to understand neural cultures a good first step is to look at
+other systems with complex interaction.
+% What CX are:
 The study of these \emph{Complex Systems} is a broad, cross-disciplinary field,
 not restricted to biological systems.
 %
 In [cite Bar Yam Dynamics of complex systems] Bar-Yam suggests that complex
 systems is a convergence point for all disciplines that deal with systems as
-shown in \ref{figBarYam}.
+shown in \ref{figCX}.
 %
+% Local interaction
 All of these fields feature systems in which the global behavior \emph{Emerges}
 from local interaction of individual components through a process of \emph{Self
-  Organization}.
-These behavior of these systems exhibit a complexity that is greater than the
+  Organization} rather than top down design.
+% 
+% Non-linearity
+The behavior of these systems exhibit a complexity that is greater than the
 sum of complexity of its individual components, i.e the relationship between the
 complexity of the system and its constituent components is \emph{Non Linear}.
-Common for these systems is therefore the futility of reductionism since the
-interesting aspects of the system only occurs when components interact.
-It is difficult to pin down exactly what a complex system is, so before
-venturing further a practical example is in order.
+%
+\par
 \begin{figure}[h!]
   \centering
-  \includegraphics[width=1\textwidth]{fig/BarYamCX.png}
+  \includegraphics[width=0.6\textwidth]{fig/BarYamCX.png}
   \caption{From Bar Yam book.}
   \label{figCX}
 \end{figure}
-\subsubsection{Cellular Automata}
+% CA: Intro
 A \emph{Cellular Automaton}\footnote{Singular: Automaton, Plural: Automata}
 is a simple discrete model of a single cell which changes between a discrete set
 of states based only on its immediate neighbors.
 Figure \ref{figCA22} shows an example of a \emph{rule set}, or \emph{transition
-  table} for a cellular automaton with only two states which over several step
-forms a pattern.
-Clearly some global behavior emerges from local interaction, do all transition
-tables lead to complex systems?
+  table} for a cellular automaton with only two states, and an initial
+condition, or ``seed'', which over several steps forms a pattern.
+Cellular automatas are capable of solving global problems such as
+contour-extraction \cite{sipper_emergence_1999} where the problem is expressed
+as the seed and a global solution emerges from the local interaction of cells.
+Cellular automata are even sufficiently powerful to express a turing machine
+[Cite Matthew Cook],
+but as Sipper puts it: ``This is perhaps the quintessential example of a slow
+bullet train: embedding a sequential universal Turing machine within the
+highly parallel cellular-automaton model.''
 %
-Stephen Wolfram suggests classifying the behavior of cellular automata into four
-classes [cite wolfram yo]:
-\begin{description}
-\item [Class I] evolves to a homogeneous state.
-\item [Class II] evolves to simple separated periodic structures.
-\item [Class III] yields chaotic aperiodic patterns.
-\item [Class IV] yields complex patterns of localized structures
-\end{description}
+% CA: Complexity
 %
-The behavior shown in \ref{figCA22} fits in the second category, outside of the
-complex category, so clearly self organization is not enough.
+Cellular automatas are excellent models for exploring complex systems since they
+can produce interesting behavior from local interaction between very simple
+components.
 %
 In Langton's pioneering paper \emph{Computation on the Edge of Chaos}
 \cite{langton_computation_1990} the space of possible transition tables for one
 dimensional cellular automata with two states, such as \ref{figCA22} is explored.
+Langton was interested in what sort of transition table would lead to CAs that
+would 
+%
 For each transition table Langton calculated the ratio of states that lead to
-``death'' to ``life'' (white and black cell respectively).
+``death'' to ``life'' (white and black cell respectively), denoted as λ.
+the system dynamics of cellular automata are shown to follow phase transitions
+similar to physical matter.
+Langton explored the rule space of cellular automata and found that the ratio
+between transitions that led to cell death and life had similarities to
+temperature in physical systems.
+As expected, rules which tended to favor cell death led to static or periodic
+systems, while rules favoring life over death led to chaotic systems.
+More interstingly is what happened when the rules favored life and death
+equally.
+In these systems which exists at the border between orderly and chaotic systems
+Langton found a \emph{critical} phase where the system was neither chaotic nor
+ordered.
+
 \begin{figure}[h!]
   \centering
   \includegraphics[width=1\textwidth]{fig/Langtons_egg2.png}
   \caption{Langtons egg}
   \label{figCAegg}
 \end{figure}
-
-
-the system dynamics of cellular automata are shown to follow phase transitions
-similar to physical matter.
-Langton explored the rule space of cellular automata and found that the ratio
-between transitions that led to cell death and life had similarities to
-temperature in physical systems.
-As expected, rules which tended to favor cell death led to static or periodic
-systems, while rules favoring life over death led to chaotic systems.
-More interstingly is what happened when the rules favored life and death
-equally.
-In these systems which exists at the border between orderly and chaotic systems
-Langton found a \emph{critical} phase where the system was neither chaotic nor
-ordered.
-
-
-Together they are capable of solving global problems such
-as contour-extraction \cite{sipper_emergence_1999}, providing an example of
-local interactions producing interesting global behavior.\par
-Cellular automata are even sufficiently powerful to express a turing machine,
-but as Sipper puts it: ``This is perhaps the quintessential example of a slow
-bullet train: embedding a sequential universal Turing machine within the
-highly parallel cellular-automaton model.''
-Embeddeding turing machines into cellular automatas is of little use, but it's
-useful to know that cellular automata are sufficiently powerful if we are to
-apply it as a model for the processes governing neural networks.
-The real power of cellular automatas as a model for neural networks is how they
-model the \emph{Phase Transitions} in behavior (i.e dynamics).
-
-
-% Langton burde faktisk komme inn allerede her.
-Unlike chaotic systems, complex systems contain \emph{Attractors}, states that
-are relatively stable.
-Fig [Strange attractor] shows the \emph{Strange Attractor}, a pattern formed by
-a particle in a vector field that orbits two attractors, arbitrarily switching
-between them.
-In complex systems both dampening and amplifying feedback loops form.
-The dampening loops allow the system to fall into the attractors, while the
-amplifying loops can amplify minor perturbations, eventually causing a cascading
-feedback loop moving the system to a different attractor.\par
-%
-%
-%
-% The immediate benefit of classifying neural cultures as a complex systems is
-% that studying simpler models of complex systems can act as a stepping stone.
-% A simple, biological inspired model capable of exhibiting complex behavior is
+% %
+% % The immediate benefit of classifying neural cultures as a complex systems is
+% % that studying simpler models of complex systems can act as a stepping stone.
+% % A simple, biological inspired model capable of exhibiting complex behavior is
 \begin{figure}[h!]
   \centering
   \includegraphics[width=1\textwidth]{fig/ca22.png}
   \caption{Should add a time axis to drive the point home that these are 1D}
   \label{figCA22}
 \end{figure}
-the \emph{Cellular Automaton}, a discrete model of a single cell which changes
-between a discrete set of states based only on its immediate neighbors.
-Together they are capable of solving global problems such
-as contour-extraction \cite{sipper_emergence_1999}, providing an example of
-local interactions producing interesting global behavior.\par
-Cellular automata are even sufficiently powerful to express a turing machine,
-but as Sipper puts it: ``This is perhaps the quintessential example of a slow
-bullet train: embedding a sequential universal Turing machine within the
-highly parallel cellular-automaton model.''
-Embeddeding turing machines into cellular automatas is of little use, but it's
-useful to know that cellular automata are sufficiently powerful if we are to
-apply it as a model for the processes governing neural networks.
-The real power of cellular automatas as a model for neural networks is how they
-model the \emph{Phase Transitions} in behavior (i.e dynamics).
-In Langton's pioneering paper \emph{Computation on the Edge of Chaos}
-\cite{langton_computation_1990}
-the system dynamics of cellular automata are shown to follow phase transitions
-similar to physical matter.
-Langton explored the rule space of cellular automata and found that the ratio
-between transitions that led to cell death and life had similarities to
-temperature in physical systems.
-As expected, rules which tended to favor cell death led to static or periodic
-systems, while rules favoring life over death led to chaotic systems.
-More interstingly is what happened when the rules favored life and death
-equally.
-In these systems which exists at the border between orderly and chaotic systems
-Langton found a \emph{critical} phase where the system was neither chaotic nor
-ordered.
-It is important to note that Langton did not seek to solve a specific problem
-with his automatons, but to explore which automatas capable of supporting
-universal computation, hypothesized by Wolfram \cite{wolfram_universality_1984}.
-Criticality applies to any dynamic system, not just cellular automata, and the
-study of adaptive networks \cite{sayama_modeling_2013} suggests that many
-systems exhibit a homeostatic regulation of system dynamics to ensure that it
-stays in the critical phase, including neurons
-\cite{bornholdt_topological_2000}.
+% the \emph{Cellular Automaton}, a discrete model of a single cell which changes
+% between a discrete set of states based only on its immediate neighbors.
+% Together they are capable of solving global problems such
+% as contour-extraction \cite{sipper_emergence_1999}, providing an example of
+% local interactions producing interesting global behavior.\par
+% Cellular automata are even sufficiently powerful to express a turing machine,
+% but as Sipper puts it: ``This is perhaps the quintessential example of a slow
+% bullet train: embedding a sequential universal Turing machine within the
+% highly parallel cellular-automaton model.''
+% Embeddeding turing machines into cellular automatas is of little use, but it's
+% useful to know that cellular automata are sufficiently powerful if we are to
+% apply it as a model for the processes governing neural networks.
+% The real power of cellular automatas as a model for neural networks is how they
+% model the \emph{Phase Transitions} in behavior (i.e dynamics).
+% In Langton's pioneering paper \emph{Computation on the Edge of Chaos}
+% \cite{langton_computation_1990}
+% the system dynamics of cellular automata are shown to follow phase transitions
+% similar to physical matter.
+% Langton explored the rule space of cellular automata and found that the ratio
+% between transitions that led to cell death and life had similarities to
+% temperature in physical systems.
+% As expected, rules which tended to favor cell death led to static or periodic
+% systems, while rules favoring life over death led to chaotic systems.
+% More interstingly is what happened when the rules favored life and death
+% equally.
+% In these systems which exists at the border between orderly and chaotic systems
+% Langton found a \emph{critical} phase where the system was neither chaotic nor
+% ordered.
+% It is important to note that Langton did not seek to solve a specific problem
+% with his automatons, but to explore which automatas capable of supporting
+% universal computation, hypothesized by Wolfram \cite{wolfram_universality_1984}.
+% Criticality applies to any dynamic system, not just cellular automata, and the
+% study of adaptive networks \cite{sayama_modeling_2013} suggests that many
+% systems exhibit a homeostatic regulation of system dynamics to ensure that it
+% stays in the critical phase, including neurons
+% \cite{bornholdt_topological_2000}.
 
 \section{Evolution In Materio}
 Classifying neurons as a complex system has not gotten us closer to a solution
@@ -208,8 +189,6 @@ unstructured matter could be used to perform computational tasks.
 In the introduction Toffolis statement that computation does not make sense
 except in the light of evolution seems to contradict this notion of computation,
 but evolution is not reserved only for nature.
-
-% TODO: Cite
 In one experiment [cite ???] the duo used silver in an acidic solution which would form
 short-lived silver filaments when subjected to electric currents.
 From our perspective of computation, it was not before they tuned the parameters
