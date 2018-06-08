@@ -33,47 +33,55 @@ establish a common ``language'' between neural cultures and digital.
 % adaptive networks"
 %
 % How nature deals with CX:
-Nature, unlike humans, does not shy away from complexity.
-On all scales, from entire ecosystems and social networks, anthills, neural
-tissue and the gene regulatory networks in single cells nature exhibits dizzying
-complexity.
+When designing systems in a top down manner it is imperative to control the
+complexity of the system, or we are unable to reason about what it does and how
+it does so.
+By carefully managing complexity it is possible to make systems that are
+\emph{complicated} in their makeup, yet with a simple, understandable behavior.
+Larger systems can be assembled by combining smaller systems, and since each
+subcomponent acts in a simple, predictable way, then so does the system as a
+whole.
+The effort necessary to understand the behavior of system as a whole is the same
+as the sum of the effort required to understand each of its subsystems, and so
+forth.
 %
-The complexity of a systems behavior is orthogonal to how \emph{complicated} it
-is.
-A swiss watch for instance is made up of hundreds of different parts that all
-come together in a specific way, but its behavior is easy to predict, and can be
-easily modeled.
-While most systems found in nature are both complicated and complex it is an
-important distinction, complex systems are hard to predict, complicated systems
-are hard to understand.
+When studying most systems that occur naturally however, such as economical
+systems, ecosystems, materials and how neurons together make up the mind, this
+does not hold.
 %
-From an evolutionary standpoint natures favoring of complex behavior makes sense.
-A system whose behavior rises from interaction is less dependent on each
-individual part, giving rise to robust systems that can adapt to change.
-Robustness is necessary for evolution to because it provides a \emph{fitness
-landscape} that evolution can maneuver.
+This is because the behavior we would like to model and predict cannot be traced
+back to the individual agents of the system.
 %
-From a systems perspective then, the brain has much more in common with an anthill
-than a processor and to understand neural cultures a good first step is to look at
-other systems with complex interaction.
-% What CX are:
-The study of these \emph{Complex Systems} is a broad, cross-disciplinary field,
-not restricted to biological systems.
+Although the individual parts of these \emph{Complex Systems} can be just as
+complicated as in human engineered ones, it is the \emph{Non-linear} dependence
+between these parts that decides the behavior of the system as a whole.
 %
-In [cite Bar Yam Dynamics of complex systems] Bar-Yam suggests that complex
-systems is a convergence point for all disciplines that deal with systems as
-shown in \ref{figCX}.
+It is these complex interactions that allows systems to spontaneously \emph{Self
+  Organization} and adapt to change.
 %
-% Local interaction
-All of these fields feature systems in which the global behavior \emph{Emerges}
-from local interaction of individual components through a process of \emph{Self
-  Organization} rather than top down design.
-% 
-% Non-linearity
-The behavior of these systems exhibit a complexity that is greater than the
-sum of complexity of its individual components, i.e the relationship between the
-complexity of the system and its constituent components is \emph{Non Linear}.
+The ``force'' that drives the self organization of complex systems is feedback.
+Positive feedback loops can cause a chain reaction that completely alter the
+dynamics of a system, while negative feedback acts as a dampener, allowing the
+system to have some measure of stability.
+Systems with mostly negative feedback are ordered and predictable, while systems
+with mostly positive feedback are chaotic and unpredictable, seemingly random.
+It is at \emph{The edge of chaos} where positive and negative feedback are
+evenly matched that systems can spontaneously self organize without being chaotic.
 %
+In the context of evolution seems necessary for systems to exist at this edge of
+chaos.
+For a plant it is essential to be able to respond to changes in light
+conditions, but it is equally important to maintain integrity.
+No two pines are alike, but they all have bark on the outside and they all grow
+upwards.
+In a swiss watch everything stops working if a single spring or cog is replaced
+with a slightly different one, yet in nature no two animals or plants are alike.
+The \emph{robustness} of complex systems goes beyond mere survival, it's what
+makes the incremental changes of evolution possible in the first place!
+%
+While the neurons that make up neural networks are both complex and complicated,
+it is in the interactions between them that computation happens, and this
+complex interaction can be modeled in a much simpler system.
 \par
 \begin{figure}[h!]
   \centering
@@ -82,159 +90,151 @@ complexity of the system and its constituent components is \emph{Non Linear}.
   \label{figCX}
 \end{figure}
 % CA: Intro
-A \emph{Cellular Automaton}\footnote{Singular: Automaton, Plural: Automata}
-is a simple discrete model of a single cell which changes between a discrete set
-of states based only on its immediate neighbors.
+% Wolfram: claims of computational powers
+% Langton: phase transitions
+% Sipper: not really necessary?
+\subsubsection{Cellular Automata}
+A \emph{Cellular Automaton}\footnote{Singular: Automaton, Plural: Automata}, CA
+in short, is a simple discrete model of a single cell which changes between a
+discrete set of states based only on its immediate neighbors.
 Figure \ref{figCA22} shows an example of a \emph{rule set}, or \emph{transition
   table} for a cellular automaton with only two states, and an initial
-condition, or ``seed'', which over several steps forms a pattern.
-Cellular automatas are capable of solving global problems such as
+configuration, or ``seed'', which over several steps forms a pattern.
+%
+One of the pioneers in the field of CAs, Stephen Wolfram suggested that under
+certain conditions CAs were capable of computation [cite Wolfram: Universality
+and complexity in cellular automata].
+%
+Cellular automatas have been shown capable of solving global problems such as
 contour-extraction \cite{sipper_emergence_1999} where the problem is expressed
 as the seed and a global solution emerges from the local interaction of cells.
-Cellular automata are even sufficiently powerful to express a turing machine
-[Cite Matthew Cook],
+Wolframs hypothesis of universal computation has also been proven correct, in
+fact even a simple 1D cellular automata such as in \ref{figCA22} has been proven
+sufficient to simulate a turing machine [Cite Matthew Cook],
 but as Sipper puts it: ``This is perhaps the quintessential example of a slow
 bullet train: embedding a sequential universal Turing machine within the
-highly parallel cellular-automaton model.''
+highly parallel cellular-automaton model.''\par
+% 
+% Her var jeg. Skriv noe om at vi tar det for gitt at utregning kan skje, vi
+% bryr oss ikke om hvordan, men hva slags conditions kreves per Langton.
 %
-% CA: Complexity
+In figure [figur av class 1 - IV CA] four cellular automatas are shown,
+each classified per Wolframs CA classification.
+The fourth class which ``yields complex patterns of localized
+structures'' shows complex behavior which Wolfram suggested was the sort of
+behavior necessary for computation to occur spontaneously.
 %
-Cellular automatas are excellent models for exploring complex systems since they
-can produce interesting behavior from local interaction between very simple
-components.
+As a model for neurons it is sufficient to know that they are capable of
+computation and under which circumstances rather than knowing exactly what they
+are computing.
 %
 In Langton's pioneering paper \emph{Computation on the Edge of Chaos}
 \cite{langton_computation_1990} the space of possible transition tables for one
 dimensional cellular automata with two states, such as \ref{figCA22} is explored.
-Langton was interested in what sort of transition table would lead to CAs that
-would 
-%
-For each transition table Langton calculated the ratio of states that lead to
-``death'' to ``life'' (white and black cell respectively), denoted as λ.
-the system dynamics of cellular automata are shown to follow phase transitions
-similar to physical matter.
-Langton explored the rule space of cellular automata and found that the ratio
-between transitions that led to cell death and life had similarities to
-temperature in physical systems.
-As expected, rules which tended to favor cell death led to static or periodic
-systems, while rules favoring life over death led to chaotic systems.
-More interstingly is what happened when the rules favored life and death
-equally.
-In these systems which exists at the border between orderly and chaotic systems
-Langton found a \emph{critical} phase where the system was neither chaotic nor
-ordered.
-
-\begin{figure}[h!]
-  \centering
-  \includegraphics[width=1\textwidth]{fig/Langtons_egg2.png}
-  \caption{Langtons egg}
-  \label{figCAegg}
-\end{figure}
-% %
-% % The immediate benefit of classifying neural cultures as a complex systems is
-% % that studying simpler models of complex systems can act as a stepping stone.
-% % A simple, biological inspired model capable of exhibiting complex behavior is
+What Langton discovered was that the ratio between states leading to life and
+death (black and white cells respectively) was analogous to how temperature
+causes phase changes in materials.
+This is not suprising, as one would expect rulesets where most transitions lead
+to death will lead to a stationary system analogous to ice, while a transition
+table favoring life and death equally leads to a chaotic system analogous to a
+gas.
+What was suprising however, was that at the edge between periodic and chaotic
+there existed a \emph{Critical Phase}, shown in \ref{figCAegg}.
+This effect also happens in materials in what is called a 2nd order phase
+change, in which the material is neither gas, liquid or solid, but exhibits all
+three in local substructures that can be found on all scales, from macroscopic
+to microscopic.
+The takeaway from the model of cellular computation is the idea that there are
+certain criterias that enable computation to occur spontaneously, and that
+neurons actively attempt to reach this critical phase.
 \begin{figure}[h!]
   \centering
   \includegraphics[width=1\textwidth]{fig/ca22.png}
   \caption{Should add a time axis to drive the point home that these are 1D}
   \label{figCA22}
 \end{figure}
-% the \emph{Cellular Automaton}, a discrete model of a single cell which changes
-% between a discrete set of states based only on its immediate neighbors.
-% Together they are capable of solving global problems such
-% as contour-extraction \cite{sipper_emergence_1999}, providing an example of
-% local interactions producing interesting global behavior.\par
-% Cellular automata are even sufficiently powerful to express a turing machine,
-% but as Sipper puts it: ``This is perhaps the quintessential example of a slow
-% bullet train: embedding a sequential universal Turing machine within the
-% highly parallel cellular-automaton model.''
-% Embeddeding turing machines into cellular automatas is of little use, but it's
-% useful to know that cellular automata are sufficiently powerful if we are to
-% apply it as a model for the processes governing neural networks.
-% The real power of cellular automatas as a model for neural networks is how they
-% model the \emph{Phase Transitions} in behavior (i.e dynamics).
-% In Langton's pioneering paper \emph{Computation on the Edge of Chaos}
-% \cite{langton_computation_1990}
-% the system dynamics of cellular automata are shown to follow phase transitions
-% similar to physical matter.
-% Langton explored the rule space of cellular automata and found that the ratio
-% between transitions that led to cell death and life had similarities to
-% temperature in physical systems.
-% As expected, rules which tended to favor cell death led to static or periodic
-% systems, while rules favoring life over death led to chaotic systems.
-% More interstingly is what happened when the rules favored life and death
-% equally.
-% In these systems which exists at the border between orderly and chaotic systems
-% Langton found a \emph{critical} phase where the system was neither chaotic nor
-% ordered.
-% It is important to note that Langton did not seek to solve a specific problem
-% with his automatons, but to explore which automatas capable of supporting
-% universal computation, hypothesized by Wolfram \cite{wolfram_universality_1984}.
-% Criticality applies to any dynamic system, not just cellular automata, and the
-% study of adaptive networks \cite{sayama_modeling_2013} suggests that many
-% systems exhibit a homeostatic regulation of system dynamics to ensure that it
-% stays in the critical phase, including neurons
-% \cite{bornholdt_topological_2000}.
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=1\textwidth]{fig/Langtons_egg2.png}
+  \caption{Langtons egg}
+  \label{figCAegg}
+\end{figure}
 
+% but where is the evolution?
 \section{Evolution In Materio}
-Classifying neurons as a complex system has not gotten us closer to a solution
-for interfacing with them in a meaningful way it seems.
-However, one useful conclusion is that neurons work nothing like human designed
-conventional computers, and that to understand how neurons compute we should
-look at more \emph{unconventional computing}, specifically work done on physical
-matter.
+Modeling neurons as cellular automata gives an idea of how neurons organize
+themselves into computationally capable networks and how this computation may
+look like, but the question of how to make sense of these dynamics and utilize
+them.
+Before tackling neurons it is necessary to extend our model to the physical
+realm and develop a model that can be extended to perform computation.
+A very natural extension of the CA model is \emph{material computing} in which
+the atoms that make up matter locally interact in similar ways to CAs.
+%
 Two pioneers in this field were the british duo Pask and Beer which studied how
 unstructured matter could be used to perform computational tasks.
-In the introduction Toffolis statement that computation does not make sense
-except in the light of evolution seems to contradict this notion of computation,
-but evolution is not reserved only for nature.
-In one experiment [cite ???] the duo used silver in an acidic solution which would form
-short-lived silver filaments when subjected to electric currents.
-From our perspective of computation, it was not before they tuned the parameters
-of the system in order to evolve a tone discriminator that the system could
-truly be classified as a computing one.
-Evolution in materio represents a very different approach than conventional
-processors.
-While it is impossible to program unstructured matter with imperative
-instructions like in a conventional computer, we can nonetheless ``instruct''
-the material computer in a declarative matter by specifying what sort of result
-we are after and letting the evolutionary process handle the rest.
-Material computing gives us a much better model of how neurons can compute:
-Material computation happens on a massively parallel scale, it occurs in a
-substrate where all structure is self-organized rather than imposed by a
-designer, and both are products of evolution.\\
+%
+In one experiment [cite ???] the duo used silver in an acidic solution which
+would form short-lived silver filaments when subjected to electric currents.
+%
+By tuning the various knobs controlling parameters such as voltage this solution
+could be made to perform the task of tone discrimination, proving that
+unstructured matter could in fact perform computation.
+%
+In Langtons CAs the goal was not to compute, but to explore what conditions were
+necessary for computation to occur, while Gordon and Pask sought to actually
+compute by observing how the matter reacted to sound and tuning the parameters
+in response.
+%
+Tommaso Toffoli argues that ``Nothing makes sense in computing except in the
+light of evolution'' in his eponymous paper [cite TT], which separates Langtons
+compute capable CAs and the tone discrimination which had been evolved by
+repeatedly observing its performance and altering the parameters accordingly.
+%
+% Hmm hmm hmm
+A corollary of the turing completeness of cellular automatas is that CAs can be
+``tuned'' in a rather heavy handed way to compute, but a more interesting
+conjecture is that a CA with a random seed will eventually exhibit local
+self-replicating behavior, spontaneously giving rise to what Toffoli would
+regard as computation, or possibly even as life.\par
+%
+Whereas the pioneers in material computing sought to perform specific tasks with
+their experiments more recent work has been made for general computation.
+One approach is \emph{Evolution In Materio} where various materials have their
+parameters tuned algorithmically to perform a transformation between input and
+output.
+A recent effort is the NASCENCE project which has developed a physical device,
+``mecobo'' that can host a variety of materials which can then be interacted
+with using an array of electrodes.
+By using the same basic loop as the early material computing reasearchers the
+Mecobo board has been used to create XOR logic gates using unstructured carbon
+nano-tubes [Cite Odd paper 1].
 
-TODO: Write about Odd Rune's stuff, clean up and add citations.
-
+TODO: mer her? fikse citations.
 \section{Neurons As Computers}
-It might seem that the previous section has provided the key to unlocking the
-computational power of neural cultures.
-This line of thinking neglects the fact that neurons have already been shaped by
-the process of evolution over billions of years, indeed neural cultures can be
-viewed as the result of an EiM experiment a billion years in the making.
-Our goal is not to apply the principle of EiM to neural cultures, but it does
-provide an interesting angle:
+It is tempting to reuse the same methodology employed in EiM for neurons but
+this line of thinking neglects the fact that neurons have already been shaped by
+the process of evolution over billions of years.
+Neurons are not unstructured matter, that can be coaxed into computing by
+tweaking parameters, rather they are the result of an EiM billion years in the
+making.
+While directly modifying the property of matter a la EiM is not a good fit for
+neural cultures there is still many clues on how to approach neurons:
 When Pask and Beer tweaked their silver solution to discriminate tones, they did
 viewed the solution as a black box, and only its performance on the task at hand
 was evaluated.
-While evolution does not optimize for a specific functionality the black box
-approach is similar.
 Just like Pask and Beer did not consider the exact inner workings of silver
-filaments, it is necessary to apply the black box liberally when approaching
-neurons.
+filaments, the monumentally complex chemical pathways and genetic regulation
+that govern the growth and functionality of neural networks can be abstracted
+away.
+On a more theoretical level, if we imagine that the neuron were the result of an
+EiM experiment, what sort of behavior did the experimenters target when varying
+the parameters?
+While this is not the case it does...
+% TODO finish
 
-% I really like the gist of this, but I'm very unsure about the phrasing.
-If the neuron was the result of an EiM experiment, the ideal model of the neuron
-would be the criteria used to evaluate fitness, eschewing all implementation
-details.
-Of course, no such criterias exist, evolution does not have a plan, but it
-illustrates why as much as possible of the cells inner working will be
-considered to be inside a black box.
-
-% Another thing missing is of course how to utilize neurons.
-
-\subsection{Neurons}
+% TODO shift focus towards the why's given previous changes.
+\subsubsection{Neurons}
 The neuron, or nerve cell, is the basic building block of both the human brain
 and the nerve system.
 There are many types of neurons in the human body, but to reduce the scope the
@@ -261,6 +261,8 @@ The model used for the neuron for the rest of this paper is a node in an
 The missing part in our model is the underlying rules that dictates the growth
 of the network.
 % What about spike trains?
+
+% TODO: redo
 \section{Reservoir Computing}
 So far we have arrived at a model of the neuron as a complex adaptive network
 which can be interfaced with using electrical signals, but the fundamental issue

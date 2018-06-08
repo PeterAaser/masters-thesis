@@ -39,6 +39,7 @@
    Mitt eksempel er temporalitet, men f.eks mer effektivitet i trening på et problem, 
    eller i det hele tatt å løse oppgaven er jo ikke helt dumt.
 
+** Strange attractor, complex eller chaotic?
    
 * Abstract
 * Intro
