@@ -1,4 +1,7 @@
 \chapter{Background}
+\epigraph{
+In '87, Huey released this, Fore!, their most accomplished album. I think their undisputed masterpiece is "Hip To Be Square", a song so catchy most people probably don't listen to the lyrics - but they should! Because it's not just about the pleasures of conformity, and the importance of trends, it's also a personal statement about the band itself! Hey Paul!
+}{Patrick Bateman before killing that massive stain Paul Allen with an axe}
 Creating a cyborg is a massive cross disciplinary effort, and if a scope is not
 clearly defined the background runs the risk of becoming equally massive.
 The goal of the thesis is to create a hybrid neuro-digital system capable of
@@ -209,8 +212,41 @@ with using an array of electrodes.
 By using the same basic loop as the early material computing reasearchers the
 Mecobo board has been used to create XOR logic gates using unstructured carbon
 nano-tubes [Cite Odd paper 1].
+% This gives latex error about missing $, but upon inserting text is no longer
+% bold
+% \subsubsection{(DS)^2}
+In the introduction Fernando's water bucket computer was briefly mentioned [cite
+bucket].
+This bucket computer showed that massively parallel computation in matter is
+possible ``for free'' due to processes intrinsic to the substrate.
+In their paper they refer to the bucket as a ``liquid brain''\footnote{Also in
+  quotation marks in the original paper}, but unlike its biological counterpart
+the water bucket would completely reset its state between each experiment.
+%
+$(DS)^2$ is a shorthand for dynamical systems with \emph{dynamical structure},
+that is a system whose structure evolves over time as a function of perturbation
+and previos state in tandem with the systems dynamics.
+%
+To put it in mathematical terms we use the following notation: The structure of
+the system at timestep $t$ is denoted as $S(t)$ and the dynamics as $D(t)$.
+The transition function for this system can only be on the form of $$(S(t+1),
+D(t+1)) = f(S(t),D(t))$$
+which means that the structure of the system is decided both by its previous
+state and the systems dynamics, and conversively, the \emph{phase space} of
+reachable states of dynamics wrt state.
+%
+In other words, the structure of a system shapes the systems dynamics, which in
+turn shapes the further evolution of structure. \unsure{Say something about
+  phase space?}
+For the water bucket, at the scale the material was observed under, the phase
+space is all possible ``configurations'' the water can be in which does not
+evolve over time as a response to perturbation\footnote{Which is why homeopathy
+  is considered quackery}. \unsure{At some level of detail, timescale and
+  definition of structure water probably can be a $(DS)^2$, but this is not the
+  case for the bucket.}
+\info{TODO: Odd rune salt experiment. Stepney om tilnærming tilnærming til bio
+  fra EiM enten her eller neste section}
 
-TODO: mer her? fikse citations.
 \section{Neurons As Computers}
 It is tempting to reuse the same methodology employed in EiM for neurons but
 this line of thinking neglects the fact that neurons have already been shaped by

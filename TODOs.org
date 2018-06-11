@@ -44,13 +44,20 @@
 * Abstract
 * Intro
 * Background
-** TODO Sjekk at toffoli quote har blitt introdusert  
+  Få inn DS^2
+  #+ATTR_ORG: :width 600
+  [[./tavle.jpg]]
+  
+  
+** TODO få inn Stepney i Neuro compute?
 * Chap 1
-** TODO Få med at kun virtuell robot brukes
-   
 * Chap 2
 * Chap 3
 * Figurer
 ** OverView
 *** TODO Legg til stiplede 'boundaries'
 *** TODO Kryssreferer med conceptual cyborg
+
+* (DS)^2
+  DS2 systemer har phase space som utvikles over tid.
+  Dette er en funksjon av systemets nåværende struktur, dets perturbation og tid.
