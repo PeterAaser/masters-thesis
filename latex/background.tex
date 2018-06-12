@@ -212,40 +212,36 @@ with using an array of electrodes.
 By using the same basic loop as the early material computing reasearchers the
 Mecobo board has been used to create XOR logic gates using unstructured carbon
 nano-tubes [Cite Odd paper 1].
-% This gives latex error about missing $, but upon inserting text is no longer
-% bold
-% \subsubsection{(DS)^2}
+%
+% This gives latex error about missing dollarsign, but upon inserting text is no longer
+% bold...
+\subsubsection{(DS)^2}
+%
 In the introduction Fernando's water bucket computer was briefly mentioned [cite
 bucket].
-This bucket computer showed that massively parallel computation in matter is
-possible ``for free'' due to processes intrinsic to the substrate.
 In their paper they refer to the bucket as a ``liquid brain''\footnote{Also in
-  quotation marks in the original paper}, but unlike its biological counterpart
-the water bucket would completely reset its state between each experiment.
+  quotation marks in the original paper}, performing calculations by observing
+the resulting wave pattern made by small motors.
+Unlike its biological counterpart the ``liquid brain'' does not evolve over
+time, in fact it has no structure to evolve at all, at least not at the chosen
+scale of observation.
 %
-$(DS)^2$ is a shorthand for dynamical systems with \emph{dynamical structure},
-that is a system whose structure evolves over time as a function of perturbation
-and previos state in tandem with the systems dynamics.
+$(DS)^2$ is shorthand for dynamic systems with \emph{dynamical structure}, and
+materials that exhibit this behavior can be used to study and model biological
+systems.
+In these material systems the \emph{phase space}, that is the set of reachable
+states, and the transition function between them evolve over time in tandem with
+the systems dynamics, both shaping them and being shaped by them.
 %
-To put it in mathematical terms we use the following notation: The structure of
-the system at timestep $t$ is denoted as $S(t)$ and the dynamics as $D(t)$.
-The transition function for this system can only be on the form of $$(S(t+1),
-D(t+1)) = f(S(t),D(t))$$
-which means that the structure of the system is decided both by its previous
-state and the systems dynamics, and conversively, the \emph{phase space} of
-reachable states of dynamics wrt state.
+In [cite Odd Rune EiM (DS)2] Odd Rune shows that a mixture of table salt and
+water exhibits (DS)2 behavior using the mecobo board by showing that the systems
+response to perturbation evolves over time.
 %
-In other words, the structure of a system shapes the systems dynamics, which in
-turn shapes the further evolution of structure. \unsure{Say something about
-  phase space?}
-For the water bucket, at the scale the material was observed under, the phase
-space is all possible ``configurations'' the water can be in which does not
-evolve over time as a response to perturbation\footnote{Which is why homeopathy
-  is considered quackery}. \unsure{At some level of detail, timescale and
-  definition of structure water probably can be a $(DS)^2$, but this is not the
-  case for the bucket.}
-\info{TODO: Odd rune salt experiment. Stepney om tilnærming tilnærming til bio
-  fra EiM enten her eller neste section}
+Simalirily, experiments using simulated artificial spin ice [Cite Johannes]
+shows that in a lattice of nano-magnets several underlying microstates map to the
+same macro-state as shown in fig ??
+This highlights the importance of observation level when describing systems.
+One could choose to... Something something.
 
 \section{Neurons As Computers}
 It is tempting to reuse the same methodology employed in EiM for neurons but
