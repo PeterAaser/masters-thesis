@@ -16,11 +16,11 @@ that of neurons.
 Modeling neurons as a complex systems is a first step towards establishing a
 common ``language'' between neural activity and digital logic.
 %
-Next, \emph{Evolution in Materio}, EiM for short, introduces computation done in
-unstructured matter through the process of evolution.
-The goals of EiM are closely aligned to the goal of this thesis, as both study
-massively parallel computation happening in physical matter shaped by the
-process of evolution.
+Next, \emph{Material Computing} and \emph{Evolution In Materio}, EiM for short,
+introduces computation done in unstructured matter through the process of
+evolution. The goals of EiM are closely aligned to the goal of this thesis, as
+both study massively parallel computation happening in physical matter shaped by
+the process of evolution.
 %
 Next section, \emph{Neurons As Computers} introduces neurons with a strong focus
 on their computational capabilities.
@@ -32,10 +32,6 @@ Finally, \emph{Reservoir Computing} is introduced, tying together the previous
 sections by introducing the framework of reservoir computing in order to
 establish a common ``language'' between neural cultures and digital.
 \section{Complex Systems}
-% TODO: Introduser Adaptive networks, siter Sayama: "Modeling complex systems with
-% adaptive networks"
-%
-% How nature deals with CX:
 When designing systems in a top down manner it is imperative to control the
 complexity of the system, or we are unable to reason about what it does and how
 it does so.
@@ -164,7 +160,7 @@ neurons actively attempt to reach this critical phase.
 \end{figure}
 
 % but where is the evolution?
-\section{Evolution In Materio}
+\section{Material Computing}
 Modeling neurons as cellular automata gives an idea of how neurons organize
 themselves into computationally capable networks and how this computation may
 look like, but the question of how to make sense of these dynamics and utilize
@@ -243,55 +239,74 @@ same macro-state as shown in fig ??
 This highlights the importance of observation level when describing systems.
 One could choose to... Something something.
 
-\section{Neurons As Computers}
-It is tempting to reuse the same methodology employed in EiM for neurons but
-this line of thinking neglects the fact that neurons have already been shaped by
-the process of evolution over billions of years.
-Neurons are not unstructured matter, that can be coaxed into computing by
-tweaking parameters, rather they are the result of an EiM billion years in the
-making.
-While directly modifying the property of matter a la EiM is not a good fit for
-neural cultures there is still many clues on how to approach neurons:
-When Pask and Beer tweaked their silver solution to discriminate tones, they did
-viewed the solution as a black box, and only its performance on the task at hand
-was evaluated.
-Just like Pask and Beer did not consider the exact inner workings of silver
-filaments, the monumentally complex chemical pathways and genetic regulation
-that govern the growth and functionality of neural networks can be abstracted
-away.
-On a more theoretical level, if we imagine that the neuron were the result of an
-EiM experiment, what sort of behavior did the experimenters target when varying
-the parameters?
-While this is not the case it does...
-% TODO finish
-
-% TODO shift focus towards the why's given previous changes.
-\subsubsection{Neurons}
+\section{Computing Neural Networks}
+Material computing provides both a theoretical framework and practical
+approach for modeling and interacting with the computational capabilities of
+living neural networks.
+%
+The $(DS)^2$ viewpoint is a very natural fit when modeling how neurons organize
+into networks.
+The structure in a neural network continously evolves as each neuron
+individually seeks out other neurons to forge new connections while letting old
+connections wither and die off.
+The dynamics of a neural network is the electro-chemical communication between
+neurons in the network.
+These signals are obviously shaped by the topology of the neural network, but
+they are also the driving force between the continued evolution of the networks
+topology in ways that we only have a rudimentary understanding of.
+%
+Although both table salt and neural networks exhibit $(DS)^2$ behavior only the
+neurons do this on purpose.
+When viewing Pask's tone discrimination experient from a $(DS)^2$ viewpoint we
+can catch a glimpse of the same process that shaped the rules governing neural
+self organization.
+Although this was not the view of the experimenter, the tuning of parameters
+performed by Pask altered how silver filaments formed and decayed, which can be
+viewed as a rudimentary approximation of how neurons form connections.
+%
+In Pask's experiment the observer tuning the knobs served the same role as
+evolution did in shaping neurons, and neither force were particularily concerned
+about exactly what the underlying structure of the material did as long as the
+behavior of the material performed as desired on a macro-scale.
+%
+\subsubsection{The Computing Neuron}
 The neuron, or nerve cell, is the basic building block of both the human brain
 and the nerve system.
-There are many types of neurons in the human body, but to reduce the scope the
-focus of this thesis is a simplified model of the neurons that make up the
-brain.
-The model neuron, shown in fig [a figure of a neuron] consists of three parts:
-The body, \emph{Soma}, the \emph{Dendritic network} and an \emph{Axon}.
-The dendritic network acts as a receptor sensing electrical activity around the
-neuron, while the axon transmits electric pulses to neighboring cells.
-The connection between two neurons is called a \emph{Synapse}.
-Axons and dendritic networks are themselves vastly complex, and viewing them as
-simple electrical transmitters neglects the importance of neurotransmitters.
-However, given the strong correlation between neurotransmitter concentrations and
-electrical activity is considered part of the black box.
-When the neuron is sufficiently excited by electrical activity it will fire an
-electrical pulse that travels along the axon, which in turn stimulate other
-neurons.
-Together neurons form networks in a complex interplay between topology and behavior:
-The behavior of the network decides its behavior, and the behavior in turn
-causes some synapses to wither, and others to form in a process that is not well
-understood.
-The model used for the neuron for the rest of this paper is a node in an
-\emph{Adaptive Network} which communicates through electrical pulses.
-The missing part in our model is the underlying rules that dictates the growth
-of the network.
+The culmination of billions of years of evolution, the neuron is a vastly
+complex entity, featuring complex chemical pathways and gene regulatory
+networks.
+However, as discussed in the section on complexity, this behavior is nescessary
+in order for evolution to function.
+As a corollary, most of the complexity of the neuron is not nescessary for it to
+function, it is simply a byproduct of evolution, an implementation detail.
+It is the view of the author that the behavior of a neural network can be
+modeled with a much simpler neuron such as in artificial spiking neural
+networks.\par
+
+her var jeg da
+% There are many types of neurons in the human body, but to reduce the scope the
+% focus of this thesis is a simplified model of the neurons that make up the
+% brain.
+% The model neuron, shown in fig [a figure of a neuron] consists of three parts:
+% The body, \emph{Soma}, the \emph{Dendritic network} and an \emph{Axon}.
+% The dendritic network acts as a receptor sensing electrical activity around the
+% neuron, while the axon transmits electric pulses to neighboring cells.
+% The connection between two neurons is called a \emph{Synapse}.
+% Axons and dendritic networks are themselves vastly complex, and viewing them as
+% simple electrical transmitters neglects the importance of neurotransmitters.
+% However, given the strong correlation between neurotransmitter concentrations and
+% electrical activity is considered part of the black box.
+% When the neuron is sufficiently excited by electrical activity it will fire an
+% electrical pulse that travels along the axon, which in turn stimulate other
+% neurons.
+% Together neurons form networks in a complex interplay between topology and behavior:
+% The behavior of the network decides its behavior, and the behavior in turn
+% causes some synapses to wither, and others to form in a process that is not well
+% understood.
+% The model used for the neuron for the rest of this paper is a node in an
+% \emph{Adaptive Network} which communicates through electrical pulses.
+% The missing part in our model is the underlying rules that dictates the growth
+% of the network.
 % What about spike trains?
 
 % TODO: redo
