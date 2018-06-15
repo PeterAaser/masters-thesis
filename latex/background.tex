@@ -58,12 +58,41 @@ between these parts that decides the behavior of the system as a whole.
 It is these complex interactions that allows systems to spontaneously \emph{Self
   Organization} and adapt to change.
 %
+\subsubsection{Attractors}
+% beskrivelse
 The ``force'' that drives the self organization of complex systems is feedback.
 Positive feedback loops can cause a chain reaction that completely alter the
 dynamics of a system, while negative feedback acts as a dampener, allowing the
 system to have some measure of stability.
 Systems with mostly negative feedback are ordered and predictable, while systems
 with mostly positive feedback are chaotic and unpredictable, seemingly random.
+This interplay between dampening and positive feedback gives rise to an
+%
+\emph{attractor landscape}, where the \emph{state space} of a system gets
+partitioned into one or more attractors.
+%
+Figure ?? shows a simple map of a state space for a system with four
+\emph{attractors} and the current state of a system represented by a point.
+This space is not a physical one, each point on the line describes the systems
+behavior as a whole and adding a velocity to a system moving along the state
+space violates this constraint.
+In simple terms, the state can only move towards lower energy.
+%
+The behavior of a system 
+%
+% Similarily, although the y axis is labeled energy this is not necessary energy
+% in a physical sense, for many systems a more fitting description is stability of
+% behavior.
+% In order to move the behavior of the system energy must be introduced to the
+% system from the outside, and if enough energy is introduced the system may fall
+% into a different attractor.
+% In fig ?? the systems behavior is currently in an attractor labeled B, and
+% energy can be applied either towards A or C, but it takes much more energy to
+% move the system towards C.
+
+%
+\subsubsection{Next up}
+\subsubsection{Noe om observation scale?}
 It is at \emph{The edge of chaos} where positive and negative feedback are
 evenly matched that systems can spontaneously self organize without being chaotic.
 %
@@ -88,10 +117,6 @@ complex interaction can be modeled in a much simpler system.
   \caption{From Bar Yam book.}
   \label{figCX}
 \end{figure}
-% CA: Intro
-% Wolfram: claims of computational powers
-% Langton: phase transitions
-% Sipper: not really necessary?
 \subsubsection{Cellular Automata}
 A \emph{Cellular Automaton}\footnote{Singular: Automaton, Plural: Automata}, CA
 in short, is a simple discrete model of a single cell which changes between a
@@ -158,8 +183,6 @@ neurons actively attempt to reach this critical phase.
   \caption{Langtons egg}
   \label{figCAegg}
 \end{figure}
-
-% but where is the evolution?
 \section{Material Computing}
 Modeling neurons as cellular automata gives an idea of how neurons organize
 themselves into computationally capable networks and how this computation may
@@ -225,7 +248,7 @@ scale of observation.
 $(DS)^2$ is shorthand for dynamic systems with \emph{dynamical structure}, and
 materials that exhibit this behavior can be used to study and model biological
 systems.
-In these material systems the \emph{phase space}, that is the set of reachable
+In these material systems the \emph{state space}, that is the set of reachable
 states, and the transition function between them evolve over time in tandem with
 the systems dynamics, both shaping them and being shaped by them.
 %
@@ -282,100 +305,162 @@ function, it is simply a byproduct of evolution, an implementation detail.
 It is the view of the author that the behavior of a neural network can be
 modeled with a much simpler neuron such as in artificial spiking neural
 networks.\par
+Although the computation performed by neurons can be modeled with simpler
+models, the fact of the matter is that the cyborg project utilizes real neurons
+rather than a digital approximation, so a cursory introduction of the neuron is
+in order.
+While there exists a multitude of different neurons in the human body it is
+sufficient to consider a simplified model neuron, shown in fig [a figure of a
+neuron].
+The three three main parts are the body, or \emph{Soma}, the \emph{Dendritic
+  network} and the \emph{Axon}. 
+The dendritic network acts as a receptor sensing electrical activity around the
+neuron, while the axon transmits electric pulses to neighboring cells.
+The connection between two neurons is called a \emph{Synapse}.
+%
+In addition to chemical signals neural networks communicate and regulate their
+behavior through chemical signals.
+These chemical signals, known as neurotransmitters, correlate strongly with
+electrical activity however, thus measuring the chemical gradients in neural
+networks is not a priority from a compuational perspective.
+\subsubsection{Neural Dynamics}
+The ``medium'' of communication between neurons chosen as the observable macro
+state, that is the dynamics we are interested in measuring for the neural
+network are electrical bursts of activity, known as spikes.
+Figure [fig of waveform] shows recorded activity from an electrode.
+Each electrode measures the activity of the surrounding neurons rather than the
+state of a single neuron.
+Given that spikes propogate through the network in a cascading manner this
+level of observation is sufficient and more fine grained measurements is not a
+priority.
+Over time these dynamics evolve in tact with the structure of the network, as
+expected in the section on $(DS)^2$.
+Not only does the dynamics of the neural network change like the table salt
+experiment, it moves in the complexity space as shown in [fig neuro complexity
+graph] towards a critical phase as discussed in the section on cellular automata.
+%
+\subsubsection{Artificial Neural Networks}
+In recent years ANNs\footnote{Or rather, the advent of hardware capable of
+  efficiently running and training them.} (shorthand for artificial neural
+network) have revolutionized AI due to their ability to solve hard
+classification problems such as image recognition.
+The simplest, and most successful variation is the \emph{feed forward} topology
+shown in \ref{figFFANN} in which each layer only interacts with the layer
+directly in front and behind it.
+Shown in \ref{figNeuronModel}, the model for a single neuron consists of a
+summing function that calculates a weighted sum of incoming connections and a
+function that calculates the outbound activation of that neuron.
+More advanced models of neurons often retain state from their previous
+activation, one such variant being the spiking neuron which emulates the
+biological neuron more faithfully.
+Networks with neurons that retain state can have more interesting topologies
+where the connections between neurons can go in all directions.
+Cleary recurrent spiking neural networks should be more capable than feed
+forward networks, if nothing else for their ability to encode time-series as
+part of their state, yet the simple, non-spiking variant has proven much more
+successful.
+This gap stems from the relative simplicity of the fitness landscape of simpler
+network topologies which allows training algorithms to manually adjust the
+weights between layers iteratively until a good result is achieved.
+In back-coupled networks however the relation between cause and effect is far
+more obscure, thus algorithms which essentially assign blame and alter weights
+based on this are unable to cope with these topologies.
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.7\textwidth]{fig/FFANN.png}
+  \caption{A feed forward ANN.}
+  \label{figFFANN}
+\end{figure}
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.7\textwidth]{fig/ArtificialNeuron.jpg}
+  \caption{A feed forward ANN.}
+  \label{figNeuronModel}
+\end{figure}
 
-her var jeg da
-% There are many types of neurons in the human body, but to reduce the scope the
-% focus of this thesis is a simplified model of the neurons that make up the
-% brain.
-% The model neuron, shown in fig [a figure of a neuron] consists of three parts:
-% The body, \emph{Soma}, the \emph{Dendritic network} and an \emph{Axon}.
-% The dendritic network acts as a receptor sensing electrical activity around the
-% neuron, while the axon transmits electric pulses to neighboring cells.
-% The connection between two neurons is called a \emph{Synapse}.
-% Axons and dendritic networks are themselves vastly complex, and viewing them as
-% simple electrical transmitters neglects the importance of neurotransmitters.
-% However, given the strong correlation between neurotransmitter concentrations and
-% electrical activity is considered part of the black box.
-% When the neuron is sufficiently excited by electrical activity it will fire an
-% electrical pulse that travels along the axon, which in turn stimulate other
-% neurons.
-% Together neurons form networks in a complex interplay between topology and behavior:
-% The behavior of the network decides its behavior, and the behavior in turn
-% causes some synapses to wither, and others to form in a process that is not well
-% understood.
-% The model used for the neuron for the rest of this paper is a node in an
-% \emph{Adaptive Network} which communicates through electrical pulses.
-% The missing part in our model is the underlying rules that dictates the growth
-% of the network.
-% What about spike trains?
-
-% TODO: redo
+% Få inn RC fig tidligere
 \section{Reservoir Computing}
-So far we have arrived at a model of the neuron as a complex adaptive network
-which can be interfaced with using electrical signals, but the fundamental issue
-of actually utilizing neurons for computing remains.
+Material computing has provided a tractable model of how the neuron computes and
+how to physically interface with them.
+However, still absent is a model that allows us to actually access the
+computational capabilities.
+In fact, from the field of material computing Susan Stepney extends the
+following warning ``the biological substrate is extremely complex and
+complicated, having evolved over billions of years to exploit specific
+properties. In some sense, biological substrate is as far (or further!) removed
+from a primitive substrate as are our own designed abstract digital
+computational media.''
 %
-The final piece of the puzzle comes in the form of \emph{Reservoir Computing}, a
-technique developed to exploit the dynamics of complex systems.
-If the fundamental rule governing the neuron is to create networks exhibiting
-the same complexity behavior as Langton's automatas then harnessing the
-computational capabilities of these simple models is a first step towards
-interfacing and understanding neurons.
+As the heading indicates, the ace up our sleeve comes in form of \emph{Reservoir
+  Computing}, a technique that fittingly enough originated from the study of
+ANNs of the back-coupled variety[Cite Jaeger][Cite Maass].
+In [Cite Jaeger] randomly connected neural networks are used to solve
+classification problems, forgoing training the network altogether.
+Instead the randomly generated network was used as a \emph{reservoir} of
+dynamics that reacted to the input while a simple linear output function had to
+be trained.
+The principle behind reservoir computing is to employ a complex system as a
+reservoir which, as Schrauwen puts it \cite{schrauwen_overview_2007} ``... acts
+as a complex nonlinear dynamic filter that transforms the input signals using a
+high-dimensional temporal map, not unlike the operation of an explicit, temporal
+kernel function.''
+Figure \ref{figRC} shows this setup, in which input perturbs a reservoir and the
+resulting dynamics is classified using a linear filter.
 %
-% Clearly designing a cellular computer in a top down manner is intractable due to
-% the intricate and unpredictable relation between cause and effect.
-% The best we could realistically achieve with the typical top down approach is
-% implementing a turing machine which would be both slow and incredibly brittle.
-% Seemingly, classifying the neural culture as a complex system has not provided
-% any useful tools for understanding how to interact with it, on the other hand it
-% makes this task seem futile.
-% However, in computer science the recent field of
-% \emph{reservoir computing} has emerged, embracing the complexity and unpredictability
-% of certain complex systems.
-In reservoir computing, a complex systems is used as a \textit{reservoir}
-\cite{schrauwen_overview_2007} which
-``acts as a complex nonlinear dynamic filter that transforms the
-input signals using a high-dimensional temporal map, not unlike the operation
-of an explicit, temporal kernel function.''\\
-% cite on SVMs?
-In order to explain, schrauwen makes a comparison to the the machine learning
-technique of source vector machines work, as shown in fig [rm 1]:
-The reservoir acts as a kernel, projecting input into a high-dimensional feature space.
-Figure [rm 1] shows this technique, note that the regression performed upon the
-feauture space is a simple linear regression, an important point both in SVMs
-and reservoir computing.
+In order to explain why this works, schrauwen makes a comparison to the the
+machine learning technique of source vector machines work, as shown in fig
+\ref{figSVM}. The general idea behind an SVM is to expand the input into a
+higher dimensional ``feature space'', which in the figure is represented by the
+transition from 2D to 3D.
+% Altså sensitivitet til input conditions
+Systems with complex behavior can behave remarkably different depending on
+certain subtle nuances in the input while exhibiting a large tolerance to
+variations for other inputs.
+To see why, consider how the behavior of a complex system can be described by
+which attractor it is currently in as a result of some initial condition.
 %
-Figure [rm 2] shows a typical reservoir computing setup which follows a similar
-method of operation as the SVM in figure [rm 1]
-The reservoir serves as the high dimensional feature space, while the output
-layer is only capable of linearly separating the resulting dynamics.
-%
-Schrauwen points out two major differences between SVMs and RCs.
-First, SVMs only implicitly expands the input to high dimensional space in order
-to make the problem tractable, while reservoirs do not.
-Secondly, kernels are not capable of handling temporal signals.
-%
-The second difference is very important, it is what allows reservoirs to
-implicitly encode temporal signals in their dynamics, making reservoirs a
-natural fit for tasks such as speech recognition.
-% cite Biologically Plausible Speech Recognition with LSTM Neural Nets Alex
-% Graves, Douglas Eck, Nicole Beringer, Juergen Schmidhuber
-% 
-In other terms, the properties that make complex systems so hard to work with
-such as sensitivity to initial conditions also allow them to discern very subtle
-nuances in input, and their complex behavioral patterns causes the systems to
-change their behavior to new input based on previous input.
-%
-In light of this, asking how to build a computer using Langton's automatons is
-the wrong question, instead the focus should be on how exploit the computation
-that is already occuring.\\
-There are many examples of reservoirs which have been successfully exploited:
-In \cite{jaeger_adaptive_2003} an \textit{echo state network} 
-is utilized to solve classification problems.
-More esoteric reservoirs have been used, for instance in
-\cite{natschlager_liquid_2002} the idea of reservoir computing is taken quite
-literally using a bucket of water as a reservoir.\\
+In his comparison Schrauwen points out the major difference between SVMs and
+reservoir computing which is that reservoirs can implicitly encode temporality
+of input by changing their state.
 
+% Schrauwen points out two major differences between SVMs and RCs.
+% First, SVMs only implicitly expands the input to high dimensional space in order
+% to make the problem tractable, while reservoirs do not.
+% Secondly, kernels are not capable of handling temporal signals.
+% %
+% The second difference is very important, it is what allows reservoirs to
+% implicitly encode temporal signals in their dynamics, making reservoirs a
+% natural fit for tasks such as speech recognition.
+% % cite Biologically Plausible Speech Recognition with LSTM Neural Nets Alex
+% % Graves, Douglas Eck, Nicole Beringer, Juergen Schmidhuber
+% % 
+% In other terms, the properties that make complex systems so hard to work with
+% such as sensitivity to initial conditions also allow them to discern very subtle
+% nuances in input, and their complex behavioral patterns causes the systems to
+% change their behavior to new input based on previous input.
+% %
+% In light of this, asking how to build a computer using Langton's automatons is
+% the wrong question, instead the focus should be on how exploit the computation
+% that is already occuring.\\
+% There are many examples of reservoirs which have been successfully exploited:
+% In \cite{jaeger_adaptive_2003} an \textit{echo state network} 
+% is utilized to solve classification problems.
+% More esoteric reservoirs have been used, for instance in
+% \cite{natschlager_liquid_2002} the idea of reservoir computing is taken quite
+% literally using a bucket of water as a reservoir.\\
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.7\textwidth]{fig/RC.jpg}
+  \caption{A feed forward ANN.}
+  \label{figRC}
+\end{figure}
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.6\textwidth, angle =90]{fig/transform.jpg}
+  \caption{Should say ``kernel function'' or similar on top of the arrow}
+  \label{figSVM}
+\end{figure}
 \subsection{Linear and nonlinear output layers}
 TODO: Elaborate on the use of linear vs nonlin classifiers.
 

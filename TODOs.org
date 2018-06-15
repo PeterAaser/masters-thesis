@@ -44,12 +44,10 @@
 * Abstract
 * Intro
 * Background
-  Få inn DS^2
-  #+ATTR_ORG: :width 600
-  [[./tavle.jpg]]
-  
-  
-** TODO få inn Stepney i Neuro compute?
+** Complexity
+*** Få inn attractors
+*** Få inn scale of observation
+    
 * Chap 1
 * Chap 2
 * Chap 3
@@ -61,3 +59,18 @@
 * (DS)^2
   DS2 systemer har phase space som utvikles over tid.
   Dette er en funksjon av systemets nåværende struktur, dets perturbation og tid.
+
+* Figurer
+** ANN
+** Neuron
+
+** RNN
+
+** SHODAN full
+** MEAME
+** Data  reorder
+** Stim diagram
+** SHODAN smaller
+** Filtering 1
+** Geneic =>  specific
+** Experiment blocks
