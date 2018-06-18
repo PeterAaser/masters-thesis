@@ -66,11 +66,11 @@
 
 ** RNN
 
-** SHODAN full
-** MEAME
+** DONE SHODAN full
+** DONE MEAME
 ** Data  reorder
 ** Stim diagram
 ** SHODAN smaller
-** Filtering 1
-** Geneic =>  specific
+** DONE Filtering 1
+** DONE Generic => specific
 ** Experiment blocks
