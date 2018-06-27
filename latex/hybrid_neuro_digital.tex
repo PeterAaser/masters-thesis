@@ -27,7 +27,6 @@ what the sensors perceive which the cyborg must act upon.
   \caption{A simple conceptual cyborg.}
   \label{cyborgOverviewSimple}
 \end{figure}
-
 \section{Architecture}
 As shown in fig \ref{figOverview}, the actual cyborg adds a lot of parts
 compared to the initial concept.
@@ -210,20 +209,13 @@ list of electrode numbers and a desired frequency.
 Consequentially, stimulating neurons is done by specifying which electrodes
 should be stimulated, and at which frequency, rather than explicitly sending a
 signal whenever stimuli should be applied.
+% FIX
 A visual representation is given in \ref{figWaves} showing two stimulus groups
 and the resulting stimulus applied.
 The stimulus group configuration also specifies a pattern for each group, sine
 and square respectively.
 These patterns can be uploaded by directly writing to memory from SHODAN, but
 for this project simple square waves are adequate.
-\begin{figure}[h!]
-  \centering
-  \includegraphics[width=0.5\textwidth]{fig/rm/dsp_config.jpg}
-  \caption{Rough sketch.
-    Some wavez
-  }
-  \label{figWaves}
-\end{figure}
 \subsection{SHODAN}
 As shown in \ref{figOverview}, SHODAN is responsible for storage, filtering,
 generating perturbations and maintaining the core RC loop.

@@ -1,7 +1,9 @@
 \chapter{Background}
 \epigraph{
-In '87, Huey released this, Fore!, their most accomplished album. I think their undisputed masterpiece is "Hip To Be Square", a song so catchy most people probably don't listen to the lyrics - but they should! Because it's not just about the pleasures of conformity, and the importance of trends, it's also a personal statement about the band itself! Hey Paul!
-}{Patrick Bateman before killing that massive stain Paul Allen with an axe}
+The genetic code does not, and cannot, specify the nature and position of every
+capillary in the body or every neuron in the brain. What it can do is describe
+the underlying fractal pattern which creates them.}{Academician Prokhor
+Zakharov \\\textit{Sid Meier's Alpha Centauri}}
 Creating a cyborg is a massive cross disciplinary effort, and if a scope is not
 clearly defined the background runs the risk of becoming equally massive.
 The goal of the thesis is to create a hybrid neuro-digital system capable of
@@ -31,93 +33,180 @@ communication between neuron and digital.
 Finally, \emph{Reservoir Computing} is introduced, tying together the previous
 sections by introducing the framework of reservoir computing in order to
 establish a common ``language'' between neural cultures and digital.
+%
 \section{Complex Systems}
-When designing systems in a top down manner it is imperative to control the
-complexity of the system, or we are unable to reason about what it does and how
-it does so.
-By carefully managing complexity it is possible to make systems that are
-\emph{complicated} in their makeup, yet with a simple, understandable behavior.
-Larger systems can be assembled by combining smaller systems, and since each
-subcomponent acts in a simple, predictable way, then so does the system as a
-whole.
-The effort necessary to understand the behavior of system as a whole is the same
-as the sum of the effort required to understand each of its subsystems, and so
-forth.
 %
-When studying most systems that occur naturally however, such as economical
-systems, ecosystems, materials and how neurons together make up the mind, this
-does not hold.
-%
-This is because the behavior we would like to model and predict cannot be traced
-back to the individual agents of the system.
-%
-Although the individual parts of these \emph{Complex Systems} can be just as
-complicated as in human engineered ones, it is the \emph{Non-linear} dependence
-between these parts that decides the behavior of the system as a whole.
-%
-It is these complex interactions that allows systems to spontaneously \emph{Self
-  Organization} and adapt to change.
-%
-\subsubsection{Attractors}
-% beskrivelse
-The ``force'' that drives the self organization of complex systems is feedback.
-Positive feedback loops can cause a chain reaction that completely alter the
-dynamics of a system, while negative feedback acts as a dampener, allowing the
-system to have some measure of stability.
-Systems with mostly negative feedback are ordered and predictable, while systems
-with mostly positive feedback are chaotic and unpredictable, seemingly random.
-This interplay between dampening and positive feedback gives rise to an
-%
-\emph{attractor landscape}, where the \emph{state space} of a system gets
-partitioned into one or more attractors.
-%
-Figure ?? shows a simple map of a state space for a system with four
-\emph{attractors} and the current state of a system represented by a point.
-This space is not a physical one, each point on the line describes the systems
-behavior as a whole and adding a velocity to a system moving along the state
-space violates this constraint.
-In simple terms, the state can only move towards lower energy.
-%
-The behavior of a system 
-%
-% Similarily, although the y axis is labeled energy this is not necessary energy
-% in a physical sense, for many systems a more fitting description is stability of
-% behavior.
-% In order to move the behavior of the system energy must be introduced to the
-% system from the outside, and if enough energy is introduced the system may fall
-% into a different attractor.
-% In fig ?? the systems behavior is currently in an attractor labeled B, and
-% energy can be applied either towards A or C, but it takes much more energy to
-% move the system towards C.
-
-%
-\subsubsection{Next up}
-\subsubsection{Noe om observation scale?}
-It is at \emph{The edge of chaos} where positive and negative feedback are
-evenly matched that systems can spontaneously self organize without being chaotic.
-%
-In the context of evolution seems necessary for systems to exist at this edge of
-chaos.
-For a plant it is essential to be able to respond to changes in light
-conditions, but it is equally important to maintain integrity.
-No two pines are alike, but they all have bark on the outside and they all grow
-upwards.
-In a swiss watch everything stops working if a single spring or cog is replaced
-with a slightly different one, yet in nature no two animals or plants are alike.
-The \emph{robustness} of complex systems goes beyond mere survival, it's what
-makes the incremental changes of evolution possible in the first place!
-%
-While the neurons that make up neural networks are both complex and complicated,
-it is in the interactions between them that computation happens, and this
-complex interaction can be modeled in a much simpler system.
+Before discussing complex systems it is necessary to provide a definition of
+complexity and system.
+In common parlance complexity one might describe a book as complex due to its
+intertwined narrative, where small details later turn into large plot points.
+A song can be described as complex because of how the different instruments play
+together, providing a context to the lyrics and vice versa.
+Giving an exact of what complexity is is awkward, but the common theme is
+highly interconnected interaction.
+In the first example this refers to how the narratives intertwine, where no
+narrative makes sense outside of the context of the other narratives, while in
+the second example it refers to how the differenent instruments can interplay,
+giving meaning to each other in such a way that one instrument alone, or the
+lyrics simply written down loses meaning and impact.
 \par
+%
+A system is defined as a set of elements and the relations between them.
+When a system changes over time it is a \emph{dynamical} system, a property that
+is implicitly assumed for the rest of this thesis.
+When there are no interaction the system can only be described by its
+constituent elements, and these systems are not very interesting.
+When systems have interaction this interaction can be either linear or
+\emph{nonlinear}.
+Linear systems are characterized by the independence of interaction.
+In these systems the behavior of the system as a whole is driven by the
+interaction of components, but each individual component behaves independantly
+of the rest of the system.
+When designing systems this is a desirable property because it enables a
+\emph{top down} design process where each part of a machine can be designed
+independently before being put together, as each part does not alter its
+behavior when part of a larger system, allowing us to assemble large systems
+that are \emph{complicated} while keeping complexity low.
+When the interactions become nonlinear this property is lost, and these systems
+become very hard to reason about and design.
+As Strogatz puts it, ``Whenever pants of a system interfere, cooperate or
+compete there are nonlinear interactions going on. ...if you listen to your two
+favorite songs at the same time you won't get double the pleasure!'' [cite
+Strogatz, page 9].
+In \emph{complex systems} nonlinear interaction is what shapes the systems
+behavior which becomes greater than the sum of parts.
+%
+\subsubsection{Feedback and Self Organization}
+The nonlinearity of interactions in complex systems is often expressed as
+\emph{feedback} which when positive can amplify small perturbations into
+cascading effects that change the system entirely, or when negative act as
+dampeners, givin the system some measure of stability.
+An example of this is how bees harvest nectar which must be carefully dried, a
+process that can be done on a large scale if all the nectar has the same water
+content.
+Because of this a hive will harvest from only one source at a time, which in
+beekeeping terms is known as ``flow'' (with raspberry-flow being the most
+important one).
+With no centralized decisionmaker the bees are still able to quickly agree on a
+new flow once the current flow dries up through local interactions.
+When a worker bee finds a suitable source of nectar it will fly back to the hive
+and perform a dance, informing other bees of the food source.
+Other bees that see this dance will then seek out the food source, and if
+successful they too will return to the hive to recruit new workers, however even
+after a successful foraging they can still be recruited to a different source.
+Often several food sources are found, and these sources ``compete'' against each
+other, but typically the closest source wins because the faster trips cause
+recruitment to happen quicker.
+Through the amplification of local effects (one bee finding a food source) the
+bees settle on one type of nectar, a \emph{global behavior} that has
+\emph{emerged} in a \emph{bottom up} fashion, i.e without the need for
+a centralized decisionmaker through the process of \emph{self organization}.
+Through collective behavior bees can adapt to changes in their environment, in
+fact a hive may even survive the death of their queen by moving a worker larvae
+to a queen cell.
+To highlight how much of the bees sophistication arise from collective behavior,
+consider the fact that if a hive is moved even a meter, the forager bees will
+not be able to find their way back home, clearly as an individual the bee is not
+a great thinker!
+\par
+%
+Just like a bee does not operate in a vacuum, the beehive is part of a larger
+ecosystem.
+Local interactions on the \emph{scale} of a single bee shapes the behavior at
+the scale of the entire hive, which in turn interacts with the surrounding flora
+at the scale of the eco-system.
+In short, every layer that is peeled away, from the scale of the eco-system to
+the scale of local flora down to the scale of a single bee reveals a new layer
+of complexity.
+Changing the scale of observation does not only reveal new complexities, it can
+just as well reveal simplicity and order.
+An example of this \emph{emergent simplicity} is the earth itself which behaves
+as a simple celestial body in the solar system regardless of the complexities
+found in smaller scales of observation.
+%
+\subsubsection{State Spaces and Attractors}
+The space of possible states, or configurations a system can be in is known as a
+\emph{state space}\footnote{For continuous systems the word phase space is more
+  accurate, but it's not a useful dichotomy for this thesis.}
+As an example, the state space of a rubiks cube can be defined as all possible
+configurations a cube can be in.
+This space includes the solved cube as well as any permutation reachable from
+the solved cube when twisting it, but it does not include impossible rubiks
+cubes such as a cube with ten red faces.
+A single system may be defined by multiple state spaces depending on which parts
+of the system is observed and at which scale.
+The state space of the rubiks cube can be extended to include the current
+rotation the cube has in space, or it can be observed at a finer scale where two
+solved cubes occupy different states if the face of one cube has been slightly
+rotated.
+These states are known as \emph{macro states} and have been chosen specifically
+by the observer as opposed to the \emph{micro state} which is the ground truth
+of the system.
+For physical systems the micro state is not only intractable, but impossible to
+measure due to the uncertainity principle, and generally what happens at a
+subatomic level is not very relevant when describing a rubiks cube.\par
+%
+As a dynamic system evolves over time it follows a trajectory through its state
+space which depends on its initial conditions and outside perturbance.
+Analogous to gravity wells in cosmology, certain points in the state space act
+as \emph{attractors}, ``pulling in'' the states in its \emph{attractor basin}.
+The simplest such attractor is the point attractor in which a system in the
+point attractors basin will move towards a static state.
+Cyclic attractors are a sequence of states that repeat themselves sequentially.
+A system in a cyclic attractor can oscillate between two states, or it can
+follow a longer path, known as cycle length before repeating itself.
+For both cyclic and point attractors the amount of states a system goes through
+before reaching the attractor (that is, the amount of states visited only once)
+is known as the \emph{transient}.
+The length of the transient is a property of one trajectory leading to the
+attractor, but the average trajectory length is a property of the attractor
+itself.
+There is a third type of attractor which have have no cycles, known as
+\emph{strange attractors}.
+Systems in strange attractors exhibits \emph{chaotic} behavior, characterized by
+its sensitivity to initial conditions and unpredictable, seemingly random
+behavior.
+Fig \ref{figStrange} shows one solution for a nonlinear differential equation known
+as Lorenz attractor.
+Two near-identical initial conditions in a this attractor will quickly diverge in
+behavior, however both will create the ``butterfly'' pattern.
+For a discrete system a strange attractor is impossible as any discrete system
+can only represent a finite amount of states, however a cyclic attractor with a
+cycle length near the total amount of expressible states may be informally
+considered as strange.\par
+% 
+TODO: Something about attractor landscape wrt complex, chaotic and ordered systems.
+% A state space along with its attractor is known as an \emph{attractor
+%   landscape}.
+% Based on the attractor landscape the system can then be classified as ordered,
+% complex or chaotic, however as examplified with the rubiks cube, the choice of
+% macro state and observation scale means that these classifications are not
+% objective as they also depend on the observer.
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.6\textwidth]{fig/strange.png}
+  \caption{Lorenz attractor. Image taken from Strogatz - Nonlinear dynamics and chaos}
+  \label{figStrange}
+\end{figure}
+%
+\subsubsection{Universality Of Complex Systems}
+Not all complex systems are biological in nature.
+In Dynamics of Complex Systems Yaneer Bar-Yam illustrates this as shown in fig
+\ref{figCX}.
+In the classical school of thought different fields are seen as divergent,
+however Bar-Yam points out that each field deals with systems, and it turns out
+that complex systems have much in common regardless of how and where they
+originate.
+This \emph{universality} is a powerful tool when studying systems such as neural
+networks because it allows us to explain and study much of the behavior with far
+simpler models, one such model being \emph{cellular automatons}.
 \begin{figure}[h!]
   \centering
   \includegraphics[width=0.6\textwidth]{fig/BarYamCX.png}
   \caption{From Bar Yam book.}
   \label{figCX}
 \end{figure}
-\subsubsection{Cellular Automata}
+\subsection{Cellular Automata}
 A \emph{Cellular Automaton}\footnote{Singular: Automaton, Plural: Automata}, CA
 in short, is a simple discrete model of a single cell which changes between a
 discrete set of states based only on its immediate neighbors.
@@ -125,52 +214,93 @@ Figure \ref{figCA22} shows an example of a \emph{rule set}, or \emph{transition
   table} for a cellular automaton with only two states, and an initial
 configuration, or ``seed'', which over several steps forms a pattern.
 %
-One of the pioneers in the field of CAs, Stephen Wolfram suggested that under
-certain conditions CAs were capable of computation [cite Wolfram: Universality
-and complexity in cellular automata].
+CAs have many properties that make them ideal as a model for studying complex
+systems and how they can facilitate computation.
+The reasons for this can be seen in [fig sipper] from [cite Sipper] showing how
+CAs model computation made by simple elements interacting locally in a vastly
+parallel manner.
 %
-Cellular automatas have been shown capable of solving global problems such as
-contour-extraction \cite{sipper_emergence_1999} where the problem is expressed
-as the seed and a global solution emerges from the local interaction of cells.
-Wolframs hypothesis of universal computation has also been proven correct, in
-fact even a simple 1D cellular automata such as in \ref{figCA22} has been proven
-sufficient to simulate a turing machine [Cite Matthew Cook],
-but as Sipper puts it: ``This is perhaps the quintessential example of a slow
-bullet train: embedding a sequential universal Turing machine within the
-highly parallel cellular-automaton model.''\par
-% 
-% Her var jeg. Skriv noe om at vi tar det for gitt at utregning kan skje, vi
-% bryr oss ikke om hvordan, men hva slags conditions kreves per Langton.
+In other words, computation in CAs must be self organized, bottom up and driven by
+local interaction which are the features that all complex systems share due to
+universality.
 %
-In figure [figur av class 1 - IV CA] four cellular automatas are shown,
-each classified per Wolframs CA classification.
-The fourth class which ``yields complex patterns of localized
-structures'' shows complex behavior which Wolfram suggested was the sort of
-behavior necessary for computation to occur spontaneously.
+An example of such a computation given by Sipper is contour extraction of an
+image, highlighting how a parallel local computation can yield a global result.
 %
-As a model for neurons it is sufficient to know that they are capable of
-computation and under which circumstances rather than knowing exactly what they
-are computing.
+While contour extraction is computation it is not very general, and the initial
+conditions are set up in a rather artificial way, so one might ask if CAs can
+perform more complex computation.
+As it turns out the answer is yes, as even simple 1D CAs are \emph{Turing
+  complete}, enabling them to express any computation.
+This is of little practical use though, as Sipper puts it: ``This is perhaps the
+quintessential example of a slow bullet train: embedding a sequential universal
+Turing machine within the highly parallel cellular-automaton model'', however it
+does show that more complex rules or models are not inherently more capable.
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.6\textwidth]{fig/CApattern.png}
+  \caption{From Bar Yam book.}
+  \label{figCX}
+\end{figure}
+\subsubsection{Order, Criticality and Chaos}
+Contour extraction and turing machines are artificially constructed
+computations, neither spontaneously occuring or particularily complex.
+A pioneer in the field, Stephen Wolfram, was interested not only in expressing
+computations with CAs, but in which conditions computation could spontaneously
+occur.
+He divided CAs into 4 classes based on their behavior, from least to most
+complex, as shown in fig [I - IV].
+Class 1 and 2 quickly resolved to static or simple periodic behavior, which
+corresponds to an attractor landscape with many point and cyclic attractors with
+shallow basins.
+Class 3 CAs exhibited chaotic behavior where small differences in initial
+conditions caused the systems to diverge quickly into cycles so long they could
+effectively be considered to be in strange attractors.
+Class was characterized by having very long transients, forming complex
+patterns of localized structures corresponding to an attractor landscape with
+fewer attractors with very large basins.
+Wolfram correctly suspected that the fourth class was capable of computation,
+even of the universal\footnote{Not to be confused with
+  universality of complex systems} variety.
 %
 In Langton's pioneering paper \emph{Computation on the Edge of Chaos}
-\cite{langton_computation_1990} the space of possible transition tables for one
-dimensional cellular automata with two states, such as \ref{figCA22} is explored.
-What Langton discovered was that the ratio between states leading to life and
-death (black and white cells respectively) was analogous to how temperature
-causes phase changes in materials.
-This is not suprising, as one would expect rulesets where most transitions lead
-to death will lead to a stationary system analogous to ice, while a transition
-table favoring life and death equally leads to a chaotic system analogous to a
-gas.
-What was suprising however, was that at the edge between periodic and chaotic
-there existed a \emph{Critical Phase}, shown in \ref{figCAegg}.
-This effect also happens in materials in what is called a 2nd order phase
-change, in which the material is neither gas, liquid or solid, but exhibits all
-three in local substructures that can be found on all scales, from macroscopic
-to microscopic.
-The takeaway from the model of cellular computation is the idea that there are
-certain criterias that enable computation to occur spontaneously, and that
-neurons actively attempt to reach this critical phase.
+\cite{langton_computation_1990} Langton explores the space of possible
+transition tables for one dimensional cellular automata, linking the space of CA
+behavior to phase changes in material.
+%
+Langton ascribed a parameter, λ, to each ruleset which described how evenly
+matched rules leading to the dead state was vs the live state.
+When all configurations lead to one type of cell the ruleset $\lambda = 0$, while
+the ruleset where the amount of states leading to dead and live are equal 
+$\lambda = 1.0$
+%
+Langton found that the $\lambda$ parameter modeled how rulesets and wolframs CA
+classes interact in a way analogous to how matter changes phase at different
+temperatures, shown in \ref{figCAegg}.
+%
+Fig \ref{figPhase} is a phase diagram for water where the colored lines shows
+first order phase changes, such as freezing below 0 degrees at ocean-level
+pressure, analogous to how CAs go from fixed to periodic in \ref{figCAegg}.
+%
+More interesting, the figure also shows a \emph{critical point} where matter
+undergoes a \emph{second order phase change} in which it exhibits properties of
+several phases at once.
+%
+In the critical phase matter forms structures that are self-similar, a property
+known as \emph{scale invariance}, which causes classical assumption about
+``smoothness'' of behavior at lower scales that allows simplifying the lower
+scale behavior break down.
+%
+This is a recurring theme for systems, at the \emph{edge of chaos} there is a
+critical point where the forces of feedback and dampening are closely matched,
+allowing a system to be responsive and dynamic without disintegrating into
+chaos.
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.5\textwidth]{fig/Phase.png}
+  \caption{Source: wikimedia commons}
+  \label{figPhase}
+\end{figure}
 \begin{figure}[h!]
   \centering
   \includegraphics[width=1\textwidth]{fig/ca22.png}
@@ -179,7 +309,7 @@ neurons actively attempt to reach this critical phase.
 \end{figure}
 \begin{figure}[h!]
   \centering
-  \includegraphics[width=1\textwidth]{fig/Langtons_egg2.png}
+  \includegraphics[width=1\textwidth]{fig/egg.png}
   \caption{Langtons egg}
   \label{figCAegg}
 \end{figure}
@@ -409,46 +539,23 @@ resulting dynamics is classified using a linear filter.
 %
 In order to explain why this works, schrauwen makes a comparison to the the
 machine learning technique of source vector machines work, as shown in fig
-\ref{figSVM}. The general idea behind an SVM is to expand the input into a
-higher dimensional ``feature space'', which in the figure is represented by the
-transition from 2D to 3D.
+\ref{figSVM}.
+The general idea behind an SVM is to expand the input into a higher dimensional
+``feature space'', which in the figure is represented by the transition from 2D
+to 3D.
 % Altså sensitivitet til input conditions
-Systems with complex behavior can behave remarkably different depending on
-certain subtle nuances in the input while exhibiting a large tolerance to
-variations for other inputs.
-To see why, consider how the behavior of a complex system can be described by
-which attractor it is currently in as a result of some initial condition.
-%
-In his comparison Schrauwen points out the major difference between SVMs and
-reservoir computing which is that reservoirs can implicitly encode temporality
-of input by changing their state.
-
-% Schrauwen points out two major differences between SVMs and RCs.
-% First, SVMs only implicitly expands the input to high dimensional space in order
-% to make the problem tractable, while reservoirs do not.
-% Secondly, kernels are not capable of handling temporal signals.
+Similarily, when perturbed by some initial condition the resulting dynamics from
+the reservoir can be interpreted as a feature space and a trained \emph{readout
+layer} can interpret the resulting dynamics.
+Schrauwen points out two major differences between SVMs and RCs.
+First, SVMs only implicitly expands the input to high dimensional space in order
+to make the problem tractable, while reservoirs do not.
+Secondly, kernels are not capable of handling temporal signals.
 % %
-% The second difference is very important, it is what allows reservoirs to
-% implicitly encode temporal signals in their dynamics, making reservoirs a
-% natural fit for tasks such as speech recognition.
-% % cite Biologically Plausible Speech Recognition with LSTM Neural Nets Alex
-% % Graves, Douglas Eck, Nicole Beringer, Juergen Schmidhuber
-% % 
-% In other terms, the properties that make complex systems so hard to work with
-% such as sensitivity to initial conditions also allow them to discern very subtle
-% nuances in input, and their complex behavioral patterns causes the systems to
-% change their behavior to new input based on previous input.
-% %
-% In light of this, asking how to build a computer using Langton's automatons is
-% the wrong question, instead the focus should be on how exploit the computation
-% that is already occuring.\\
-% There are many examples of reservoirs which have been successfully exploited:
-% In \cite{jaeger_adaptive_2003} an \textit{echo state network} 
-% is utilized to solve classification problems.
-% More esoteric reservoirs have been used, for instance in
-% \cite{natschlager_liquid_2002} the idea of reservoir computing is taken quite
-% literally using a bucket of water as a reservoir.\\
-
+The second difference is very important, it is what allows reservoirs to
+implicitly encode temporal signals in their dynamics, making reservoirs a
+natural fit for tasks such as speech recognition where each part of the input is
+context sensitive.
 \begin{figure}[h!]
   \centering
   \includegraphics[width=0.7\textwidth]{fig/RC.jpg}

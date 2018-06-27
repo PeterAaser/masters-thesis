@@ -1,14 +1,11 @@
 * Neste gang
-  Snakk med Gunnar om CX biten
-
+** Bytte navn i figurer
+** Exporte figurer
+** Background fix-up
+** Gå gjennom kap3 i lys av kap4
   
 * Now-ish
-** TODO Bedre intro for Chap3
 * Later
-** TODO Forbedre RC background
-*** TODO Skaff figurer
-*** TODO Skriv om lineær vs ulineær output classifiers
-    
 * Maybe
 ** TODO Les Bar Yam, se over complexity i intro
    
@@ -48,10 +45,12 @@
 *** Få inn attractors
 *** Få inn scale of observation
     
-* Chap 1
-* Chap 2
-* Chap 3
+* Implement
+** TODO beskrivelse av hva core RC computer faktisk er
+* Experimental setup
+* Conclusion & further work
 * Figurer
+** TODO recreate Sipper fig
 ** OverView
 *** TODO Legg til stiplede 'boundaries'
 *** TODO Kryssreferer med conceptual cyborg
