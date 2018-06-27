@@ -3,10 +3,8 @@
 you can feel, what you can smell, what you can taste and see, then 'real' is
 simply electrical signals interpreted by your brain.}
 {Morpheus to Neo - The Matrix}
-The word cyborg is 
-biological and mechanical.
-TODO: Write good text here.
-In [Cite AHDNN] researchers created 
+In order to get mad grant \$\$\$ we made a cyborg.
+\blindtext
 \section{Concept}
 In figure \ref{cyborgOverviewSimple} the conceptual cyborg is shown.
 This conceptual cyborg is comprised of three main components: An \emph{MEA}, short
@@ -49,17 +47,17 @@ Additionally, the reservoir computer can interface with any reservoir as long as
 the interfaces are adhered to, allowing other reservoirs to be used in place of
 the neurons, both for testing purposes, and to compare the capabilities of
 different reservoirs.
-\begin{figure}[h!]
+\begin{figure}[h]
   \centering
   \includegraphics[width=1\textwidth]{fig/system2.png}
-  \caption{Rough sketch.
-    Should indicate the use of TCP/IP.
-    Should show user interface.
-    Final version will be done in inkscape.
+  \caption{An overview of all software written for the cyborg project. The
+    dataflow is color coded with red denoting data going from neurons to robot,
+    green from robot sensors to neurons. The ble line indicates configuration
+    data, as the system is capable of reconfiguring itself during an experiment.
+    The two main systems are physically separated, connected only through network.
   }
   \label{figOverview}
 \end{figure}
-
 \section{Wetware}
 As opposed to hardware and software, the term wetware describes system
 components of biological origin, i.e ``wet'' components.
@@ -74,9 +72,19 @@ The activity from these so-called pacemaker neurons can be seen in
 In the figure each cell in the grid corresponds to one of the
 electrodes as seen in \ref{fig:cellular_networks}, however at this stage the
 monotonic spiking activity tends to be transient, starting and stopping
-randomly.
-
-% TODO: Legg til info om complexity, graf fra johannes(?)
+randomly.\par
+As shown in fig \ref{figDopey} a neural culture evolves over time, showing an
+increase in behavioral complexity.
+TODO: should say something more about this.
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=1\textwidth]{fig/dopeyComplexity.png}
+  \caption{
+    Approximated Kolmogorov complexity of the firing patterns over a one year
+    period.
+  }
+  \label{figDopey}
+\end{figure}
 \subsection{Neural Interface}
 The \emph{Neural Interface} is the bridge between the biological and digital,
 responsible for providing a convenient API for reading out digital waveform data
@@ -90,12 +98,10 @@ and inducing voltages with its high precision electrodes.
 In addition to voltage and current the MEA2100 system comes with a life support
 module, allowing neural cultures to survive for prolonged experiments for up to
 30 minutes.
-Figure \ref{figNI}[rm 12] shows a physical overview of the components that make up the
+Figure \ref{figNI} [TODO: Figure missing] shows a physical overview of the components that make up the
 neural interface, which is also marked in \ref{figOverview}.
 \subsubsection{Micro Electrode Array}
-% Shown in fig [Stock photo of MEA] the \textit{MEA}s used in the cyborg project has been procured
-% from multichannel systems.
-Shown in \ref{figNI}, an MEA containing a neural culture is slotted into the
+Shown in \ref{figNI} [TODO: Figure missing], an MEA containing a neural culture is slotted into the
 headstage for measurements.
 Not shown however is that the MEA can easily be removed, and is in fact one of
 many MEAs which are kept in an incubator when not experimented on.
@@ -105,12 +111,18 @@ out in a grid.
 Each MEA is seeded with a neural culture, meaning that once seeded an MEA will
 be the host of a single culture, each capable of living for over a year, like
 the culture shown in \ref{frank}.
-
-% TODO: Upon adding figure, move the kool story about frank the tank to the
-% subtext
-% Fig [Microscope pic of Frank] shows a seeded MEA, nicknamed ``Frank'' as a play on frankensteins
-% monster due to it's tendency to develop \emph{Organoids}, small proto-organs
-% with structures similar to eyes and other sensor organs.
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=1\textwidth]{fig/frank.png}
+  \caption{
+    A look through the microscope, showing a culture nicknamed ``Frank'', a
+    play on frankensteins monster due to it's tendency to develop \emph{Organoids},
+    small proto-organs with structures similar to eyes and other sensor organs.
+    The black lines are electrodes that can be used to record and apply stimuli.
+  }
+  \label{figDopey}
+\end{figure}
+% Fig [Microscope pic of Frank] shows a seeded 
 \subsubsection{Headstage}
 Equipped with 60 high precision electrodes, shown in \ref{openHeadstage}, the
 headstage can connect to an MEA when inserted into the measuerement bay of the
@@ -130,8 +142,10 @@ The interface board connects to up to two head-stages and is responsible for
 interfacing with the data acquisition computer, as well as auxiliary equipment
 such as temperature controls.
 For this project, the most interesting feature of the IFB is a user programmable
-digital signal processor, which can access the raw stream of data from the
+digital signal processor (DSP), which can access the raw stream of data from the
 headstage and issue stimuli.
+This DSP has access to the interfacing hardware in the IFB which is otherwise
+off limits and not reprogrammable for the user.
 % Texas Instruments TMS320C6454 digital signal processor
 \section{Software}
 Creating a cyborg is a massive undertaking, thus a quite extensive software
@@ -148,7 +162,6 @@ and is specialized to interface with the MEA2100 system specifically.
 SHODAN on the other hand resides on the other side of the ``network chasm'', and
 is closer to a framework, capable of handling any reservoir as long as the
 necessary transformations are implemented.
-
 \subsection{MEAME}
 An overview of MEAME is shown in \ref{figMEAME}, revealing that MEAME internally
 consists of two distinct subprojects exposed by a unified REST interface.
@@ -181,12 +194,13 @@ electrode readouts, referred to as \emph{channels}.
   }
   \label{figMEAME}
 \end{figure}
-
 \begin{figure}[h!]
   \centering
-  \includegraphics[width=0.5\textwidth]{fig/rm/waveform_segmentation.jpg}
-  \caption{Rough sketch.
-    Shows how data is transmitted.
+  \includegraphics[width=0.5\textwidth]{fig/reorder.png}
+  \caption{
+    The interleaved datastream can be broken down into its individual channels.
+    Here a datastream with only 3 streams are shown, whereas the stream is
+    normally comprised of data from 60 channels.
   }
   \label{figLayout}
 \end{figure}

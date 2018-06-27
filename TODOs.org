@@ -56,20 +56,5 @@
 *** TODO Kryssreferer med conceptual cyborg
 
 * (DS)^2
-  DS2 systemer har phase space som utvikles over tid.
-  Dette er en funksjon av systemets nåværende struktur, dets perturbation og tid.
-
 * Figurer
-** ANN
-** Neuron
-
-** RNN
-
-** DONE SHODAN full
-** DONE MEAME
-** Data  reorder
-** Stim diagram
-** SHODAN smaller
-** DONE Filtering 1
-** DONE Generic => specific
-** Experiment blocks
+** TODO Wolfram klasser
