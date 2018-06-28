@@ -10,8 +10,9 @@ hybrid bio-robotic machines.'' [Cite cyborg webpage]
 The work in this thesis is strictly focused on enabling communication, leaving
 the robotic and social aspects for later work.
 This section presents the design and implementation of a system capable of
-communicating with neural tissue and controlling a robot.
-\section{Concept}
+communicating with neural tissue and controlling a robot in three parts,
+wetware, hardware and most importantly software.
+\subsubsection{Concept}
 In figure \ref{figOverviewSimple} the conceptual cyborg is shown.
 This conceptual cyborg is comprised of three main components: An \emph{MEA}, short
 for \emph{Micro Electrode Array} in which a biological neural network is grown.
@@ -31,18 +32,22 @@ what the sensors perceive which the cyborg must act upon.
   \caption{A simple conceptual cyborg.}
   \label{figOverviewSimple}
 \end{figure}
-\section{Architecture}
+\subsubsection{Architecture}
 As shown in fig \ref{figOverview}, the actual cyborg adds a lot of parts
 compared to the initial concept.
-This overview focuses on the main data loop, depicted as red and green lines,
-with red denoting the data pipeline from the reservoir to the reservoir
-computer, and green from reservoir computer to reservoir.
-This design expands on the initial concept, fleshing out the ``interface'' box
-from the conceptual cyborg, juxtaposed in \ref{figJuxta}, and substitutes the
-ANN with the more general notions of reservoir output filter.
+This design expands on the initial concept of \ref{figOverviewSimple}, fleshing
+out the ``interface'' box from the conceptual cyborg, juxtaposed in
+\ref{figJuxta}.
+As the conceptual cyborg indicates, what goes on in the interface is mostly
+implementation detail, thus the robot control and reservoir readout has been
+dubbed as the \emph{core reservoir loop} to differentiate it from the interface
+components.
+This overview of \ref{figOverview} focuses on the main data loop, depicted as
+red and green lines, with red denoting the data pipeline from the reservoir to
+the core reservoir loop, and green from core reservoir loop to reservoir.
 The expanded architecture reveals a very important detail in the final design,
-which is that the data loop between the reservoir computer and the reservoir
-extends over network.
+which is that the closed data loop between neurons and robot extends over
+network. 
 This design choice allows the neural cultures to be safely stored in a
 laboratory, which has ramications both in a practical and philosophical sense.
 By decoupling the reservoir and reservior computer, the neurons are not
