@@ -1,0 +1,936 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg61466"
+   inkscape:version="0.92.3 (unknown)"
+   sodipodi:docname="svm.svg">
+  <defs
+     id="defs61460">
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible;"
+       id="marker62447"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend">
+      <path
+         transform="scale(0.8) rotate(180) translate(12.5,0)"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         id="path62445" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Lend"
+       style="overflow:visible;"
+       inkscape:isstock="true"
+       inkscape:collect="always">
+      <path
+         id="path62166"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         transform="scale(0.8) rotate(180) translate(12.5,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Lend-5"
+       style="overflow:visible"
+       inkscape:isstock="true"
+       inkscape:collect="always">
+      <path
+         inkscape:connector-curvature="0"
+         id="path62166-2"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;stroke-opacity:1"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)" />
+    </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="marker62447-6"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend">
+      <path
+         inkscape:connector-curvature="0"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;stroke-opacity:1"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path62445-1" />
+    </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="marker62447-6-2"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend">
+      <path
+         inkscape:connector-curvature="0"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;stroke-opacity:1"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path62445-1-5" />
+    </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="marker62447-6-2-9"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend">
+      <path
+         inkscape:connector-curvature="0"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;stroke-opacity:1"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path62445-1-5-3" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.4"
+     inkscape:cx="440.00203"
+     inkscape:cy="651.65174"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:snap-midpoints="true"
+     inkscape:window-width="1916"
+     inkscape:window-height="1149"
+     inkscape:window-x="2280"
+     inkscape:window-y="400"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata61463">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.26458332;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect62015"
+       width="70.870537"
+       height="70.870537"
+       x="449.34357"
+       y="-80.90387" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend)"
+       d="M 43.939735,159.36335 V 88.49282"
+       id="path62017"
+       inkscape:connector-curvature="0"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker62447)"
+       d="M 8.504468,123.41444 H 79.374999"
+       id="path62019"
+       inkscape:connector-curvature="0"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path62039"
+       d="m 62.151363,137.14179 -2.405414,2.40541"
+       style="fill:none;fill-rule:evenodd;stroke:#ff001e;stroke-width:0.26458335px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path62043"
+       d="m 71.978739,130.33822 -2.40541,2.40541"
+       style="fill:none;fill-rule:evenodd;stroke:#ff001e;stroke-width:0.26458335px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path62047"
+       d="m 71.789759,110.30548 -2.405418,2.40541"
+       style="fill:none;fill-rule:evenodd;stroke:#ff001e;stroke-width:0.26458335px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path62051"
+       d="m 51.001065,99.911131 -2.405414,2.405409"
+       style="fill:none;fill-rule:evenodd;stroke:#ff001e;stroke-width:0.26458335px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path62055"
+       d="m 40.795708,90.839702 -2.405414,2.40541"
+       style="fill:none;fill-rule:evenodd;stroke:#ff001e;stroke-width:0.26458335px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path62059"
+       d="m 37.015946,94.808452 -2.405414,2.40541"
+       style="fill:none;fill-rule:evenodd;stroke:#ff001e;stroke-width:0.26458335px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path62063"
+       d="m 25.67666,95.753393 -2.405414,2.40541"
+       style="fill:none;fill-rule:evenodd;stroke:#ff001e;stroke-width:0.26458335px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path62067"
+       d="m 18.495112,107.84864 -2.405414,2.40541"
+       style="fill:none;fill-rule:evenodd;stroke:#ff001e;stroke-width:0.26458335px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path62071"
+       d="m 11.880529,116.16411 -2.405414,2.40541"
+       style="fill:none;fill-rule:evenodd;stroke:#ff001e;stroke-width:0.26458335px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path62075"
+       d="m 9.234696,127.12542 -2.405414,2.40541"
+       style="fill:none;fill-rule:evenodd;stroke:#ff001e;stroke-width:0.26458335px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path62079"
+       d="m 18.495112,129.96024 -2.405414,2.40541"
+       style="fill:none;fill-rule:evenodd;stroke:#ff001e;stroke-width:0.26458335px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path62083"
+       d="m 25.298684,146.21322 -2.405414,2.40541"
+       style="fill:none;fill-rule:evenodd;stroke:#ff001e;stroke-width:0.26458335px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path62087"
+       d="m 34.181124,146.5912 -2.405414,2.40541"
+       style="fill:none;fill-rule:evenodd;stroke:#ff001e;stroke-width:0.26458335px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path62091"
+       d="m 48.355232,148.29209 -2.405414,2.40541"
+       style="fill:none;fill-rule:evenodd;stroke:#ff001e;stroke-width:0.26458335px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path62095"
+       d="m 58.749577,144.70131 -2.405414,2.40541"
+       style="fill:none;fill-rule:evenodd;stroke:#ff001e;stroke-width:0.26458335px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#ff001e;stroke-width:0.26458335px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 58.749577,144.70131 -2.405414,2.40541"
+       id="path62017-8"
+       inkscape:connector-curvature="0"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path62041"
+       d="m 59.745945,137.14179 2.405415,2.40542"
+       style="fill:none;fill-rule:evenodd;stroke:#ff001e;stroke-width:0.26458335px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path62045"
+       d="m 69.573325,130.33822 2.405414,2.40542"
+       style="fill:none;fill-rule:evenodd;stroke:#ff001e;stroke-width:0.26458335px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path62049"
+       d="m 69.384337,110.30548 2.405412,2.40542"
+       style="fill:none;fill-rule:evenodd;stroke:#ff001e;stroke-width:0.26458335px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path62053"
+       d="m 48.595647,99.911131 2.405415,2.405419"
+       style="fill:none;fill-rule:evenodd;stroke:#ff001e;stroke-width:0.26458335px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path62057"
+       d="m 38.39029,90.839702 2.405415,2.40542"
+       style="fill:none;fill-rule:evenodd;stroke:#ff001e;stroke-width:0.26458335px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path62061"
+       d="m 34.610528,94.808452 2.405415,2.40542"
+       style="fill:none;fill-rule:evenodd;stroke:#ff001e;stroke-width:0.26458335px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path62065"
+       d="m 23.271242,95.753393 2.405415,2.40542"
+       style="fill:none;fill-rule:evenodd;stroke:#ff001e;stroke-width:0.26458335px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path62069"
+       d="m 16.089694,107.84864 2.405415,2.40542"
+       style="fill:none;fill-rule:evenodd;stroke:#ff001e;stroke-width:0.26458335px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path62073"
+       d="m 9.475111,116.16411 2.405415,2.40542"
+       style="fill:none;fill-rule:evenodd;stroke:#ff001e;stroke-width:0.26458335px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path62077"
+       d="m 6.829278,127.12542 2.405415,2.40542"
+       style="fill:none;fill-rule:evenodd;stroke:#ff001e;stroke-width:0.26458335px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path62081"
+       d="m 16.089694,129.96024 2.405415,2.40542"
+       style="fill:none;fill-rule:evenodd;stroke:#ff001e;stroke-width:0.26458335px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path62085"
+       d="m 22.893266,146.21322 2.405415,2.40542"
+       style="fill:none;fill-rule:evenodd;stroke:#ff001e;stroke-width:0.26458335px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path62089"
+       d="m 31.775706,146.5912 2.405415,2.40542"
+       style="fill:none;fill-rule:evenodd;stroke:#ff001e;stroke-width:0.26458335px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path62093"
+       d="m 45.949814,148.29209 2.405415,2.40542"
+       style="fill:none;fill-rule:evenodd;stroke:#ff001e;stroke-width:0.26458335px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path62097"
+       d="m 56.344159,144.70131 2.405415,2.40542"
+       style="fill:none;fill-rule:evenodd;stroke:#ff001e;stroke-width:0.26458335px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#ff001e;stroke-width:0.26458335px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 56.344159,144.70131 2.405415,2.40542"
+       id="path62019-3"
+       inkscape:connector-curvature="0"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
+    <circle
+       r="0.94494045"
+       cy="109.71279"
+       cx="34.773808"
+       id="circle62143"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#0016ff;stroke-width:0.26458332;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
+    <circle
+       r="0.94494045"
+       cy="111.98065"
+       cx="31.183037"
+       id="circle62145"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#0016ff;stroke-width:0.26458332;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
+    <circle
+       r="0.94494045"
+       cy="122.375"
+       cx="28.726189"
+       id="circle62147"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#0016ff;stroke-width:0.26458332;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
+    <circle
+       r="0.94494045"
+       cy="132.95833"
+       cx="25.891369"
+       id="circle62149"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#0016ff;stroke-width:0.26458332;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
+    <circle
+       r="0.94494045"
+       cy="138.62798"
+       cx="30.049107"
+       id="circle62151"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#0016ff;stroke-width:0.26458332;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
+    <circle
+       r="0.94494045"
+       cy="139.57291"
+       cx="39.687496"
+       id="circle62153"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#0016ff;stroke-width:0.26458332;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
+    <circle
+       r="0.94494045"
+       cy="127.28869"
+       cx="55.184521"
+       id="circle62155"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#0016ff;stroke-width:0.26458332;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
+    <circle
+       r="0.94494045"
+       cy="135.79315"
+       cx="56.69643"
+       id="circle62157"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#0016ff;stroke-width:0.26458332;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
+    <circle
+       r="0.94494045"
+       cy="115.38244"
+       cx="50.648808"
+       id="circle62159"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#0016ff;stroke-width:0.26458332;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
+    <circle
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#0016ff;stroke-width:0.26458332;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="path62139"
+       cx="50.648808"
+       cy="115.38244"
+       r="0.94494045"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
+    <ellipse
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.26458332;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.26458333, 0.52916667;stroke-dashoffset:0;stroke-opacity:1"
+       id="path62161"
+       ry="20.263388"
+       rx="19.68816"
+       cy="125.94983"
+       cx="40.175999"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend-5)"
+       d="M 127.47284,129.19325 V 78.91152"
+       id="path62017-7"
+       inkscape:connector-curvature="0"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker62447-6)"
+       d="m 127.15859,129.23016 h 51.37082"
+       id="path62019-8"
+       inkscape:connector-curvature="0"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
+    <ellipse
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.26458332;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.26458333, 0.52916667;stroke-dashoffset:0;stroke-opacity:1"
+       id="path62161-5"
+       ry="20.263388"
+       rx="19.68816"
+       cy="-50.454617"
+       cx="474.87158" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.26458332;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.26458332, 0.52916664;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#marker62447-6-2)"
+       d="M 127.43272,129.23336 94.99394,161.67354"
+       id="path62019-8-1"
+       inkscape:connector-curvature="0"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
+    <circle
+       r="0.94494045"
+       cy="124.83185"
+       cx="132.10268"
+       id="circle65068"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#0016ff;stroke-width:0.26458332;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
+    <circle
+       r="0.94494045"
+       cy="122.94197"
+       cx="130.96875"
+       id="circle65070"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#0016ff;stroke-width:0.26458332;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
+    <circle
+       r="0.94494045"
+       cy="116.70536"
+       cx="130.59077"
+       id="circle65072"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#0016ff;stroke-width:0.26458332;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
+    <circle
+       r="0.94494045"
+       cy="118.40625"
+       cx="137.96132"
+       id="circle65074"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#0016ff;stroke-width:0.26458332;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
+    <circle
+       r="0.94494045"
+       cy="123.50893"
+       cx="140.04018"
+       id="circle65076"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#0016ff;stroke-width:0.26458332;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
+    <circle
+       r="0.94494045"
+       cy="126.53275"
+       cx="136.26042"
+       id="circle65078"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#0016ff;stroke-width:0.26458332;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
+    <circle
+       r="0.94494045"
+       cy="128.23363"
+       cx="139.28423"
+       id="circle65080"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#0016ff;stroke-width:0.26458332;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
+    <circle
+       r="0.94494045"
+       cy="124.45387"
+       cx="146.46577"
+       id="circle65082"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#0016ff;stroke-width:0.26458332;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
+    <circle
+       r="0.94494045"
+       cy="117.27232"
+       cx="144.3869"
+       id="circle65084"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#0016ff;stroke-width:0.26458332;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
+    <circle
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#0016ff;stroke-width:0.26458332;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="path62139-5"
+       cx="144.3869"
+       cy="117.27232"
+       r="0.94494045"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#ff001e;stroke-width:0.26458338px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 141.80985,96.603834 -2.40541,2.40541"
+       id="path65129"
+       inkscape:connector-curvature="0"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#ff001e;stroke-width:0.26458338px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 142.37681,100.19461 -2.40541,2.40541"
+       id="path65133"
+       inkscape:connector-curvature="0"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#ff001e;stroke-width:0.26458338px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 148.80241,106.05324 -2.40541,2.40541"
+       id="path65137"
+       inkscape:connector-curvature="0"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#ff001e;stroke-width:0.26458338px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 151.82622,102.46246 -2.40541,2.40541"
+       id="path65141"
+       inkscape:connector-curvature="0"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#ff001e;stroke-width:0.26458338px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 155.41699,110.02199 -2.40541,2.40541"
+       id="path65145"
+       inkscape:connector-curvature="0"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#ff001e;stroke-width:0.26458338px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 157.87384,123.62913 -2.40541,2.40541"
+       id="path65149"
+       inkscape:connector-curvature="0"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#ff001e;stroke-width:0.26458338px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 163.35449,118.90443 -2.40541,2.40541"
+       id="path65153"
+       inkscape:connector-curvature="0"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#ff001e;stroke-width:0.26458338px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 137.65211,103.21842 -2.40541,2.40541"
+       id="path65157"
+       inkscape:connector-curvature="0"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#ff001e;stroke-width:0.26458338px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 131.79348,87.154429 -2.40541,2.40541"
+       id="path65161"
+       inkscape:connector-curvature="0"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#ff001e;stroke-width:0.26458338px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 130.47056,94.713953 -2.40541,2.40541"
+       id="path65165"
+       inkscape:connector-curvature="0"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#ff001e;stroke-width:0.26458338px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 147.59971,107.25595 -2.40542,2.40541"
+       id="path65169"
+       inkscape:connector-curvature="0"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#ff001e;stroke-width:0.26458338px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 156.55092,95.469905 -2.40541,2.40541"
+       id="path65173"
+       inkscape:connector-curvature="0"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#ff001e;stroke-width:0.26458338px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 150.31431,90.178239 -2.40541,2.40541"
+       id="path65177"
+       inkscape:connector-curvature="0"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#ff001e;stroke-width:0.26458338px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 141.99884,90.367227 -2.40541,2.40541"
+       id="path65181"
+       inkscape:connector-curvature="0"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#ff001e;stroke-width:0.26458338px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 169.96908,116.06961 -2.40541,2.40541"
+       id="path65185"
+       inkscape:connector-curvature="0"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path62043-5"
+       d="m 169.96908,116.06961 -2.40541,2.40541"
+       style="fill:none;fill-rule:evenodd;stroke:#ff001e;stroke-width:0.26458338px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#ff001e;stroke-width:0.26458338px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 139.40444,96.603834 2.40541,2.40542"
+       id="path65131"
+       inkscape:connector-curvature="0"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#ff001e;stroke-width:0.26458338px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 139.9714,100.19461 2.40541,2.40542"
+       id="path65135"
+       inkscape:connector-curvature="0"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#ff001e;stroke-width:0.26458338px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 146.397,106.05324 2.40541,2.40542"
+       id="path65139"
+       inkscape:connector-curvature="0"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#ff001e;stroke-width:0.26458338px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 149.42081,102.46246 2.40541,2.40542"
+       id="path65143"
+       inkscape:connector-curvature="0"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#ff001e;stroke-width:0.26458338px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 153.01158,110.02199 2.40541,2.40542"
+       id="path65147"
+       inkscape:connector-curvature="0"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#ff001e;stroke-width:0.26458338px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 155.46842,123.62913 2.40542,2.40542"
+       id="path65151"
+       inkscape:connector-curvature="0"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#ff001e;stroke-width:0.26458338px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 160.94908,118.90443 2.40541,2.40542"
+       id="path65155"
+       inkscape:connector-curvature="0"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#ff001e;stroke-width:0.26458338px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 135.2467,103.21842 2.40541,2.40542"
+       id="path65159"
+       inkscape:connector-curvature="0"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#ff001e;stroke-width:0.26458338px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 129.38807,87.154429 2.40541,2.40542"
+       id="path65163"
+       inkscape:connector-curvature="0"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#ff001e;stroke-width:0.26458338px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 128.06515,94.713953 2.40541,2.40542"
+       id="path65167"
+       inkscape:connector-curvature="0"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#ff001e;stroke-width:0.26458338px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 145.19429,107.25595 2.40542,2.40542"
+       id="path65171"
+       inkscape:connector-curvature="0"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#ff001e;stroke-width:0.26458338px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 154.14551,95.469905 2.40541,2.40542"
+       id="path65175"
+       inkscape:connector-curvature="0"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#ff001e;stroke-width:0.26458338px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 147.9089,90.178239 2.40541,2.40542"
+       id="path65179"
+       inkscape:connector-curvature="0"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#ff001e;stroke-width:0.26458338px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 139.59342,90.367227 2.40542,2.40542"
+       id="path65183"
+       inkscape:connector-curvature="0"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#ff001e;stroke-width:0.26458338px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 167.56366,116.06961 2.40542,2.40542"
+       id="path65187"
+       inkscape:connector-curvature="0"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path62045-8"
+       d="m 167.56366,116.06961 2.40542,2.40542"
+       style="fill:none;fill-rule:evenodd;stroke:#ff001e;stroke-width:0.26458338px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.26458332;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.26458332, 0.52916665;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 127.47284,98.004771 -21.8559,21.856849"
+       id="path62019-8-1-3"
+       inkscape:connector-curvature="0"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.26458332;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.26458332, 0.52916666;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 159.39431,129.17706 -21.8559,21.85685"
+       id="path62019-8-1-3-6"
+       inkscape:connector-curvature="0"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.26458332;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.26458332, 0.52916667;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 159.08543,129.61602 127.47284,98.004776"
+       id="path62019-8-1-3-2"
+       inkscape:connector-curvature="0"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.26458332;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.26458332, 0.52916667;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 137.22952,151.47286 105.61694,119.86162"
+       id="path62019-8-1-3-2-5"
+       inkscape:connector-curvature="0"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
+  </g>
+</svg>

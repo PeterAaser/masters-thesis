@@ -38,8 +38,8 @@ This overview focuses on the main data loop, depicted as red and green lines,
 with red denoting the data pipeline from the reservoir to the reservoir
 computer, and green from reservoir computer to reservoir.
 This design expands on the initial concept, fleshing out the ``interface'' box
-in \ref{cyborgOverviewSimple} and substituting ANN with the more
-general notions of reservoir output filter.
+from the conceptual cyborg, juxtaposed in \ref{figJuxta}, and substitutes the
+ANN with the more general notions of reservoir output filter.
 The expanded architecture reveals a very important detail in the final design,
 which is that the data loop between the reservoir computer and the reservoir
 extends over network.
@@ -63,6 +63,15 @@ different reservoirs.
     The two main systems are physically separated, connected only through network.
   }
   \label{figOverview}
+\end{figure}
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.9\textwidth]{fig/ConceptMap.png}
+  \caption{
+    When juxtaposing the pieces of the conceptual cyborg onto the fleshed out
+    design it becomes apparent that the interface box makes up a majority of the cyborg.
+  }
+  \label{figJuxta}
 \end{figure}
 \section{Wetware}
 As opposed to hardware and software, the term wetware describes system

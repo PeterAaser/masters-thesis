@@ -1,0 +1,944 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg9428"
+   inkscape:version="0.92.3 (unknown)"
+   sodipodi:docname="reservoir.svg">
+  <defs
+     id="defs9422">
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="marker30400"
+       style="overflow:visible;"
+       inkscape:isstock="true">
+      <path
+         id="path30398"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round;stroke:#000000;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         transform="scale(1.1) rotate(180) translate(1,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="marker30258"
+       style="overflow:visible;"
+       inkscape:isstock="true">
+      <path
+         id="path30256"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round;stroke:#000000;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         transform="scale(1.1) rotate(180) translate(1,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="marker30122"
+       style="overflow:visible;"
+       inkscape:isstock="true">
+      <path
+         id="path30120"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round;stroke:#000000;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         transform="scale(1.1) rotate(180) translate(1,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lstart"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Lstart"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path1100"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         transform="scale(0.8) translate(12.5,0)" />
+    </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible;"
+       id="marker29851"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow2Lend"
+       inkscape:collect="always">
+      <path
+         transform="scale(1.1) rotate(180) translate(1,0)"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round;stroke:#000000;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         id="path29849" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="marker29441"
+       style="overflow:visible;"
+       inkscape:isstock="true"
+       inkscape:collect="always">
+      <path
+         id="path29439"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round;stroke:#000000;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         transform="scale(1.1) rotate(180) translate(1,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="marker29329"
+       style="overflow:visible;"
+       inkscape:isstock="true">
+      <path
+         id="path29327"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round;stroke:#000000;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         transform="scale(1.1) rotate(180) translate(1,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="marker29223"
+       style="overflow:visible;"
+       inkscape:isstock="true">
+      <path
+         id="path29221"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round;stroke:#000000;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         transform="scale(1.1) rotate(180) translate(1,0)" />
+    </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible;"
+       id="marker10878"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow2Lend"
+       inkscape:collect="always">
+      <path
+         transform="scale(1.1) rotate(180) translate(1,0)"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round;stroke:#000000;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         id="path10876" />
+    </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible;"
+       id="marker10784"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow2Lend">
+      <path
+         transform="scale(1.1) rotate(180) translate(1,0)"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round;stroke:#000000;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         id="path10782" />
+    </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible;"
+       id="marker10696"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow2Lend">
+      <path
+         transform="scale(1.1) rotate(180) translate(1,0)"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round;stroke:#000000;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         id="path10694" />
+    </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible;"
+       id="marker10614"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow2Lend">
+      <path
+         transform="scale(1.1) rotate(180) translate(1,0)"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round;stroke:#000000;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         id="path10612" />
+    </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible;"
+       id="marker10538"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow2Lend">
+      <path
+         transform="scale(1.1) rotate(180) translate(1,0)"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round;stroke:#000000;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         id="path10536" />
+    </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible;"
+       id="marker10468"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow2Lend">
+      <path
+         transform="scale(1.1) rotate(180) translate(1,0)"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round;stroke:#000000;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         id="path10466" />
+    </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible;"
+       id="marker10404"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow2Lend">
+      <path
+         transform="scale(1.1) rotate(180) translate(1,0)"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round;stroke:#000000;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         id="path10402" />
+    </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible;"
+       id="marker10346"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow2Lend">
+      <path
+         transform="scale(1.1) rotate(180) translate(1,0)"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round;stroke:#000000;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         id="path10344" />
+    </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible;"
+       id="marker10294"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow2Lend">
+      <path
+         transform="scale(1.1) rotate(180) translate(1,0)"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round;stroke:#000000;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         id="path10292" />
+    </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible;"
+       id="marker10248"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow2Lend">
+      <path
+         transform="scale(1.1) rotate(180) translate(1,0)"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round;stroke:#000000;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         id="path10246" />
+    </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible;"
+       id="marker10208"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow2Lend">
+      <path
+         transform="scale(1.1) rotate(180) translate(1,0)"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round;stroke:#000000;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         id="path10206" />
+    </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible;"
+       id="marker10174"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow2Lend">
+      <path
+         transform="scale(1.1) rotate(180) translate(1,0)"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round;stroke:#000000;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         id="path10172" />
+    </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible;"
+       id="marker10146"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow2Lend">
+      <path
+         transform="scale(1.1) rotate(180) translate(1,0)"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round;stroke:#000000;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         id="path10144" />
+    </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible;"
+       id="marker10124"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow2Lend">
+      <path
+         transform="scale(1.1) rotate(180) translate(1,0)"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round;stroke:#000000;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         id="path10122" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow2Lend"
+       style="overflow:visible;"
+       inkscape:isstock="true"
+       inkscape:collect="always">
+      <path
+         id="path5319"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round;stroke:#000000;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         transform="scale(1.1) rotate(180) translate(1,0)" />
+    </marker>
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect9557"
+       is_visible="true"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect9553"
+       is_visible="true"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect9549"
+       is_visible="true"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect9541"
+       is_visible="true"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect9537"
+       is_visible="true"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect9533"
+       is_visible="true"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect9529"
+       is_visible="true"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect9525"
+       is_visible="true"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect9517"
+       is_visible="true"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect9513"
+       is_visible="true"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect9509"
+       is_visible="true"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect9505"
+       is_visible="true"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect9501"
+       is_visible="true"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect9497"
+       is_visible="true"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect9493"
+       is_visible="true"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.7"
+     inkscape:cx="686.26773"
+     inkscape:cy="565.40254"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1855"
+     inkscape:window-height="1176"
+     inkscape:window-x="2345"
+     inkscape:window-y="400"
+     inkscape:window-maximized="1"
+     inkscape:snap-global="false" />
+  <metadata
+     id="metadata9425">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <ellipse
+       style="opacity:1;fill:#ffffff;fill-opacity:0.10648151;stroke:#000000;stroke-width:0.32000002;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.64000001, 1.28000001;stroke-dashoffset:0;stroke-opacity:1"
+       id="circle9481-6"
+       cx="87.412361"
+       cy="98.073181"
+       rx="45.154564"
+       ry="42.482384"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/reservoirz.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <circle
+       r="3.4239941"
+       cy="101.3866"
+       cx="62.744049"
+       id="circle4639"
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.31957269;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/reservoirz.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.31957269;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="circle9475"
+       cx="97.895828"
+       cy="111.63482"
+       r="3.4239941"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/reservoirz.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.31957269;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="circle9477"
+       cx="66.523804"
+       cy="121.08422"
+       r="3.4239941"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/reservoirz.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.31957269;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="circle9479"
+       cx="93.360115"
+       cy="67.411606"
+       r="3.4239941"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/reservoirz.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.31957269;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="circle9481"
+       cx="63.122017"
+       cy="72.325294"
+       r="3.4239941"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/reservoirz.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.31957269;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="circle9483"
+       cx="96.761894"
+       cy="95.003868"
+       r="3.4239941"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/reservoirz.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.31957269;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="circle9485"
+       cx="114.1488"
+       cy="123.73006"
+       r="3.4239941"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/reservoirz.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.31957269;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="circle9487"
+       cx="123.97618"
+       cy="88.57827"
+       r="3.4239941"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/reservoirz.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <circle
+       r="3.4239941"
+       cy="80.262794"
+       cx="105.07738"
+       id="circle4643"
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.31957269;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/reservoirz.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <circle
+       r="3.4239941"
+       cy="87.758034"
+       cx="78.997025"
+       id="circle4649"
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.31957269;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/reservoirz.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <circle
+       r="3.4239941"
+       cy="111.61338"
+       cx="80.886909"
+       id="circle4651"
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.31957269;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/reservoirz.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.265;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;marker-end:url(#marker10784)"
+       d="m 66.015573,70.756343 c 2.450218,-2.762064 4.900188,-5.523849 7.817732,-7.127323 2.917544,-1.603474 6.303303,-2.048969 9.109399,-1.314032 2.806096,0.734936 5.033537,2.650536 7.260759,4.565947"
+       id="path9491"
+       inkscape:connector-curvature="0"
+       inkscape:path-effect="#path-effect9493"
+       inkscape:original-d="m 66.015573,70.756343 c 2.450235,-2.762049 4.900205,-5.523834 7.34991,-8.285353 3.385336,-0.44567 6.771095,-0.891165 10.156243,-1.33635 2.227318,1.915001 4.454758,3.830601 6.681737,5.746295"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/reservoirz.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.26499999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker10696)"
+       d="m 61.952053,75.542569 c -0.406051,2.159617 -0.834335,4.437483 -2.04e-4,6.526726 0.834131,2.089243 2.920135,4.050145 5.08385,4.359825 2.163715,0.309679 4.405807,-1.031775 5.214166,-2.657175 0.80836,-1.625399 0.182759,-3.534085 -1.209158,-5.209382 C 69.64879,76.887266 67.63544,75.54252 65.549839,74.149515"
+       id="path9495"
+       inkscape:connector-curvature="0"
+       inkscape:path-effect="#path-effect9497"
+       inkscape:original-d="m 61.952053,75.542569 c -0.365302,2.167279 -0.83458,4.437437 -1.251404,6.655698 2.085033,1.960588 4.171037,3.92149 6.257021,5.881778 2.241797,-1.341158 4.483889,-2.682611 6.726299,-4.024377 -0.626117,-1.909 -1.251715,-3.817687 -1.877109,-5.726994 -2.190481,-1.392883 -4.171657,-2.785799 -6.257021,-4.179159"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/reservoirz.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.265;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;marker-end:url(#marker10614)"
+       d="m 66.149209,100.82417 c 3.529364,0.84883 7.038286,1.69275 9.430299,2.88404 2.392014,1.19129 3.621339,2.68405 4.86862,4.1986"
+       id="path9499"
+       inkscape:connector-curvature="0"
+       inkscape:path-effect="#path-effect9501"
+       inkscape:original-d="m 66.149209,100.82417 c 3.519312,0.89063 7.038361,1.69244 10.557144,2.53906 1.291998,1.51418 2.49478,3.02879 3.741775,4.54358"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/reservoirz.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.265;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;marker-end:url(#marker10538)"
+       d="m 70.024616,122.33936 c 2.093582,2.67266 4.187195,5.34536 6.525976,6.57035 2.338782,1.22499 4.922353,1.00226 6.45902,-0.13366 1.536667,-1.13593 2.026714,-3.18522 1.803998,-5.70171 -0.222717,-2.51649 -1.158302,-5.50145 -2.093693,-8.48579"
+       id="path9503"
+       inkscape:connector-curvature="0"
+       inkscape:path-effect="#path-effect9505"
+       inkscape:original-d="m 70.024616,122.33936 c 2.093876,2.67243 4.187486,5.34513 6.280833,8.01809 2.583905,-0.22299 5.167476,-0.44571 7.750818,-0.66818 0.490204,-2.0491 0.980252,-4.09839 1.46998,-6.1472 -0.935035,-2.98432 -1.87062,-5.96928 -2.80633,-8.95352"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/reservoirz.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.265;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;marker-end:url(#marker10468)"
+       d="m 95.014316,109.24315 c -2.71717,-1.73721 -5.434411,-3.47446 -8.084763,-4.29856 -2.650352,-0.82411 -5.233895,-0.73502 -7.683971,0.0668 -2.450077,0.8018 -4.766169,2.31616 -6.540375,4.59124 -1.774205,2.27508 -3.036823,5.38653 -4.284209,8.46045"
+       id="path9507"
+       inkscape:connector-curvature="0"
+       inkscape:path-effect="#path-effect9509"
+       inkscape:original-d="m 95.014316,109.24315 c -2.716975,-1.73751 -5.434216,-3.47476 -8.15172,-5.21175 -2.583405,0.0888 -5.166947,0.17791 -7.750818,0.26727 -2.316316,1.51442 -4.632407,3.02879 -6.949006,4.54358 -1.247158,3.02919 -2.494251,6.14694 -3.741774,9.2208"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/reservoirz.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.265;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;marker-end:url(#marker10404)"
+       d="m 111.58503,121.53755 c -0.57912,-2.98471 -1.15821,-5.96922 -2.02678,-8.12951 -0.86858,-2.1603 -2.02683,-3.49674 -3.56346,-4.00902 -1.53663,-0.51228 -3.45209,-0.20046 -5.36781,0.1114"
+       id="path9511"
+       inkscape:connector-curvature="0"
+       inkscape:path-effect="#path-effect9513"
+       inkscape:original-d="m 111.58503,121.53755 c -0.57882,-2.98477 -1.15791,-5.96928 -1.73725,-8.95353 -1.15783,-1.33652 -2.31608,-2.67296 -3.47451,-4.00904 -1.91514,0.31155 -3.8306,0.62337 -5.74629,0.93544"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/reservoirz.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.265;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;marker-end:url(#marker10346)"
+       d="m 98.355186,108.04044 c 3.742084,-1.82649 7.483864,-3.65284 9.688714,-5.34556 2.20486,-1.69273 2.87309,-3.251928 3.03295,-4.967405 0.15986,-1.715477 -0.20458,-3.674345 -1.60753,-5.188681 -1.40295,-1.514336 -3.85319,-2.628082 -5.83538,-2.71727 -1.98219,-0.08919 -3.49665,0.846207 -5.011485,1.781842"
+       id="path9515"
+       inkscape:connector-curvature="0"
+       inkscape:path-effect="#path-effect9517"
+       inkscape:original-d="m 98.355186,108.04044 c 3.742034,-1.8266 7.483814,-3.65294 11.225314,-5.47902 0.66839,-1.55921 1.33662,-3.118413 2.00453,-4.677219 -0.35603,-1.870768 -0.71246,-3.831127 -1.06908,-5.746295 -2.44944,-1.113766 -4.89968,-2.227511 -7.34991,-3.34087 -1.51434,0.935226 -3.02879,1.870623 -4.543585,2.80633"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/reservoirz.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.265;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;marker-end:url(#marker10294)"
+       d="m 95.682489,91.603366 c 0.534652,-1.514844 1.069191,-3.029372 1.271854,-4.475021 0.202663,-1.445649 0.06447,-2.919673 -0.826193,-3.877204 -0.890665,-0.95753 -2.539101,-1.447606 -4.120468,-1.046781 -1.581367,0.400826 -3.095737,1.692494 -3.719495,3.585891 -0.623758,1.893397 -0.356539,4.387444 0.6459,5.902139 1.002439,1.514695 2.739526,2.049184 4.476611,2.583672"
+       id="path9523"
+       inkscape:connector-curvature="0"
+       inkscape:path-effect="#path-effect9525"
+       inkscape:original-d="m 95.682489,91.603366 c 0.534805,-1.51479 1.069343,-3.029318 1.603619,-4.543581 -0.08881,-1.380866 -0.267007,-2.85114 -0.400905,-4.276312 -1.647624,-0.490178 -3.29606,-0.980253 -4.944485,-1.469983 -1.514423,1.291672 -3.028792,2.583341 -4.543584,3.875408 0.267584,2.494719 0.534805,4.988766 0.801809,7.483546 1.73768,0.534326 3.474768,1.068813 5.211755,1.603618"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/reservoirz.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.265;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;marker-end:url(#marker10248)"
+       d="m 75.50364,89.331577 c -1.514446,-0.890851 -3.028973,-1.78175 -4.43224,-3.585972 -1.403267,-1.804222 -2.695001,-4.521319 -1.781725,-7.171749 0.913276,-2.650431 4.031552,-5.234145 6.770919,-6.325377 2.739367,-1.091232 5.100466,-0.690291 7.372197,-0.623498 2.271731,0.06679 4.45463,-0.2005 5.746391,-0.534674 1.291761,-0.334174 1.692721,-0.735132 2.093359,-1.135771"
+       id="path9527"
+       inkscape:connector-curvature="0"
+       inkscape:path-effect="#path-effect9529"
+       inkscape:original-d="m 75.50364,89.331577 c -1.514261,-0.891165 -3.028789,-1.782062 -4.543582,-2.672697 -1.291605,-2.717649 -2.583341,-5.434745 -3.875407,-8.15172 3.118278,-2.583762 6.236554,-5.167476 9.354433,-7.750817 2.360928,0.400603 4.722027,0.801544 7.082642,1.202713 2.182768,-0.267509 4.365667,-0.534802 6.548104,-0.801809 0.401114,-0.401113 0.802074,-0.802071 1.202711,-1.202711"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/reservoirz.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.265;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;marker-end:url(#marker10208)"
+       d="m 96.885203,66.079128 c 2.353233,-1.394509 4.811167,-2.851062 7.127297,-3.318701 2.31613,-0.46764 4.54367,0.02242 6.25848,1.158184 1.71481,1.135765 2.91763,2.917719 3.22948,5.256254 0.31186,2.338535 -0.26721,5.233858 -1.26942,7.171663 -1.00222,1.937805 -2.42751,2.91769 -3.85325,3.897884"
+       id="path9531"
+       inkscape:connector-curvature="0"
+       inkscape:path-effect="#path-effect9533"
+       inkscape:original-d="m 96.885203,66.079128 c 2.361144,-1.381159 4.811117,-2.851142 7.216277,-4.276314 2.22722,0.489667 4.45476,0.979725 6.68174,1.469982 1.20287,1.781376 2.40569,3.563329 3.60814,5.34539 -0.57884,2.895254 -1.15791,5.790576 -1.73725,8.686261 -1.42533,0.979828 -2.85062,1.959713 -4.27632,2.939965"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/reservoirz.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.265;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;marker-end:url(#marker10174)"
+       d="m 94.747047,113.11856 c -1.95966,0.80168 -3.919635,1.60349 -5.100237,3.029 -1.180602,1.42552 -1.581442,3.47426 -1.247318,5.1672 0.334124,1.69294 1.403044,3.02909 2.895492,3.42996 1.492448,0.40087 3.40783,-0.13366 4.766324,-1.04683 1.358494,-0.91318 2.160437,-2.20519 2.628056,-3.74177 0.46762,-1.53657 0.601286,-3.31879 0.7349,-5.1003"
+       id="path9535"
+       inkscape:connector-curvature="0"
+       inkscape:path-effect="#path-effect9537"
+       inkscape:original-d="m 94.747047,113.11856 c -1.959713,0.80155 -3.919688,1.60336 -5.879931,2.40543 -0.400703,2.04913 -0.801544,4.09787 -1.202711,6.1472 1.069502,1.33628 2.138421,2.67243 3.207234,4.00904 1.915743,-0.53482 3.831127,-1.06934 5.746295,-1.60362 0.801942,-1.29185 1.603881,-2.58387 2.405425,-3.8754 0.133866,-1.78164 0.267534,-3.56386 0.400905,-5.34539"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/reservoirz.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.265;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;marker-end:url(#marker10146)"
+       d="m 112.2532,126.61568 c -1.20252,2.00421 -2.40524,4.00872 -4.72178,5.67936 -2.31653,1.67063 -5.74596,3.00677 -8.797521,2.93997 -3.051565,-0.0668 -5.724012,-1.53665 -9.220898,-4.18715 -3.496886,-2.65051 -7.817599,-6.48124 -9.822109,-9.555 -2.00451,-3.07375 -1.692696,-5.39008 -1.38092,-7.70612"
+       id="path9539"
+       inkscape:connector-curvature="0"
+       inkscape:path-effect="#path-effect9541"
+       inkscape:original-d="m 112.2532,126.61568 c -1.20245,2.00425 -2.40516,4.00877 -3.60814,6.01356 -3.43023,1.33629 -6.85965,2.67243 -10.289874,4.00904 -2.672681,-1.47038 -5.345126,-2.94023 -8.018087,-4.40995 -4.320741,-3.83125 -8.64145,-7.66199 -12.962572,-11.49259 0.312081,-2.3166 0.623893,-4.63293 0.935445,-6.949"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/reservoirz.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.265;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;marker-end:url(#marker10124)"
+       d="m 79.111778,90.801559 c 0.801755,2.182554 1.603564,4.365253 2.717298,5.90218 1.113734,1.536926 2.539075,2.427765 4.387702,3.073653 1.848627,0.645888 4.120532,1.046808 5.790946,0.734898 1.670414,-0.31192 2.739594,-1.336546 3.808401,-2.36082"
+       id="path9547"
+       inkscape:connector-curvature="0"
+       inkscape:path-effect="#path-effect9549"
+       inkscape:original-d="m 79.111778,90.801559 c 0.802074,2.182437 1.603883,4.365136 2.405428,6.548102 1.425797,0.890696 2.851139,1.781532 4.276312,2.672699 2.27194,0.40062 4.543846,0.80154 6.815373,1.20271 1.069242,-1.0247 2.138421,-2.049332 3.207234,-3.0736"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/reservoirz.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.265;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;marker-end:url(#Arrow2Lend)"
+       d="m 120.40492,88.128863 c -1.82602,0.757132 -3.65237,1.514395 -5.23384,1.959908 -1.58148,0.445513 -2.91759,0.579124 -4.41019,-0.557045 -1.49259,-1.136168 -3.1404,-3.541078 -4.78852,-5.946444"
+       id="path9551"
+       inkscape:connector-curvature="0"
+       inkscape:path-effect="#path-effect9553"
+       inkscape:original-d="m 120.40492,88.128863 c -1.82608,0.756999 -3.65242,1.514263 -5.47903,2.271792 -1.33631,0.133392 -2.67242,0.267004 -4.00904,0.400904 -1.64825,-2.40621 -3.29606,-4.811117 -4.94448,-7.216277"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/reservoirz.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.265;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;marker-end:url(#marker10878)"
+       d="m 100.22607,95.879678 c 1.82632,2.271761 3.65266,4.543552 6.14731,5.991302 2.49465,1.44775 5.6573,2.07137 8.17407,1.58129 2.51677,-0.49009 4.38777,-2.09381 5.70169,-4.231798 1.31392,-2.137991 2.0713,-4.811089 2.82848,-7.48347"
+       id="path9555"
+       inkscape:connector-curvature="0"
+       inkscape:path-effect="#path-effect9557"
+       inkscape:original-d="m 100.22607,95.879678 c 1.82661,2.271527 3.65295,4.543322 5.47903,6.815372 3.16299,0.62338 6.32564,1.247 9.48807,1.87089 1.87103,-1.60378 3.74203,-3.2075 5.61265,-4.810852 0.75742,-2.672556 1.5148,-5.345655 2.2718,-8.018086"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/reservoirz.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.31957269;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="circle9481-1"
+       cx="21.114292"
+       cy="81.046227"
+       r="3.4239941"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/reservoirz.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.31957269;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="circle9481-7"
+       cx="21.114292"
+       cy="91.737"
+       r="3.4239941"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/reservoirz.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <circle
+       r="3.4239941"
+       cy="102.69505"
+       cx="21.114292"
+       id="circle29205"
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.31957269;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/reservoirz.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker29329)"
+       d="m 59.384929,71.758431 -34.662498,9.28779 34.076865,19.777949"
+       id="path29207"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/reservoirz.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker29223)"
+       d="M 24.455161,92.137906 59.384929,71.758431"
+       id="path29209"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/reservoirz.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker29441)"
+       d="M 62.674703,121.00301 24.455161,92.137904 58.799296,100.82417"
+       id="path29211"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/reservoirz.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker29851);marker-start:url(#Arrow1Lstart)"
+       d="M 62.674703,121.00301 24.588796,103.09596 75.50364,89.331581"
+       id="path29213"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/reservoirz.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.31957269;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="circle9481-7-2"
+       cx="157.42709"
+       cy="94.782738"
+       r="3.4239941"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/reservoirz.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker30400)"
+       d="M 117.5506,123.50893 154.0253,96.861605"
+       id="path30108"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/reservoirz.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker30122)"
+       d="m 127.94494,89.113094 25.51339,5.102678"
+       id="path30110"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/reservoirz.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker30258)"
+       d="M 97.328867,67.946428 154.97024,91.947914"
+       id="path30112"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/reservoirz.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot31206"
+       style="fill:black;stroke:none;stroke-opacity:1;stroke-width:1px;stroke-linejoin:miter;stroke-linecap:butt;fill-opacity:1;font-family:Verdana;font-style:normal;font-weight:normal;font-size:21.33333333px;line-height:125%;letter-spacing:0px;word-spacing:0px;-inkscape-font-specification:'Verdana, Normal';font-stretch:normal;font-variant:normal;text-anchor:start;text-align:start;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/reservoirz.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><flowRegion
+         id="flowRegion31208"
+         style="-inkscape-font-specification:'Verdana, Normal';font-family:Verdana;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:21.33333333px;text-anchor:start;text-align:start;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;"><rect
+           id="rect31210"
+           width="116.42857"
+           height="52.142857"
+           x="50"
+           y="213.94826"
+           style="-inkscape-font-specification:'Verdana, Normal';font-family:Verdana;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:21.33333333px;text-anchor:start;text-align:start;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;" /></flowRegion><flowPara
+         id="flowPara31214">Input layer</flowPara></flowRoot>    <flowRoot
+       transform="matrix(0.26458333,0,0,0.26458333,60.780737,-7.9727965)"
+       xml:space="preserve"
+       id="flowRoot31206-7"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.33333397px;line-height:125%;font-family:Verdana;-inkscape-font-specification:'Verdana, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/reservoirz.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><flowRegion
+         id="flowRegion31208-7"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.33333397px;font-family:Verdana;-inkscape-font-specification:'Verdana, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start"><rect
+           id="rect31210-2"
+           width="116.42857"
+           height="52.142857"
+           x="50"
+           y="213.94826"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.33333397px;font-family:Verdana;-inkscape-font-specification:'Verdana, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start" /></flowRegion><flowPara
+         id="flowPara31214-3">Input layer</flowPara></flowRoot>    <flowRoot
+       style="fill:black;stroke:none;stroke-opacity:1;stroke-width:1px;stroke-linejoin:miter;stroke-linecap:butt;fill-opacity:1;font-family:Verdana;font-style:normal;font-weight:normal;font-size:21.33333333px;line-height:125%;letter-spacing:0px;word-spacing:0px;-inkscape-font-specification:'Verdana, Normal';font-stretch:normal;font-variant:normal;text-anchor:start;text-align:start;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;"
+       id="flowRoot31246"
+       xml:space="preserve"><flowRegion
+         style="-inkscape-font-specification:'Verdana, Normal';font-family:Verdana;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:21.33333333px;text-anchor:start;text-align:start;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;"
+         id="flowRegion31242"><rect
+           style="-inkscape-font-specification:'Verdana, Normal';font-family:Verdana;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:21.33333333px;text-anchor:start;text-align:start;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;"
+           y="213.94826"
+           x="50"
+           height="52.142857"
+           width="116.42857"
+           id="rect31240" /></flowRegion><flowPara
+         id="flowPara31244">Input layer</flowPara></flowRoot>    <flowRoot
+       transform="matrix(0.26458333,0,0,0.26458333,124.46972,15.839704)"
+       xml:space="preserve"
+       id="flowRoot31206-72"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.33333397px;line-height:125%;font-family:Verdana;-inkscape-font-specification:'Verdana, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/reservoirz.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><flowRegion
+         id="flowRegion31208-5"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.33333397px;font-family:Verdana;-inkscape-font-specification:'Verdana, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start"><rect
+           id="rect31210-3"
+           width="163.57143"
+           height="66.428581"
+           x="50"
+           y="213.94826"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.33333397px;font-family:Verdana;-inkscape-font-specification:'Verdana, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start" /></flowRegion><flowPara
+         id="flowPara31214-7">Readout layer</flowPara></flowRoot>  </g>
+</svg>
