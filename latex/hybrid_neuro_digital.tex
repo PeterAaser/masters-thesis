@@ -12,7 +12,7 @@ the robotic and social aspects for later work.
 This section presents the design and implementation of a system capable of
 communicating with neural tissue and controlling a robot.
 \section{Concept}
-In figure \ref{cyborgOverviewSimple} the conceptual cyborg is shown.
+In figure \ref{figOverviewSimple} the conceptual cyborg is shown.
 This conceptual cyborg is comprised of three main components: An \emph{MEA}, short
 for \emph{Micro Electrode Array} in which a biological neural network is grown.
 A \emph{neural interface}, allowing two-way communication between the neural network and
@@ -29,7 +29,7 @@ what the sensors perceive which the cyborg must act upon.
   \centering
   \includegraphics[width=0.7\textwidth]{fig/cyborg_overview.png}
   \caption{A simple conceptual cyborg.}
-  \label{cyborgOverviewSimple}
+  \label{figOverviewSimple}
 \end{figure}
 \section{Architecture}
 As shown in fig \ref{figOverview}, the actual cyborg adds a lot of parts
@@ -55,7 +55,7 @@ the neurons, both for testing purposes, and to compare the capabilities of
 different reservoirs.
 \begin{figure}[h]
   \centering
-  \includegraphics[width=1\textwidth]{fig/system2.png}
+  \includegraphics[width=1\textwidth]{fig/system3.png}
   \caption{An overview of all software written for the cyborg project. The
     dataflow is color coded with red denoting data going from neurons to robot,
     green from robot sensors to neurons. The ble line indicates configuration
@@ -68,8 +68,9 @@ different reservoirs.
   \centering
   \includegraphics[width=0.9\textwidth]{fig/ConceptMap.png}
   \caption{
-    When juxtaposing the pieces of the conceptual cyborg onto the fleshed out
-    design it becomes apparent that the interface box makes up a majority of the cyborg.
+    When juxtaposing the pieces of the conceptual cyborg in fig
+    \ref{figOverviewSimple} onto the fleshed out design it becomes apparent that the
+    interface box makes up a majority of the cyborg.
   }
   \label{figJuxta}
 \end{figure}
