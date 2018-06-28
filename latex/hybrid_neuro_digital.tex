@@ -3,8 +3,14 @@
 you can feel, what you can smell, what you can taste and see, then 'real' is
 simply electrical signals interpreted by your brain.}
 {Morpheus to Neo - The Matrix}
-In order to get mad grant \$\$\$ we made a cyborg.
-\blindtext
+The mission statement of the NTNU cyborg is ``... to enable communication
+between living nerve tissue and a robot. The social and interactive Cyborg
+serves as a platform for studying neural signaling properties, robotics and
+hybrid bio-robotic machines.'' [Cite cyborg webpage]
+The work in this thesis is strictly focused on enabling communication, leaving
+the robotic and social aspects for later work.
+This section presents the design and implementation of a system capable of
+communicating with neural tissue and controlling a robot.
 \section{Concept}
 In figure \ref{cyborgOverviewSimple} the conceptual cyborg is shown.
 This conceptual cyborg is comprised of three main components: An \emph{MEA}, short
@@ -21,7 +27,7 @@ The conceptual cyborg is a closed loop system: The only input to the system is
 what the sensors perceive which the cyborg must act upon.
 \begin{figure}[h!]
   \centering
-  \includegraphics[width=1\textwidth]{fig/cyborg_overview.png}
+  \includegraphics[width=0.7\textwidth]{fig/cyborg_overview.png}
   \caption{A simple conceptual cyborg.}
   \label{cyborgOverviewSimple}
 \end{figure}
@@ -72,19 +78,7 @@ The activity from these so-called pacemaker neurons can be seen in
 In the figure each cell in the grid corresponds to one of the
 electrodes as seen in \ref{fig:cellular_networks}, however at this stage the
 monotonic spiking activity tends to be transient, starting and stopping
-randomly.\par
-As shown in fig \ref{figDopey} a neural culture evolves over time, showing an
-increase in behavioral complexity.
-TODO: should say something more about this.
-\begin{figure}[h]
-  \centering
-  \includegraphics[width=1\textwidth]{fig/dopeyComplexity.png}
-  \caption{
-    Approximated Kolmogorov complexity of the firing patterns over a one year
-    period.
-  }
-  \label{figDopey}
-\end{figure}
+randomly.
 \subsection{Neural Interface}
 The \emph{Neural Interface} is the bridge between the biological and digital,
 responsible for providing a convenient API for reading out digital waveform data
