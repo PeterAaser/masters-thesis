@@ -1,35 +1,17 @@
+* Gunnar notes
+** Fiks impedans mismatch i intro mellom mitt og motivasjon
+** Legg til et nivaa i figur fra MEA til reservoir kompatibelt sig
+** Naturligvis fikse siste seksjon
+   Tjaaaaaaaa
+** Fikse siteringer (ta paa jobbmaskin)
+
+** Fiks RC figur (feil tekst)
 * Neste gang
 ** Bytte navn i figurer
 ** Exporte figurer
 ** Background fix-up
 ** Gå gjennom kap3 i lys av kap4
   
-* Now-ish
-* Later
-* Maybe
-** TODO Les Bar Yam, se over complexity i intro
-   
-* Diskus
-** DONE Siste del av introduction
-   Sånn det ser ut nå er jeg ikke helt sikker på hva jeg ønsker å oppnå.
-   Diskuter med Gunnar hva som er essensielt.
-   
-   Kom frem til at det å legge til et bilde med nevroner i intro hjelper med å 
-   få frem at dette er et fysisk system.
-
-   
-* Done
-** DONE Skriv om chap 3 og 4 til et stort chapter
-** DONE Lag en mer comprehensive figur for system overview
-** DONE Legg til neuro fig i intro
-** DONE Skriv om CS background til å reflektere endring i kappitelstruktur.
-** DONE Skriv RC subchapter
-** DONE Skriv initial hardware chapter
-** DONE Bytt rekkefølge på EIM og res comp
-** DONE Skriv ferdig EiM
-** DONE Forbedre Neuro computing background
-
-   
 * Gunnar diskuser
 ** Om lineær vs ulineær
    Gunnar er enig i at reservoirer ikke nødvendigvis må ha en lineær output.
@@ -48,13 +30,34 @@
 * Implement
 ** TODO beskrivelse av hva core RC computer faktisk er
 * Experimental setup
+  Endre figur til primary dataloop for a poengtere hva som er primary 
+  dloop og hva som er core rc
 * Conclusion & further work
+  hehe
 * Figurer
-** TODO recreate Sipper fig
+** DONE recreate Sipper fig
 ** OverView
+   uhh, hva mente jeg her?
 *** TODO Legg til stiplede 'boundaries'
 *** TODO Kryssreferer med conceptual cyborg
 
-* (DS)^2
 * Figurer
 ** TODO Wolfram klasser
+
+* Navnefiks
+  Reservoir output -> res output preprocessor -> input layer
+  output transform
+
+* Thingken
+  Kan vi gjøre et eksperiment for aa vise at reservoiret kan tilpasse
+  seg til filteret?
+  Hvis et reservoir har state som kan resettes, er det da mulig a vise
+  at dersom vi ikke resetter sa konvergerer vi til et resultat raskere?
+  
+* Random
+  Kan vi beskrive mulige stier gjennom et konfigurasjons-nett der 
+  sykler blir oppdaget og stier som ikke oppfyller alle krav kan 
+  oppdages?
+  
+  Worst case er det som å spørre om et system kommer til å stabilisere 
+  seg uansett input (som å vise at en CA går til en quiescent state...)

@@ -1,28 +1,19 @@
 \chapter{Experimental System and Setup}
-Because of the issues with stimuli generation the experiment setup has not been
+Because of the unresolved issues with stimuli generation the experiment setup has not been
 employed on live neural tissue.
 As a consequence, the current experimental setup is designed to be easy to
 modify whenever testing becomes possible and to verify functionality of the rest
 of the system.
-Consequentially, the focus on this section is the experimental capabilities
-provided by the system and the parameter space that can be explored.
-When leaving out all implementation details the experimental setup provided by
-SHODAN and MEAME becomes much simpler, as shown in \ref{figExperimentLoop}.
-The figure highlights a point mentioned in the previos section, namely that the
-closed loop system actually consists of two data-loops running in parallel.
-This is a departure from the classical reservoir computer model where
-modifications are made between runs.
-In the classic model experiments are run, performance is evaluated and the
-readout layer is altered in some way.
-This mode of operation makes sense when the reservoir can be reset to an initial
-state, but as discussed this is not possible when dealing with neural tissue
-which evolve both short term and long term.
-The experiment setup from \ref{figExperimentLoop} can be broken up into three
-parts: The data loop, the core reservoir computer and the reconfiguration loop.
-The three following section gives a brief description of purpose and which
-parameters can be altered.
-To give a better overview these parameters are then summarized in the subsequent
-section.
+Consequentially, the focus on this section is the capabilities for experimentation
+provided by the system, and the parameter space that can be explored.\par
+%
+When leaving out all implementation details the setup for conducting experiments
+provided by SHODAN and MEAME shown in \ref{figExperimentLoop} becomes much simpler.
+The setup can be divided into three separate components.
+The first two components are the \emph{primary} and \emph{secondary} dataloop
+which both interact with the third component, the \emph{robot control} module.
+The focus of this chapter is the role each of the three components of an
+experiment serve, and a survey of the parameter space which can be explored. 
 \begin{figure}[h!]
   \centering
   \includegraphics[width=1\textwidth]{fig/experimentLoop.png}
@@ -32,18 +23,88 @@ section.
   \label{figExperimentLoop}
 \end{figure}
 %
-\section{Data Loop}
-A closer look at the data loop is shown in figure \ref{figDataLoop}.
-The two ``knobs'' that can be turned in this part of the system is the reservoir
-input filter and the perturbation transform.
-The reservoir output filtering module, as discussed in the previous chapter,
-perform a spike detection which is then used as input to an averaging filter.
-While the spike detection is considered to be fixed, the averaging filter is
-not.
-In the current implementation it is a simple averaging filter, but it can easily
-be changed to use a different model, such as linear of exponential decay if the
-averaging filter is deemed insufficient.
-The second module is the reservouir perturbation transform which transforms a
+\subsubsection{Deviation From Classical Reservoir Computing}
+Before going further it is necessary to clarify where the experimental setup
+deviates from a classical reservoir computer setup, as well as definig the
+terminology.
+Henceforth, a \emph{run} is defined as continously running the reservoir
+computer with no outside intervention for some duration of time.
+An \emph{experiment} can consist of several runs in which the dataloop between
+reservoir and reservoir computer is restarted between runs. 
+Finally, the goal of an experiment is to optimize the performance at a given
+\emph{task} according to some criteria.
+%% Skrive noe mer autistisk om perf measurement?
+In the classic RC setup the input layer is not altered during an individual run,
+instead it is modified between runs, and the resulting experiment iterates
+towards an input filter capable of solving some task specified by the
+experiment.
+From this angle the classic model is very close to the one shown in
+\ref{figExperimentLoop}, but there is one major difference, namely that the two
+loops run in a \emph{sequential} lockstep fashion 
+rather than in \emph{parallel}, or \emph{on-line} as is the case with the cyborg.
+Running each loop sequentially makes more sense than parallel when the reservoir
+can be reset to an initial state, but this is not 
+the case with live tissue whose topology and function evolves both over time,
+and as a response to previous experiments. This effect is exacerbated by the
+imperfect measurement of electrodes, where a cluster of neurons can seemingly
+vanish by physically moving away from an electrode.
+\subsubsection{A Sample Experiment}
+Before detailing the component systems it is useful to describe an experiment to
+make the intended operation of the system clearer when described in detail in
+the following sections.\par
+Before starting parameters that are considered static are pulled from a
+configuration file and a database record with the current configuration is
+created.
+These parameters describe constants such as max electrode stimuli frequency,
+agent turn rate and similar, and once good values have been found they should
+not be altered (which is why they are stored in a file).
+When the experiment is started the secondary dataloop will ``cold start'' the
+system by generating a set of random #input layers. The main dataloop will then start
+pulling data from the reservoir and feed it into the generated input layer,
+which in turn controls the robot.
+Output from the robot is then simultaneously sent through both dataloops, the
+primary loop uses it to generate reservoir perturbations while the secondary
+loop uses it to evaluate the current input layer.
+After all the randomly generated generated networks have been evaluated the
+secondary dataloop creates a new set of input layers based on the most
+successful layers from the previous generation.
+This keeps repeating until the experiment is terminated, hopefully after
+converging on a set of input layers capable of adequately solving the presented
+task.
+Since the system stores all data in a database it is possible to play back
+previous recordings without the system being aware of this (of course the
+perturbation will not do anything in this case), but it helps debugging and
+ensures that all relevant information is stored in the database.
+For convenience all the configuration can be done through a web interface which
+supports loading previously stored settings, visualizing live data and give
+diagnostics in case of equipment failure. 
+% TODO figur av webshit
+\subsection{Primary Data Loop}
+A more detailed view of the data loop is shown in figure \ref{figDataLoop}.
+Since the primary dataloop interacts with the robot control it must be part of
+the diagram, but it is considered a separate component for configuration
+purposes.
+The two configurable parts of the primary dataloop is shown in the figure as the
+reservoir output filter and the perturbation transform.
+In the classical RC model the #input layer is typically illustrated a single
+transform, however when 
+dealing with a physical reservoir it is useful to break this step into two
+separate filters, namely the #preprocessor and the #input layer.
+The difference between these transforms is that only the #input layer may be
+modified as a function of its task performance.
+That does not mean the #preprocessor has to be static, the only constraint is
+that the update function cannot be aware of the task performance.
+Similarily, the #reservoir perturbation generator may not be modified using
+information on task performance, but it can otherwise be modified.
+Exploring the parameters space of the primary dataloop is not being pursued, as
+long as they are ``good enough'' changing them will only render experimental
+results incomparable.
+\par
+%% TODO Move all this boring shit to a figure or something. A sample config maybe?
+In the current implementation the chosen #preprocessor is a simple averaging
+filter, but it can be changed to use a different model, such as linear of
+exponential decay if the experimenter so desires.
+The #reservoir perturbation transform which transforms a
 set of distances perceived by the robot into stimulus frequencies.
 The perturbation model has three parameters: A list of electrodes to receive the
 stimulus signal, the period between applying stimuli, and the stimuli signal
@@ -71,13 +132,16 @@ distance.
   \label{figDataLoop}
 \end{figure}
 %
-\section{Core Reservoir Computer}
-As discussed in the previous chapter, the core reservoir computer is the
-ideal reservoir readout layer and the perturbation generator while the remaining
-functionality is abstracted away in the interface and feedback processor box.
-The core reservoir computer consists of two parts, the robot control and the
-reservoir readout layer.
+\subsection{Core Reservoir Computer}
+%% As discussed in the previous chapter, the core reservoir computer is the
+%% ideal reservoir readout layer and the perturbation generator while the remaining
+%% functionality is abstracted away in the interface and feedback processor box.
+%% The core reservoir computer consists of two parts, the robot control and the
+%% reservoir readout layer.
+The #core reservoir computer is comprised of a readout layer and a robot control
+module.
 \subsubsection{Readout Layer}
+% skriv no fornuftig her da
 The chosen readout layer is a simple feed forward neural network.
 As mentioned in the background, the choice of using a network with multiple
 layers as indicated in the figure means that a non-linear problem may be solved
@@ -98,9 +162,11 @@ to modify during an experiment.
 \subsubsection{Robot Control}
 The robot control is a simulator that controls an agent with 4 ``eyes'' in a box
 world as shown in \ref{figGame}.
-As with all other parts of the system variables such as the amount of eyes, sight
+As with all other parts of the system, variables such as the amount of eyes, sight
 range, the function between the output of the reservoir filter and robot
-movement, max turn rate and max speed can be changed on a per-experiment basis.
+movement, max turn rate and max speed can be changed on a per-experiment basis,
+but as long as they are ``good enough'' there is little scientific value in
+exploring them and they should remain fixed.
 The goal of the ``game'' is for the robot to not collide with walls.
 Since the best way to avoid this is to simply run in circles, the performance is
 evaluated by how close the agent came to crashing in a series of trials where
@@ -140,8 +206,19 @@ because of its ease of implementation and relative lack of bias.
   \label{figReconfLoop}
 \end{figure}
 \section{Parameter Space}
-The first distinction in the parameter space is 
-uhh...
+In order to get a feeling for what sort of parameters are available a small
+sample is presented.
+This is not an exhaustive list, it is just supposed to give an idea.
+
+% Do not alter - voltages,
+% Not really relevant - samplerate,
+
+% Perturb parameters - max/min freq, stim sites,
+
+% Reconfig parameters - individuals per generation, steps, mutation rate 
+%                       choice of algorithm (could be backprop plus GA for instance)
+
+% Here a description of the relevant parameters are described.
 \cleardoublepage
 
 %%% Local Variables:
