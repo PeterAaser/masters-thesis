@@ -5,7 +5,7 @@
 ** DONE Legg til et nivaa i figur fra MEA til reservoir kompatibelt sig
 ** DONE Naturligvis fikse siste seksjon
    Tjaaaaaaaa
-** TODO Fikse siteringer (ta paa jobbmaskin)
+** DONE Fikse siteringer (ta paa jobbmaskin)
 
 ** TODO Heavy handed på background i EiM
    A corollary of the turing completeness of cellular automatas is that CAs can be
@@ -16,7 +16,7 @@
 * Neste gang
 ** DONE Fiks RC figur (feil tekst)
 ** DONE Se over material computing som nå har ny figur fra gunnar paper
-** TODO Bytte navn i figurer
+** DONE Bytte navn i figurer
   
 * Gunnar diskuser
 ** Om lineær vs ulineær
