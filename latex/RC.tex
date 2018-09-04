@@ -59,9 +59,9 @@ These parameters describe constants such as max electrode stimuli frequency,
 agent turn rate and similar, and once good values have been found they should
 not be altered (which is why they are stored in a file).
 When the experiment is started the secondary dataloop will ``cold start'' the
-system by generating a set of random #input layers. The main dataloop will then start
-pulling data from the reservoir and feed it into the generated input layer,
-which in turn controls the robot.
+system by generating a set of random reservoir readout layers.
+The main dataloop will then start pulling data from the reservoir and feed it
+into the generated input layer, which in turn controls the robot.
 Output from the robot is then simultaneously sent through both dataloops, the
 primary loop uses it to generate reservoir perturbations while the secondary
 loop uses it to evaluate the current input layer.
@@ -86,25 +86,25 @@ the diagram, but it is considered a separate component for configuration
 purposes.
 The two configurable parts of the primary dataloop is shown in the figure as the
 reservoir output filter and the perturbation transform.
-In the classical RC model the #input layer is typically illustrated a single
+In the classical RC model the reservoir readout layer is typically illustrated a single
 transform, however when 
 dealing with a physical reservoir it is useful to break this step into two
-separate filters, namely the #preprocessor and the #input layer.
-The difference between these transforms is that only the #input layer may be
+separate filters, namely the preprocessor and the readout layer.
+The difference between these transforms is that only the readout layer may be
 modified as a function of its task performance.
-That does not mean the #preprocessor has to be static, the only constraint is
+That does not mean the preprocessor has to be static, the only constraint is
 that the update function cannot be aware of the task performance.
-Similarily, the #reservoir perturbation generator may not be modified using
+Similarily, the reservoir perturbation generator may not be modified using
 information on task performance, but it can otherwise be modified.
 Exploring the parameters space of the primary dataloop is not being pursued, as
 long as they are ``good enough'' changing them will only render experimental
 results incomparable.
 \par
 %% TODO Move all this boring shit to a figure or something. A sample config maybe?
-In the current implementation the chosen #preprocessor is a simple averaging
+In the current implementation the chosen preprocessor is a simple averaging
 filter, but it can be changed to use a different model, such as linear of
 exponential decay if the experimenter so desires.
-The #reservoir perturbation transform which transforms a
+The reservoir perturbation transform which transforms a
 set of distances perceived by the robot into stimulus frequencies.
 The perturbation model has three parameters: A list of electrodes to receive the
 stimulus signal, the period between applying stimuli, and the stimuli signal
@@ -138,8 +138,10 @@ distance.
 %% functionality is abstracted away in the interface and feedback processor box.
 %% The core reservoir computer consists of two parts, the robot control and the
 %% reservoir readout layer.
-The #core reservoir computer is comprised of a readout layer and a robot control
-module.
+The core reservoir computer is at the heart of both the dataloops and is
+comprised of a readout layer and a robot control module.
+In the classical reservoir computer model there is little more than the core
+reservoir computer, a fact that can be illustrated by 
 \subsubsection{Readout Layer}
 % skriv no fornuftig her da
 The chosen readout layer is a simple feed forward neural network.
