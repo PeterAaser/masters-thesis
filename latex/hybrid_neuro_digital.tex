@@ -197,9 +197,9 @@ electrode readouts, referred to as \emph{channels}.
 \begin{figure}[h!]
   \centering
   \includegraphics[width=0.5\textwidth]{fig/MEAME.png}
-  \caption{Rough sketch.
-    nice MEAME
-    TODO: Flesh out the DSP box with RPC handler a la MCS USB .dll
+  \caption{
+    MEAME is made up of two components residing on the DSP and the connected lab
+    machine.
   }
   \label{figMEAME}
 \end{figure}
@@ -249,8 +249,13 @@ regards to the main RC loop.
 \begin{figure}[h!]
   \centering
   \includegraphics[width=0.5\textwidth]{fig/SHODANfrontend.png}
-  \caption{Rough sketch.
-    Some wavez
+  \caption{
+    The frontend of SHODAN, responsible for demuxing \ref{figLayout} and
+    preprocessing \ref{figWaves} the input data before handing it over to the
+    core reservoir computer, as well as translating sensory data from the core
+    reservoir computer to neuron-compatible perturbations.
+    The frontend is also responsible for hosting a web-interface allowing
+    configuration and visualization of data through a browser.
   }
   \label{figSHODANiface}
 \end{figure}
@@ -280,8 +285,10 @@ what translates from specific to generic.
 \begin{figure}[h!]
   \centering
   \includegraphics[width=0.5\textwidth]{fig/Transforms.png}
-  \caption{Rough sketch.
-    Some wavez
+  \caption{
+    The preprocessing pipeline in more detail.
+    Each electrode site is filtered first through a spike detector, then passed
+    through an averaging filter.
   }
   \label{figWaves}
 \end{figure}
@@ -309,7 +316,10 @@ just a practical matter added for completeness.
 \begin{figure}[h!]
   \centering
   \includegraphics[width=0.5\textwidth]{fig/genericSpecific.png}
-  \caption{Rough sketch.
+  \caption{
+    This figure shows how input to the core reservoir computer is transformed to
+    a generic representation in the preprocessor, and similary to a specific
+    representation the other way around.
   }
   \label{figGenericSpecific}
 \end{figure}
