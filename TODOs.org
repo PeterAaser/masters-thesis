@@ -1,16 +1,22 @@
 * Gunnar notes
-** Fiks impedans mismatch i intro mellom mitt og motivasjon
-** Legg til et nivaa i figur fra MEA til reservoir kompatibelt sig
-** Naturligvis fikse siste seksjon
+** DONE Intro
+*** DONE Fiks impedans mismatch i intro mellom mitt og motivasjon
+*** DONE Legg til general intelligence
+** DONE Legg til et nivaa i figur fra MEA til reservoir kompatibelt sig
+** DONE Naturligvis fikse siste seksjon
    Tjaaaaaaaa
-** Fikse siteringer (ta paa jobbmaskin)
+** TODO Fikse siteringer (ta paa jobbmaskin)
 
-** Fiks RC figur (feil tekst)
+** TODO Heavy handed på background i EiM
+   A corollary of the turing completeness of cellular automatas is that CAs can be
+   ``tuned'' in a rather heavy handed way to compute, but a more interesting
+   conjecture is that a CA with a random seed will eventually exhibit local
+   self-replicating behavior, spontaneously giving rise to what Toffoli would
+   regard as computation, or possibly even as life.\par
 * Neste gang
-** Bytte navn i figurer
-** Exporte figurer
-** Background fix-up
-** Gå gjennom kap3 i lys av kap4
+** DONE Fiks RC figur (feil tekst)
+** DONE Se over material computing som nå har ny figur fra gunnar paper
+** TODO Bytte navn i figurer
   
 * Gunnar diskuser
 ** Om lineær vs ulineær
@@ -44,6 +50,7 @@
 * Figurer
 ** TODO Wolfram klasser
 
+   
 * Navnefiks
   Reservoir output -> res output preprocessor -> input layer
   output transform
@@ -61,3 +68,13 @@
   
   Worst case er det som å spørre om et system kommer til å stabilisere 
   seg uansett input (som å vise at en CA går til en quiescent state...)
+
+* Cite stuff
+  Nascence på intro:
+  "Unconvential computing, as implied by the name, comes in many forms such as
+  buckets of water \cite{fernando_pattern_2003}, or blobs of carbon nanotubes
+  [cite nascence]."
+  
+  Pask & Gordon
+  In one experiment [cite ???] the duo used silver in an acidic solution which
+  would form short-lived silver filaments when subjected to electric currents.

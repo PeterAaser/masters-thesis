@@ -19,13 +19,32 @@
   <defs
      id="defs61460">
     <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="marker21320"
+       style="overflow:visible;"
+       inkscape:isstock="true">
+      <path
+         id="path21318"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         transform="scale(0.8) rotate(180) translate(12.5,0)" />
+    </marker>
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect21274"
+       is_visible="true" />
+    <marker
        inkscape:isstock="true"
        style="overflow:visible;"
        id="marker62447"
        refX="0.0"
        refY="0.0"
        orient="auto"
-       inkscape:stockid="Arrow1Lend">
+       inkscape:stockid="Arrow1Lend"
+       inkscape:collect="always">
       <path
          transform="scale(0.8) rotate(180) translate(12.5,0)"
          style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
@@ -116,16 +135,16 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.4"
-     inkscape:cx="440.00203"
-     inkscape:cy="651.65174"
+     inkscape:zoom="0.49497475"
+     inkscape:cx="556.33069"
+     inkscape:cy="653.53147"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:snap-midpoints="true"
-     inkscape:window-width="1916"
+     inkscape:window-width="956"
      inkscape:window-height="1149"
-     inkscape:window-x="2280"
+     inkscape:window-x="3240"
      inkscape:window-y="400"
      inkscape:window-maximized="0" />
   <metadata
@@ -525,7 +544,7 @@
        inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend-5)"
-       d="M 127.47284,129.19325 V 78.91152"
+       d="M 148.8544,129.19325 V 78.91152"
        id="path62017-7"
        inkscape:connector-curvature="0"
        inkscape:export-xdpi="96"
@@ -533,7 +552,7 @@
        inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker62447-6)"
-       d="m 127.15859,129.23016 h 51.37082"
+       d="m 148.54015,129.23016 h 51.37082"
        id="path62019-8"
        inkscape:connector-curvature="0"
        inkscape:export-xdpi="96"
@@ -548,7 +567,7 @@
        cx="474.87158" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.26458332;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.26458332, 0.52916664;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#marker62447-6-2)"
-       d="M 127.43272,129.23336 94.99394,161.67354"
+       d="M 148.81428,129.23336 116.3755,161.67354"
        id="path62019-8-1"
        inkscape:connector-curvature="0"
        inkscape:export-xdpi="96"
@@ -557,7 +576,7 @@
     <circle
        r="0.94494045"
        cy="124.83185"
-       cx="132.10268"
+       cx="153.48424"
        id="circle65068"
        style="opacity:1;fill:none;fill-opacity:1;stroke:#0016ff;stroke-width:0.26458332;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        inkscape:export-xdpi="96"
@@ -566,7 +585,7 @@
     <circle
        r="0.94494045"
        cy="122.94197"
-       cx="130.96875"
+       cx="152.35031"
        id="circle65070"
        style="opacity:1;fill:none;fill-opacity:1;stroke:#0016ff;stroke-width:0.26458332;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        inkscape:export-xdpi="96"
@@ -575,7 +594,7 @@
     <circle
        r="0.94494045"
        cy="116.70536"
-       cx="130.59077"
+       cx="151.97234"
        id="circle65072"
        style="opacity:1;fill:none;fill-opacity:1;stroke:#0016ff;stroke-width:0.26458332;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        inkscape:export-xdpi="96"
@@ -584,7 +603,7 @@
     <circle
        r="0.94494045"
        cy="118.40625"
-       cx="137.96132"
+       cx="159.34288"
        id="circle65074"
        style="opacity:1;fill:none;fill-opacity:1;stroke:#0016ff;stroke-width:0.26458332;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        inkscape:export-xdpi="96"
@@ -593,7 +612,7 @@
     <circle
        r="0.94494045"
        cy="123.50893"
-       cx="140.04018"
+       cx="161.42174"
        id="circle65076"
        style="opacity:1;fill:none;fill-opacity:1;stroke:#0016ff;stroke-width:0.26458332;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        inkscape:export-xdpi="96"
@@ -602,7 +621,7 @@
     <circle
        r="0.94494045"
        cy="126.53275"
-       cx="136.26042"
+       cx="157.64198"
        id="circle65078"
        style="opacity:1;fill:none;fill-opacity:1;stroke:#0016ff;stroke-width:0.26458332;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        inkscape:export-xdpi="96"
@@ -611,7 +630,7 @@
     <circle
        r="0.94494045"
        cy="128.23363"
-       cx="139.28423"
+       cx="160.66579"
        id="circle65080"
        style="opacity:1;fill:none;fill-opacity:1;stroke:#0016ff;stroke-width:0.26458332;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        inkscape:export-xdpi="96"
@@ -620,7 +639,7 @@
     <circle
        r="0.94494045"
        cy="124.45387"
-       cx="146.46577"
+       cx="167.84734"
        id="circle65082"
        style="opacity:1;fill:none;fill-opacity:1;stroke:#0016ff;stroke-width:0.26458332;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        inkscape:export-xdpi="96"
@@ -629,7 +648,7 @@
     <circle
        r="0.94494045"
        cy="117.27232"
-       cx="144.3869"
+       cx="165.76846"
        id="circle65084"
        style="opacity:1;fill:none;fill-opacity:1;stroke:#0016ff;stroke-width:0.26458332;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        inkscape:export-xdpi="96"
@@ -638,7 +657,7 @@
     <circle
        style="opacity:1;fill:none;fill-opacity:1;stroke:#0016ff;stroke-width:0.26458332;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="path62139-5"
-       cx="144.3869"
+       cx="165.76846"
        cy="117.27232"
        r="0.94494045"
        inkscape:export-xdpi="96"
@@ -646,7 +665,7 @@
        inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#ff001e;stroke-width:0.26458338px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 141.80985,96.603834 -2.40541,2.40541"
+       d="m 163.19141,96.603834 -2.40541,2.40541"
        id="path65129"
        inkscape:connector-curvature="0"
        inkscape:export-xdpi="96"
@@ -654,7 +673,7 @@
        inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#ff001e;stroke-width:0.26458338px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 142.37681,100.19461 -2.40541,2.40541"
+       d="m 163.75837,100.19461 -2.40541,2.40541"
        id="path65133"
        inkscape:connector-curvature="0"
        inkscape:export-xdpi="96"
@@ -662,7 +681,7 @@
        inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#ff001e;stroke-width:0.26458338px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 148.80241,106.05324 -2.40541,2.40541"
+       d="m 170.18397,106.05324 -2.40541,2.40541"
        id="path65137"
        inkscape:connector-curvature="0"
        inkscape:export-xdpi="96"
@@ -670,7 +689,7 @@
        inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#ff001e;stroke-width:0.26458338px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 151.82622,102.46246 -2.40541,2.40541"
+       d="m 173.20778,102.46246 -2.40541,2.40541"
        id="path65141"
        inkscape:connector-curvature="0"
        inkscape:export-xdpi="96"
@@ -678,7 +697,7 @@
        inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#ff001e;stroke-width:0.26458338px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 155.41699,110.02199 -2.40541,2.40541"
+       d="m 176.79855,110.02199 -2.40541,2.40541"
        id="path65145"
        inkscape:connector-curvature="0"
        inkscape:export-xdpi="96"
@@ -686,7 +705,7 @@
        inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#ff001e;stroke-width:0.26458338px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 157.87384,123.62913 -2.40541,2.40541"
+       d="m 179.2554,123.62913 -2.40541,2.40541"
        id="path65149"
        inkscape:connector-curvature="0"
        inkscape:export-xdpi="96"
@@ -694,7 +713,7 @@
        inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#ff001e;stroke-width:0.26458338px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 163.35449,118.90443 -2.40541,2.40541"
+       d="m 184.73605,118.90443 -2.40541,2.40541"
        id="path65153"
        inkscape:connector-curvature="0"
        inkscape:export-xdpi="96"
@@ -702,7 +721,7 @@
        inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#ff001e;stroke-width:0.26458338px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 137.65211,103.21842 -2.40541,2.40541"
+       d="m 159.03367,103.21842 -2.40541,2.40541"
        id="path65157"
        inkscape:connector-curvature="0"
        inkscape:export-xdpi="96"
@@ -710,7 +729,7 @@
        inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#ff001e;stroke-width:0.26458338px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 131.79348,87.154429 -2.40541,2.40541"
+       d="m 153.17504,87.154429 -2.40541,2.40541"
        id="path65161"
        inkscape:connector-curvature="0"
        inkscape:export-xdpi="96"
@@ -718,7 +737,7 @@
        inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#ff001e;stroke-width:0.26458338px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 130.47056,94.713953 -2.40541,2.40541"
+       d="m 151.85212,94.713953 -2.40541,2.40541"
        id="path65165"
        inkscape:connector-curvature="0"
        inkscape:export-xdpi="96"
@@ -726,7 +745,7 @@
        inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#ff001e;stroke-width:0.26458338px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 147.59971,107.25595 -2.40542,2.40541"
+       d="m 168.98127,107.25595 -2.40542,2.40541"
        id="path65169"
        inkscape:connector-curvature="0"
        inkscape:export-xdpi="96"
@@ -734,7 +753,7 @@
        inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#ff001e;stroke-width:0.26458338px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 156.55092,95.469905 -2.40541,2.40541"
+       d="m 177.93248,95.469905 -2.40541,2.40541"
        id="path65173"
        inkscape:connector-curvature="0"
        inkscape:export-xdpi="96"
@@ -742,7 +761,7 @@
        inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#ff001e;stroke-width:0.26458338px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 150.31431,90.178239 -2.40541,2.40541"
+       d="m 171.69587,90.178239 -2.40541,2.40541"
        id="path65177"
        inkscape:connector-curvature="0"
        inkscape:export-xdpi="96"
@@ -750,7 +769,7 @@
        inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#ff001e;stroke-width:0.26458338px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 141.99884,90.367227 -2.40541,2.40541"
+       d="m 163.3804,90.367227 -2.40541,2.40541"
        id="path65181"
        inkscape:connector-curvature="0"
        inkscape:export-xdpi="96"
@@ -758,7 +777,7 @@
        inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#ff001e;stroke-width:0.26458338px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 169.96908,116.06961 -2.40541,2.40541"
+       d="m 191.35064,116.06961 -2.40541,2.40541"
        id="path65185"
        inkscape:connector-curvature="0"
        inkscape:export-xdpi="96"
@@ -767,14 +786,14 @@
     <path
        inkscape:connector-curvature="0"
        id="path62043-5"
-       d="m 169.96908,116.06961 -2.40541,2.40541"
+       d="m 191.35064,116.06961 -2.40541,2.40541"
        style="fill:none;fill-rule:evenodd;stroke:#ff001e;stroke-width:0.26458338px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96"
        inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#ff001e;stroke-width:0.26458338px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 139.40444,96.603834 2.40541,2.40542"
+       d="m 160.786,96.603834 2.40541,2.40542"
        id="path65131"
        inkscape:connector-curvature="0"
        inkscape:export-xdpi="96"
@@ -782,7 +801,7 @@
        inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#ff001e;stroke-width:0.26458338px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 139.9714,100.19461 2.40541,2.40542"
+       d="m 161.35296,100.19461 2.40541,2.40542"
        id="path65135"
        inkscape:connector-curvature="0"
        inkscape:export-xdpi="96"
@@ -790,7 +809,7 @@
        inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#ff001e;stroke-width:0.26458338px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 146.397,106.05324 2.40541,2.40542"
+       d="m 167.77856,106.05324 2.40541,2.40542"
        id="path65139"
        inkscape:connector-curvature="0"
        inkscape:export-xdpi="96"
@@ -798,7 +817,7 @@
        inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#ff001e;stroke-width:0.26458338px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 149.42081,102.46246 2.40541,2.40542"
+       d="m 170.80237,102.46246 2.40541,2.40542"
        id="path65143"
        inkscape:connector-curvature="0"
        inkscape:export-xdpi="96"
@@ -806,7 +825,7 @@
        inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#ff001e;stroke-width:0.26458338px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 153.01158,110.02199 2.40541,2.40542"
+       d="m 174.39314,110.02199 2.40541,2.40542"
        id="path65147"
        inkscape:connector-curvature="0"
        inkscape:export-xdpi="96"
@@ -814,7 +833,7 @@
        inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#ff001e;stroke-width:0.26458338px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 155.46842,123.62913 2.40542,2.40542"
+       d="m 176.84998,123.62913 2.40542,2.40542"
        id="path65151"
        inkscape:connector-curvature="0"
        inkscape:export-xdpi="96"
@@ -822,7 +841,7 @@
        inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#ff001e;stroke-width:0.26458338px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 160.94908,118.90443 2.40541,2.40542"
+       d="m 182.33064,118.90443 2.40541,2.40542"
        id="path65155"
        inkscape:connector-curvature="0"
        inkscape:export-xdpi="96"
@@ -830,7 +849,7 @@
        inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#ff001e;stroke-width:0.26458338px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 135.2467,103.21842 2.40541,2.40542"
+       d="m 156.62826,103.21842 2.40541,2.40542"
        id="path65159"
        inkscape:connector-curvature="0"
        inkscape:export-xdpi="96"
@@ -838,7 +857,7 @@
        inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#ff001e;stroke-width:0.26458338px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 129.38807,87.154429 2.40541,2.40542"
+       d="m 150.76963,87.154429 2.40541,2.40542"
        id="path65163"
        inkscape:connector-curvature="0"
        inkscape:export-xdpi="96"
@@ -846,7 +865,7 @@
        inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#ff001e;stroke-width:0.26458338px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 128.06515,94.713953 2.40541,2.40542"
+       d="m 149.44671,94.713953 2.40541,2.40542"
        id="path65167"
        inkscape:connector-curvature="0"
        inkscape:export-xdpi="96"
@@ -854,7 +873,7 @@
        inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#ff001e;stroke-width:0.26458338px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 145.19429,107.25595 2.40542,2.40542"
+       d="m 166.57585,107.25595 2.40542,2.40542"
        id="path65171"
        inkscape:connector-curvature="0"
        inkscape:export-xdpi="96"
@@ -862,7 +881,7 @@
        inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#ff001e;stroke-width:0.26458338px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 154.14551,95.469905 2.40541,2.40542"
+       d="m 175.52707,95.469905 2.40541,2.40542"
        id="path65175"
        inkscape:connector-curvature="0"
        inkscape:export-xdpi="96"
@@ -870,7 +889,7 @@
        inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#ff001e;stroke-width:0.26458338px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 147.9089,90.178239 2.40541,2.40542"
+       d="m 169.29046,90.178239 2.40541,2.40542"
        id="path65179"
        inkscape:connector-curvature="0"
        inkscape:export-xdpi="96"
@@ -878,7 +897,7 @@
        inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#ff001e;stroke-width:0.26458338px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 139.59342,90.367227 2.40542,2.40542"
+       d="m 160.97498,90.367227 2.40542,2.40542"
        id="path65183"
        inkscape:connector-curvature="0"
        inkscape:export-xdpi="96"
@@ -886,7 +905,7 @@
        inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#ff001e;stroke-width:0.26458338px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 167.56366,116.06961 2.40542,2.40542"
+       d="m 188.94522,116.06961 2.40542,2.40542"
        id="path65187"
        inkscape:connector-curvature="0"
        inkscape:export-xdpi="96"
@@ -895,14 +914,14 @@
     <path
        inkscape:connector-curvature="0"
        id="path62045-8"
-       d="m 167.56366,116.06961 2.40542,2.40542"
+       d="m 188.94522,116.06961 2.40542,2.40542"
        style="fill:none;fill-rule:evenodd;stroke:#ff001e;stroke-width:0.26458338px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96"
        inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.26458332;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.26458332, 0.52916665;stroke-dashoffset:0;stroke-opacity:1"
-       d="m 127.47284,98.004771 -21.8559,21.856849"
+       d="M 148.8544,98.004771 126.9985,119.86162"
        id="path62019-8-1-3"
        inkscape:connector-curvature="0"
        inkscape:export-xdpi="96"
@@ -910,7 +929,7 @@
        inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.26458332;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.26458332, 0.52916666;stroke-dashoffset:0;stroke-opacity:1"
-       d="m 159.39431,129.17706 -21.8559,21.85685"
+       d="m 180.77587,129.17706 -21.8559,21.85685"
        id="path62019-8-1-3-6"
        inkscape:connector-curvature="0"
        inkscape:export-xdpi="96"
@@ -918,7 +937,7 @@
        inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.26458332;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.26458332, 0.52916667;stroke-dashoffset:0;stroke-opacity:1"
-       d="M 159.08543,129.61602 127.47284,98.004776"
+       d="M 180.46699,129.61602 148.8544,98.004776"
        id="path62019-8-1-3-2"
        inkscape:connector-curvature="0"
        inkscape:export-xdpi="96"
@@ -926,11 +945,38 @@
        inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.26458332;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.26458332, 0.52916667;stroke-dashoffset:0;stroke-opacity:1"
-       d="M 137.22952,151.47286 105.61694,119.86162"
+       d="M 158.61108,151.47286 126.9985,119.86162"
        id="path62019-8-1-3-2-5"
        inkscape:connector-curvature="0"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96"
        inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png" />
-  </g>
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.06500006;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker21320)"
+       d="M 80.359968,107.56722 H 118.84678"
+       id="path21272"
+       inkscape:connector-curvature="0"
+       inkscape:path-effect="#path-effect21274"
+       inkscape:original-d="m 80.359968,107.56722 c 12.829201,-2.6e-4 25.658142,-2.6e-4 38.486812,0"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot21916"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:37.33333206px;line-height:125%;font-family:Verdana;-inkscape-font-specification:'Verdana, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.60805213px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       transform="matrix(0.16453654,0,0,0.16453654,39.349519,39.20145)"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/svmthing.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><flowRegion
+         id="flowRegion21918"
+         style="stroke-width:1.60805213px"><rect
+           id="rect21920"
+           width="165.71428"
+           height="117.14287"
+           x="305.71429"
+           y="283.94824"
+           style="stroke-width:1.60805213px" /></flowRegion><flowPara
+         id="flowPara21928"
+         style="stroke-width:1.60805213px">kernel function</flowPara></flowRoot>  </g>
 </svg>

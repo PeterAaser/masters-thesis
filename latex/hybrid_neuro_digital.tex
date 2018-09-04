@@ -6,7 +6,7 @@ simply electrical signals interpreted by your brain.}
 The mission statement of the NTNU cyborg is ``... to enable communication
 between living nerve tissue and a robot. The social and interactive Cyborg
 serves as a platform for studying neural signaling properties, robotics and
-hybrid bio-robotic machines.'' [Cite cyborg webpage]
+hybrid bio-robotic machines.'' \cite{ntnu_cyborg}
 The work in this thesis is strictly focused on enabling communication, leaving
 the robotic and social aspects for later work.
 This section presents the design and implementation of a system capable of
@@ -60,12 +60,12 @@ the neurons, both for testing purposes, and to compare the capabilities of
 different reservoirs.
 \begin{figure}[h]
   \centering
-  \includegraphics[width=1\textwidth]{fig/system3.png}
-  \caption{An overview of all software written for the cyborg project. The
-    dataflow is color coded with red denoting data going from neurons to robot,
-    green from robot sensors to neurons. The ble line indicates configuration
-    data, as the system is capable of reconfiguring itself during an experiment.
-    The two main systems are physically separated, connected only through network.
+  \includegraphics[width=0.5\textwidth]{fig/system4.png}
+  \caption{
+    The figure shows how neural activity is sampled and preprocessed to
+    be compatible with the input layer of the reservoir computer.
+    For each channel a spike detector singles out spikes which is then input
+    into an averaging filter.
   }
   \label{figOverview}
 \end{figure}
@@ -361,7 +361,6 @@ While this flaw means the system does not fulfill its purpose, it's enough to
 verify that the remaining modules work.
 Recordings can be made and played back, which means that MEAME/SHODAN is already
 able to provide a better storage solution than the vendor provided solution.
-% Hur dur
 %%% Local Variables:
 %%% mode: latex
 %%% TeX-master: "../main"
