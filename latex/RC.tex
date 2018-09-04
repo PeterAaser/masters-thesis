@@ -16,9 +16,12 @@ The focus of this chapter is the role each of the three components of an
 experiment serve, and a survey of the parameter space which can be explored. 
 \begin{figure}[h!]
   \centering
-  \includegraphics[width=1\textwidth]{fig/experimentLoop.png}
-  \caption{Rough sketch.
-    Some wavez
+  \includegraphics[width=1\textwidth]{fig/experimentLoopFull.png}
+  \caption{
+    With all implementation detail stripped away the dataflow in the figure is
+    left.
+    By following the arrows two dataloops can be seen, meeting at the readout
+    layer and robot control modules.
   }
   \label{figExperimentLoop}
 \end{figure}
@@ -125,9 +128,11 @@ exponential dropoff to $1/3hz$ when the sensor perceives a wall at the maximum
 distance.
 \begin{figure}[h!]
   \centering
-  \includegraphics[width=0.5\textwidth]{fig/RCloop.png}
-  \caption{Rough sketch.
-    Some wavez
+  \includegraphics[width=0.5\textwidth]{fig/rcLoop.png}
+  \caption{
+    The figure shows the primary dataloop.
+    The readout layer and robot control are also part of the secondary dataloop,
+    and are therefore covered separately.
   }
   \label{figDataLoop}
 \end{figure}
@@ -141,9 +146,10 @@ distance.
 The core reservoir computer is at the heart of both the dataloops and is
 comprised of a readout layer and a robot control module.
 In the classical reservoir computer model there is little more than the core
-reservoir computer, a fact that can be illustrated by 
+reservoir computer, a fact that can be illustrated by comparing it to the
+conceptual cyborg \ref{figOverviewSimple} in which the reservoir itself and the
+core reservoir computer makes up the entire figure, save for a small interfacing box.
 \subsubsection{Readout Layer}
-% skriv no fornuftig her da
 The chosen readout layer is a simple feed forward neural network.
 As mentioned in the background, the choice of using a network with multiple
 layers as indicated in the figure means that a non-linear problem may be solved
@@ -179,7 +185,14 @@ is this evaluation that shapes the next readout layer.
 \begin{figure}[h!]
   \centering
   \includegraphics[width=1\textwidth]{fig/TAC/game2.png}
-  \caption{The cyborg doing its thing}
+  \caption{
+    The cyborg maneuvering the simple walled world. In the first pane none of
+    the cyborgs sensors are in range, thus no perturbation is generated.
+    In the second pane the sensors detect a wall which is then relayed back to
+    the neural cultures as stimuli.
+    In the third pane the robot is very close to the wall, illustrated by the
+    color change of the sensor ``raycaster''.
+  }
   \label{figGame}
 \end{figure}
 % \begin{figure}[h!]
@@ -202,8 +215,11 @@ because of its ease of implementation and relative lack of bias.
 \begin{figure}[h!]
   \centering
   \includegraphics[width=0.5\textwidth]{fig/reconfigLoop.png}
-  \caption{Rough sketch.
-    Some wavez
+  \caption{
+    The reconfiguration loop evaluates the performance of the robot when using a
+    given readout layer.
+    The best performing readout layers are then used as a base in order to
+    create a new generation of readout layers.
   }
   \label{figReconfLoop}
 \end{figure}

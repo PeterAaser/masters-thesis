@@ -6291,16 +6291,16 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.35"
-     inkscape:cx="1007.6792"
-     inkscape:cy="711.87031"
+     inkscape:zoom="0.175"
+     inkscape:cx="995.59955"
+     inkscape:cy="-196.99678"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:snap-global="false"
-     inkscape:window-width="1916"
+     inkscape:window-width="956"
      inkscape:window-height="1149"
-     inkscape:window-x="2280"
+     inkscape:window-x="3240"
      inkscape:window-y="400"
      inkscape:window-maximized="0" />
   <metadata
@@ -6319,6 +6319,16 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1">
+    <rect
+       style="opacity:1;fill:#e2e2e2;fill-opacity:0.28648648;stroke:#000000;stroke-width:0.86500002;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:1.73000003,1.73000003;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect72664-2"
+       width="104.55064"
+       height="196.10895"
+       x="295.5957"
+       y="44.461693"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/experimentLoopFull.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <flowRoot
        xml:space="preserve"
        id="flowRoot19446"
@@ -6631,7 +6641,7 @@
        id="g26010"
        transform="matrix(2.7885372,0,0,2.7810738,139.30942,-812.22292)"
        style="stroke-width:0.35909182"
-       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/experimentLoop.png"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/experimentLoopFull.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96">
       <rect
@@ -6759,7 +6769,7 @@
        transform="matrix(1.5381901,0,0,1.5240341,104.89569,-63.61029)"
        id="g18177-5-7-3-2"
        style="stroke-width:0.65312707"
-       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/experimentLoop.png"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/experimentLoopFull.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96">
       <rect
@@ -6806,7 +6816,7 @@
        style="stroke-width:0.54757446"
        id="g26489-1"
        transform="matrix(1.8309601,0,0,1.8215235,-139.77188,-56.470292)"
-       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/experimentLoop.png"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/experimentLoopFull.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96">
       <g
@@ -7473,145 +7483,140 @@
        height="21.580851"
        x="-119.91876"
        y="251.4315" />
-    <g
-       id="g111349"
-       transform="matrix(3.3720843,0,0,3.3720843,-72.429809,-181.26832)"
-       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/experimentLoop.png"
+    <rect
+       y="60.475872"
+       x="318.94241"
+       height="51.539253"
+       width="54.615536"
+       id="rect14745-1"
+       style="opacity:1;fill:#b0b0b0;fill-opacity:1;stroke:#040000;stroke-width:0.26499996;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/experimentLoopFull.png"
        inkscape:export-xdpi="96"
-       inkscape:export-ydpi="96"
-       style="stroke-width:0.29655248">
-      <rect
-         style="opacity:1;fill:#b0b0b0;fill-opacity:1;stroke:#040000;stroke-width:0.0785864;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         id="rect14745-1"
-         width="16.196373"
-         height="15.284094"
-         x="116.06241"
-         y="71.689842" />
+       inkscape:export-ydpi="96" />
+    <g
+       id="g41420"
+       transform="matrix(2.7283299,0,0,2.6414564,172.33042,-386.96227)"
+       style="stroke-width:0.37250301"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/experimentLoopFull.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96">
       <g
-         style="stroke-width:0.37250301"
-         transform="matrix(0.80909303,0,0,0.78333048,72.584255,-60.999052)"
-         id="g41420">
+         transform="translate(-151.33815,144.30118)"
+         id="g22756-1"
+         style="stroke-width:0.37250301">
         <g
-           style="stroke-width:0.37250301"
-           id="g22756-1"
-           transform="translate(-151.33815,144.30118)">
-          <g
-             style="fill:#00ffff;stroke-width:0.45051911"
-             transform="matrix(0.37126098,0,0,0.37093994,152.81994,-24.741658)"
-             id="g13766-5-2">
-            <circle
-               style="opacity:0.57999998;fill:#00ffff;fill-opacity:1;stroke:#000006;stroke-width:0.11938756;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-               id="path13699-8-8-9"
-               cx="165.97879"
-               cy="157.4323"
-               r="3.6380208" />
-            <circle
-               style="opacity:0.57999998;fill:#00ffff;fill-opacity:1;stroke:#000006;stroke-width:0.11938756;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-               id="path13699-6-6-8"
-               cx="165.97879"
-               cy="167.11794"
-               r="3.6380208" />
-            <circle
-               style="opacity:0.57999998;fill:#00ffff;fill-opacity:1;stroke:#000006;stroke-width:0.11938756;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-               id="path13699-34-0-2"
-               cx="165.97879"
-               cy="176.80357"
-               r="3.6380208" />
-          </g>
-          <ellipse
-             ry="1.3494872"
-             rx="1.3506552"
-             cy="37.249058"
-             cx="218.73892"
-             id="path13699-7-1-6"
-             style="opacity:0.57999998;fill:#00ffff;fill-opacity:1;stroke:#000006;stroke-width:0.04430477;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-          <g
-             style="fill:#00ffff;stroke-width:0.45051911"
-             transform="matrix(0.37126098,0,0,0.37093994,152.71469,-24.978256)"
-             id="g13770-0-2">
-            <circle
-               style="opacity:0.57999998;fill:#00ffff;fill-opacity:1;stroke:#000006;stroke-width:0.11938756;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-               id="path13699-6-3-7-8"
-               cx="154.68677"
-               cy="162.91295"
-               r="3.6380208" />
-            <circle
-               style="opacity:0.57999998;fill:#00ffff;fill-opacity:1;stroke:#000006;stroke-width:0.11938756;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-               id="path13699-34-9-1-8"
-               cx="154.68677"
-               cy="172.59859"
-               r="3.6380208" />
-          </g>
-          <path
-             inkscape:connector-curvature="0"
-             id="path13772-7-4"
-             d="m 211.49451,35.452662 1.59622,-1.796396"
-             style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.04423511px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker13978-0-8)" />
-          <path
-             inkscape:connector-curvature="0"
-             id="path13774-0-3"
-             d="m 211.49451,39.045452 1.59622,-1.796395"
-             style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.04423511px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker13938-6-2)" />
-          <path
-             inkscape:connector-curvature="0"
-             id="path13776-3-0"
-             d="m 213.09073,40.841848 -1.59622,-5.389186 1.59622,1.796399"
-             style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.04423511px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Send-4-1)" />
-          <path
-             inkscape:connector-curvature="0"
-             id="path13778-9-2"
-             d="m 213.09073,40.841848 -1.59622,-1.796396 1.59622,-5.389182"
-             style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.04423511px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker14024-8-5)" />
-          <path
-             inkscape:connector-curvature="0"
-             id="path13780-8-2"
-             d="m 215.79204,33.656266 1.59623,3.592791"
-             style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.04423511px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker14146-0-5)" />
-          <path
-             inkscape:connector-curvature="0"
-             id="path13782-6-3"
-             d="m 215.79204,37.249057 h 1.59623"
-             style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.04423511px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker14088-4-7)" />
-          <path
-             inkscape:connector-curvature="0"
-             id="path13784-5-2"
-             d="m 215.79204,40.841848 1.59623,-3.592791"
-             style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.04423511px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker14210-9-7)" />
-          <path
-             inkscape:connector-curvature="0"
-             id="path13786-1-5"
-             d="m 219.78073,37.249057 3.04858,0.01751"
-             style="fill:none;fill-rule:evenodd;stroke:#f80000;stroke-width:0.04423511px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Mend-4-0)" />
+           id="g13766-5-2"
+           transform="matrix(0.37126098,0,0,0.37093994,152.81994,-24.741658)"
+           style="fill:#00ffff;stroke-width:0.45051911">
+          <circle
+             r="3.6380208"
+             cy="157.4323"
+             cx="165.97879"
+             id="path13699-8-8-9"
+             style="opacity:0.57999998;fill:#00ffff;fill-opacity:1;stroke:#000006;stroke-width:0.11938756;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+          <circle
+             r="3.6380208"
+             cy="167.11794"
+             cx="165.97879"
+             id="path13699-6-6-8"
+             style="opacity:0.57999998;fill:#00ffff;fill-opacity:1;stroke:#000006;stroke-width:0.11938756;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+          <circle
+             r="3.6380208"
+             cy="176.80357"
+             cx="165.97879"
+             id="path13699-34-0-2"
+             style="opacity:0.57999998;fill:#00ffff;fill-opacity:1;stroke:#000006;stroke-width:0.11938756;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+        </g>
+        <ellipse
+           style="opacity:0.57999998;fill:#00ffff;fill-opacity:1;stroke:#000006;stroke-width:0.04430477;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="path13699-7-1-6"
+           cx="218.73892"
+           cy="37.249058"
+           rx="1.3506552"
+           ry="1.3494872" />
+        <g
+           id="g13770-0-2"
+           transform="matrix(0.37126098,0,0,0.37093994,152.71469,-24.978256)"
+           style="fill:#00ffff;stroke-width:0.45051911">
+          <circle
+             r="3.6380208"
+             cy="162.91295"
+             cx="154.68677"
+             id="path13699-6-3-7-8"
+             style="opacity:0.57999998;fill:#00ffff;fill-opacity:1;stroke:#000006;stroke-width:0.11938756;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+          <circle
+             r="3.6380208"
+             cy="172.59859"
+             cx="154.68677"
+             id="path13699-34-9-1-8"
+             style="opacity:0.57999998;fill:#00ffff;fill-opacity:1;stroke:#000006;stroke-width:0.11938756;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
         </g>
         <path
-           style="fill:#eb0000;fill-opacity:1;fill-rule:evenodd;stroke:#fe0000;stroke-width:0.09871329;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker15998-1)"
-           d="m 57.434623,183.46161 h -2.79052"
-           id="path15690-5"
+           style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.04423511px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker13978-0-8)"
+           d="m 211.49451,35.452662 1.59622,-1.796396"
+           id="path13772-7-4"
            inkscape:connector-curvature="0" />
         <path
-           style="fill:#eb0000;fill-opacity:1;fill-rule:evenodd;stroke:#fe0000;stroke-width:0.09871329;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#Arrow1Sstart-6)"
-           d="m 57.434623,179.68924 h -2.86804"
-           id="path15692-8"
+           style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.04423511px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker13938-6-2)"
+           d="m 211.49451,39.045452 1.59622,-1.796395"
+           id="path13774-0-3"
+           inkscape:connector-curvature="0" />
+        <path
+           style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.04423511px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Send-4-1)"
+           d="m 213.09073,40.841848 -1.59622,-5.389186 1.59622,1.796399"
+           id="path13776-3-0"
+           inkscape:connector-curvature="0" />
+        <path
+           style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.04423511px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker14024-8-5)"
+           d="m 213.09073,40.841848 -1.59622,-1.796396 1.59622,-5.389182"
+           id="path13778-9-2"
+           inkscape:connector-curvature="0" />
+        <path
+           style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.04423511px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker14146-0-5)"
+           d="m 215.79204,33.656266 1.59623,3.592791"
+           id="path13780-8-2"
+           inkscape:connector-curvature="0" />
+        <path
+           style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.04423511px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker14088-4-7)"
+           d="m 215.79204,37.249057 h 1.59623"
+           id="path13782-6-3"
+           inkscape:connector-curvature="0" />
+        <path
+           style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.04423511px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker14210-9-7)"
+           d="m 215.79204,40.841848 1.59623,-3.592791"
+           id="path13784-5-2"
+           inkscape:connector-curvature="0" />
+        <path
+           style="fill:none;fill-rule:evenodd;stroke:#f80000;stroke-width:0.04423511px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Mend-4-0)"
+           d="m 219.78073,37.249057 3.04858,0.01751"
+           id="path13786-1-5"
            inkscape:connector-curvature="0" />
       </g>
-      <text
-         transform="scale(1.0163112,0.98395057)"
-         id="text19470-78-1-9"
-         y="75.070633"
-         x="115.12676"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.52764153px;line-height:125%;font-family:Verdana;-inkscape-font-specification:'Verdana, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.07846284px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         xml:space="preserve"><tspan
-           y="75.070633"
-           x="115.12676"
-           id="tspan22941-9"
-           sodipodi:role="line"
-           style="stroke-width:0.07846284px">Reservoir </tspan><tspan
-           y="78.230186"
-           x="115.12676"
-           sodipodi:role="line"
-           style="stroke-width:0.07846284px"
-           id="tspan16456">Filter</tspan></text>
+      <path
+         inkscape:connector-curvature="0"
+         id="path15690-5"
+         d="m 57.434623,183.46161 h -2.79052"
+         style="fill:#eb0000;fill-opacity:1;fill-rule:evenodd;stroke:#fe0000;stroke-width:0.09871329;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker15998-1)" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path15692-8"
+         d="m 57.434623,179.68924 h -2.86804"
+         style="fill:#eb0000;fill-opacity:1;fill-rule:evenodd;stroke:#fe0000;stroke-width:0.09871329;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#Arrow1Sstart-6)" />
     </g>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.52346362px;line-height:125%;font-family:Verdana;-inkscape-font-specification:'Verdana, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
+       x="316.9498"
+       y="68.919479"
+       id="text19470-78-1-9"
+       transform="scale(1.0163112,0.98395059)"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/experimentLoopFull.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan22379">Readout </tspan><tspan
+         sodipodi:role="line"
+         id="tspan22381">layer</tspan></text>
     <rect
        y="170.06436"
        x="-389.72974"
@@ -7620,14 +7625,14 @@
        id="rect14745-1-5"
        style="opacity:1;fill:#b0b0b0;fill-opacity:1;stroke:#040000;stroke-width:0.26499996;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        transform="scale(-1,1)"
-       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/experimentLoop.png"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/experimentLoopFull.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <g
        style="stroke-width:0.37250301"
        id="g1228"
        transform="matrix(1.0479662,0,0,1.0145976,276.9088,-167.67553)"
-       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/experimentLoop.png"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/experimentLoopFull.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96">
       <rect
@@ -7744,7 +7749,7 @@
        y="183.13074"
        id="text19470-78-1-9-4"
        transform="scale(1.0163112,0.98395057)"
-       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/experimentLoop.png"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/experimentLoopFull.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96"><tspan
          style="stroke-width:0.26458332px"
@@ -7956,37 +7961,29 @@
         </g>
       </g>
     </g>
-    <g
-       id="g97453"
-       transform="matrix(3.3720843,0,0,3.3720843,-27.979263,-127.73649)"
-       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/experimentLoop.png"
+    <path
+       style="opacity:0.85399996;fill:#b0b0b0;fill-opacity:1;stroke:#040000;stroke-width:0.26499996;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 139.9049,69.768271 h 9.08615 9.08615 9.08615 9.08617 9.08614 9.08616 9.08614 9.08617 V 96.543717 H 176.24952 139.9049 Z"
+       id="rect14584-8-4-9-2-7"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccccccccccc"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/experimentLoopFull.png"
        inkscape:export-xdpi="96"
-       inkscape:export-ydpi="96"
-       style="stroke-width:0.29655248">
-      <path
-         sodipodi:nodetypes="ccccccccccccc"
-         inkscape:connector-curvature="0"
-         id="rect14584-8-4-9-2-7"
-         d="m 49.786466,58.570529 h 2.694521 2.694521 2.694521 2.694524 2.694519 2.694524 2.694518 2.694524 v 7.940325 H 60.564553 49.786466 Z"
-         style="opacity:0.85399996;fill:#b0b0b0;fill-opacity:1;stroke:#040000;stroke-width:0.0785864;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-      <text
-         transform="scale(1.0163112,0.98395058)"
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.52764153px;line-height:125%;font-family:Verdana;-inkscape-font-specification:'Verdana, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.07846284px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         x="50.501019"
-         y="62.575134"
-         id="text19470-43-6-7-0"><tspan
-           id="tspan12403-6"
-           style="fill:#000000;fill-opacity:1;stroke-width:0.07846284px"
-           sodipodi:role="line"
-           x="50.501019"
-           y="62.575134">Reservoir </tspan><tspan
-           id="tspan97447"
-           style="fill:#000000;fill-opacity:1;stroke-width:0.07846284px"
-           sodipodi:role="line"
-           x="50.501019"
-           y="65.734688">output filtering</tspan></text>
-    </g>
+       inkscape:export-ydpi="96" />
+    <text
+       id="text19470-43-6-7-0"
+       y="81.188599"
+       x="142.76347"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.52346362px;line-height:125%;font-family:Verdana;-inkscape-font-specification:'Verdana, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr;text-anchor:start;opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
+       xml:space="preserve"
+       transform="scale(1.0163112,0.98395059)"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/experimentLoopFull.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan22349">Reservoir </tspan><tspan
+         sodipodi:role="line"
+         id="tspan22351">preprocessing</tspan></text>
     <rect
        style="opacity:1;fill:#f2f2f2;fill-opacity:1;stroke:#000000;stroke-width:0.30000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="rect31525-3-9-9-89"
@@ -7995,18 +7992,18 @@
        x="-43.586586"
        y="42.415363" />
     <path
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.86500007;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker29761-7-0-1)"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.165;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker29761-7-0-1)"
        d="m 117.39484,84.157036 h 14.17894"
        id="path28367-4-6-5"
        inkscape:connector-curvature="0"
-       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/experimentLoop.png"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/experimentLoopFull.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <g
        id="g26368"
        transform="matrix(1.6364429,0,0,1.5843364,17.556831,-142.07011)"
        style="stroke-width:0.62104893"
-       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/experimentLoop.png"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/experimentLoopFull.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96">
       <g
@@ -8203,7 +8200,7 @@
        id="g13600-9-5"
        transform="matrix(-1.6010901,0,0,1.5459949,422.96612,-140.79735)"
        style="stroke-width:0.63560611"
-       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/experimentLoop.png"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/experimentLoopFull.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96">
       <g
@@ -8387,13 +8384,6 @@
        inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/RCloop.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
-    <rect
-       style="opacity:1;fill:#e2e2e2;fill-opacity:1;stroke:#000000;stroke-width:0.86500001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       id="rect72664-2"
-       width="64.994743"
-       height="79.57943"
-       x="-118.13752"
-       y="80.27581" />
     <path
        style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.60000002;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#Arrow1Mend-44)"
        id="path12059-8"
@@ -10883,30 +10873,30 @@
        width="29.123404"
        clip-path="url(#clipPath26559-8)"
        transform="matrix(-2.7283299,0,0,2.6414564,451.06179,97.340631)"
-       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/experimentLoop.png"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/experimentLoopFull.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <path
        inkscape:connector-curvature="0"
        id="path97767"
        d="m 216.17383,84.157036 h 14.17894"
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.86500007;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker97771)"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.165;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker97771)"
        inkscape:transform-center-x="89.91167"
-       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/experimentLoop.png"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/experimentLoopFull.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <path
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.86500007;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker29761-7-0-1-3)"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.165;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker29761-7-0-1-3)"
        d="M 56.457472,105.05235 66.483498,95.026326"
        id="path28367-4-6-5-0"
        inkscape:connector-curvature="0"
-       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/experimentLoop.png"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/experimentLoopFull.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <g
        id="g97453-4"
        transform="matrix(3.3720843,0,0,3.3720843,-28.233877,-17.810644)"
-       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/experimentLoop.png"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/experimentLoopFull.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96"
        style="stroke-width:0.29655248">
@@ -10943,31 +10933,31 @@
        inkscape:connector-curvature="0"
        id="path102547"
        d="M 136.78136,197.71522 H 122.60242"
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.86500007;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker102551)"
-       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/experimentLoop.png"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.165;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker102551)"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/experimentLoopFull.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <path
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.86500007;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker104621)"
-       d="M 235.46882,197.71522 H 221.28988"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.16499996;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker104621)"
+       d="M 235.46881,197.71521 H 219.18969"
        id="path104617"
        inkscape:connector-curvature="0"
-       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/experimentLoop.png"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/experimentLoopFull.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <path
        inkscape:connector-curvature="0"
        id="path109145"
        d="M 69.134546,177.60341 59.10852,167.57738"
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.86500007;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker109149)"
-       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/experimentLoop.png"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.165;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker109149)"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/experimentLoopFull.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <g
        id="g97453-4-5"
        transform="matrix(3.3720843,0,0,3.3720843,281.69888,-75.863537)"
        inkscape:transform-center-x="29.952338"
-       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/experimentLoop.png"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/experimentLoopFull.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96"
        style="stroke-width:0.29655248"
@@ -11002,36 +10992,36 @@
            id="tspan102539-6">transform</tspan></text>
     </g>
     <path
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.86500007;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker29761-7-0-1-3-4)"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.165;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker29761-7-0-1-3-4)"
        d="m 343.27861,132.19452 v 14.17896"
        id="path28367-4-6-5-0-4"
        inkscape:connector-curvature="0"
-       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/experimentLoop.png"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/experimentLoopFull.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <path
        inkscape:connector-curvature="0"
        id="path116937"
-       d="m 395.72588,198.98626 h 18.68519"
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.86500007;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker116941)"
-       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/experimentLoop.png"
+       d="m 394.12226,198.98626 h 20.01393"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.16499996;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker116941)"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/experimentLoopFull.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <path
-       inkscape:transform-center-x="5.6809188"
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.86500007;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker119299)"
-       d="m 408.38688,83.274538 -14.17898,1.3e-5"
+       inkscape:transform-center-x="8.3932993"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.16499996;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker119299)"
+       d="m 409.48732,83.27452 -20.94882,4.2e-5"
        id="path119295"
        inkscape:connector-curvature="0"
-       inkscape:transform-center-y="-2.8677728"
-       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/experimentLoop.png"
+       inkscape:transform-center-y="-9.1813198"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/experimentLoopFull.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <g
        transform="matrix(1.5381901,0,0,1.5240341,291.56651,-60.794377)"
        id="g18177-5-7-3-2-0"
        style="stroke-width:0.65312707"
-       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/experimentLoop.png"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/experimentLoopFull.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96">
       <rect
@@ -11075,36 +11065,37 @@
          style="opacity:0.57999998;fill:#008000;fill-opacity:1;stroke:#000006;stroke-width:0.02034511;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     </g>
     <path
-       inkscape:transform-center-x="89.911672"
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.86500007;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker125460)"
-       d="M 277.99035,84.157036 H 292.1693"
+       inkscape:transform-center-x="119.21049"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.16499996;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker125460)"
+       d="m 281.99941,84.15704 h 18.79934"
        id="path125456"
        inkscape:connector-curvature="0"
-       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/experimentLoop.png"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/experimentLoopFull.png"
        inkscape:export-xdpi="96"
-       inkscape:export-ydpi="96" />
+       inkscape:export-ydpi="96"
+       inkscape:transform-center-y="4e-06" />
     <path
        inkscape:connector-curvature="0"
        id="path129895"
-       d="M 294.73622,197.71522 H 280.55727"
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.86500007;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker129899)"
-       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/experimentLoop.png"
+       d="M 300.88341,197.71521 H 280.61395"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.16499996;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker129899)"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/experimentLoopFull.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <path
        inkscape:connector-curvature="0"
        id="path116937-6"
        d="m 464.18921,186.8762 13.21243,-13.21239"
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.86500007;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker116941-5)"
-       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/experimentLoop.png"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.165;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker116941-5)"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/experimentLoopFull.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <path
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.86500007;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker135196)"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.165;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker135196)"
        d="m 483.23909,114.22588 -13.2124,-13.21244"
        id="path135192"
        inkscape:connector-curvature="0"
-       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/experimentLoop.png"
+       inkscape:export-filename="/home/peteraa/datateknikk/MsC/fig/experimentLoopFull.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
   </g>
