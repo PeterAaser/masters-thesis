@@ -68,7 +68,7 @@ into the generated input layer, which in turn controls the robot.
 Output from the robot is then simultaneously sent through both dataloops, the
 primary loop uses it to generate reservoir perturbations while the secondary
 loop uses it to evaluate the current input layer.
-After all the randomly generated generated networks have been evaluated the
+After all the randomly generated input layers have been evaluated, the
 secondary dataloop creates a new set of input layers based on the most
 successful layers from the previous generation.
 This keeps repeating until the experiment is terminated, hopefully after
@@ -89,10 +89,10 @@ the diagram, but it is considered a separate component for configuration
 purposes.
 The two configurable parts of the primary dataloop is shown in the figure as the
 reservoir output filter and the perturbation transform.
-In the classical RC model the reservoir readout layer is typically illustrated a single
-transform, however when 
-dealing with a physical reservoir it is useful to break this step into two
-separate filters, namely the preprocessor and the readout layer.
+In the classical RC model the reservoir readout layer is typically illustrated as
+a single transform between reservoir and task, however when dealing with a
+physical reservoir it is useful to break this step into two separate filters,
+namely the preprocessor and the readout layer.
 The difference between these transforms is that only the readout layer may be
 modified as a function of its task performance.
 That does not mean the preprocessor has to be static, the only constraint is

@@ -96,8 +96,8 @@ monotonic spiking activity tends to be transient, starting and stopping
 randomly.
 \subsection{Neural Interface}
 The \emph{Neural Interface} is the bridge between the biological and digital,
-responsible for providing a convenient API for reading out digital waveform data
-and inducing stimuli.
+responsible for providing a convenient API (application programming interface)
+for reading out digital waveform data and inducing stimuli.
 Although not intended for use in close loop systems, the \textit{MEA2100}
 system features the necessary hardware to implement a neural interface with the
 necessary functionality for a closed loop system.
@@ -183,7 +183,7 @@ The data acquisition module is responsible for configuring recording parameters
 such as samplerate and starting or stopping recordings, while the DSP interface
 provides a very thin layer of abstraction for writing to the DSP memory.
 %
-Both these modules are built on top of a very thin API provided the equipment
+Both these modules are built on top of a very thin API provided by the equipment
 vendor, making it clear that the closed loop cyborg system is pushing the
 equipment further than the vendor intended, for better or worse.
 %

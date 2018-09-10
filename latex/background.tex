@@ -24,7 +24,7 @@ evolution. The goals of EiM are closely aligned to the goal of this thesis, as
 both study massively parallel computation happening in physical matter shaped by
 the process of evolution.
 %
-Next section, \emph{Neurons As Computers} introduces neurons with a strong focus
+Next section, \emph{Computing Neural Networks} introduces neurons with a strong focus
 on their computational capabilities.
 Building on the EiM section, this section motivates a necessary reduction of
 scope, proposing a simplified model of the computing neuron and a medium of
@@ -125,7 +125,7 @@ as a simple celestial body in the solar system regardless of the complexities
 found in smaller scales of observation.
 %
 \subsubsection{State Spaces and Attractors}
-The space of possible states, or configurations a system can be in is known as a
+The space of possible states, or configurations a system can be in, is known as a
 \emph{state space}\footnote{For continuous systems the word phase space is more
   accurate, but it's not a useful dichotomy for this thesis.}
 As an example, the state space of a rubiks cube can be defined as all possible
@@ -231,7 +231,7 @@ universality.
 An example of such a computation given by Sipper is contour extraction of an
 image, highlighting how a parallel local computation can yield a global result.
 %
-While contour extraction is computation it is not very general, and the initial
+While contour extraction is a computation, it is not very general, and the initial
 conditions are set up in a rather artificial way, so one might ask if CAs can
 perform more complex computation.
 As it turns out the answer is yes, as even simple 1D CAs are \emph{Turing
@@ -243,11 +243,11 @@ does show that more complex rules or models are not inherently more capable.
 \begin{figure}[h!]
   \centering
   \includegraphics[width=0.6\textwidth]{fig/sipperComp.png}
-  \caption{From Sipper paper.}
-  \label{
+  \caption{
     Figure taken from Sippers ermergence of cellular computation showing
     how computation can be separated by three orthogonal axes.
-  }
+    }
+  \label{figSipperClass}
 \end{figure}
 \begin{figure}[h!]
   \centering
@@ -344,9 +344,9 @@ chaos.
 \section{Material Computing}
 Modeling neurons as cellular automata gives an idea of how neurons organize
 themselves into computationally capable networks and how this computation may
-look like, but the question of how to make sense of these dynamics and utilize
-them.
-Before tackling neurons it is necessary to extend our model to the physical
+look like, but the question of how to make sense of these dynamics and how to
+physically interact with them remains.
+Before tackling neurons it is therefore necessary to extend our model to the physical
 realm and develop a model that can be extended to perform computation.
 A very natural extension of the CA model is \emph{material computing} in which
 the atoms that make up matter locally interact in similar ways to CAs.
@@ -375,9 +375,9 @@ its performance and altering the parameters accordingly.
 % TODO Hmm hmm hmm
 A corollary of the turing completeness of cellular automatas is that CAs can be
 ``tuned'' in a rather heavy handed way to compute, but a more interesting
-conjecture is that a CA with a random seed will eventually exhibit local
-self-replicating behavior, spontaneously giving rise to what Toffoli would
-regard as computation, or possibly even as life.\par
+conjecture is that a CA in the complex regime with a random seed will eventually
+exhibit local self-replicating behavior, spontaneously giving rise to what
+Toffoli would regard as computation, or possibly even as life.\par
 %
 Whereas the pioneers in material computing sought to perform specific tasks with
 their experiments more recent work has been made for general computation. One
@@ -408,7 +408,7 @@ nano-tubes \cite{lykkebo_mecobo:_2014}.
 \subsubsection{(DS)^2}
 %
 In the introduction Fernando's water bucket computer
-\cite{fernando_pattern_2003} was briefly mentioned 
+\cite{fernando_pattern_2003} was briefly mentioned.
 In their paper they refer to the bucket as a ``liquid brain''\footnote{Also in
   quotation marks in the original paper}, performing calculations by observing
 the resulting wave pattern made by small motors.
@@ -427,11 +427,18 @@ In \cite{eimDS2} Odd Rune shows that a mixture of table salt and
 water exhibits (DS)2 behavior using the mecobo board by showing that the systems
 response to perturbation evolves over time.
 %
-Simalirily, experiments using simulated artificial spin ice \cite{joh_ASI}
+Similarly, experiments using simulated artificial spin ice \cite{joh_ASI}
 shows that in a lattice of nano-magnets several underlying microstates map to the
 same macro-state as shown in fig \ref{figJohASI}.
 This highlights the importance of observation level when describing systems.
-One could choose to... Something something.
+In the context of this thesis, the unobservable microstate of neural cultures is the
+inner life of each cell, the chemical gradients of neurotransmitters and the
+acivation of various genes, whereas the macrostate is the observable properties
+of a network, such as its topology and electrical activity.
+If the focus of the study were on single neurons a different definition of macro
+and micro state would be useful, highlighting the fact that the choice of micro
+and macro state is not necessarily an intrinsic property of the subject of
+study, but a choice made by the experimenter.
 \begin{figure}[h]
   \centering
   \includegraphics[width=1\textwidth]{fig/joh_ASI.png}
@@ -490,9 +497,8 @@ models, the fact of the matter is that the cyborg project utilizes real neurons
 rather than a digital approximation, so a cursory introduction of the neuron is
 in order.
 While there exists a multitude of different neurons in the human body it is
-sufficient to consider a simplified model neuron, shown in fig [a figure of a
-neuron].
-The three three main parts are the body, or \emph{Soma}, the \emph{Dendritic
+sufficient to consider a simplified model neuron, shown in \ref{figNeuron}
+The three main parts are the body, or \emph{Soma}, the \emph{Dendritic
   network} and the \emph{Axon}. 
 The dendritic network acts as a receptor sensing electrical activity around the
 neuron, while the axon transmits electric pulses to neighboring cells.
@@ -503,6 +509,15 @@ behavior through chemical signals.
 These chemical signals, known as neurotransmitters, correlate strongly with
 electrical activity however, thus measuring the chemical gradients in neural
 networks is not a priority from a compuational perspective.
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=1\textwidth]{fig/neuron.png}
+  \caption{
+    A simplified drawing of a neuron, showing dendrites, axon and cell body.
+    Source: Wikimedia commons.
+  }
+  \label{figNeuron}
+\end{figure}
 \subsubsection{Neural Dynamics}
 The ``medium'' of communication between neurons chosen as the observable macro
 state, that is the dynamics we are interested in measuring for the neural
@@ -591,7 +606,7 @@ from a primitive substrate as are our own designed abstract digital
 computational media.''
 %
 As the heading indicates, the ace up our sleeve comes in form of \emph{Reservoir
-  Computing}, a technique that fittingly enough originated from the study of
+  Computing} (RC), a technique that fittingly enough originated from the study of
 ANNs of the back-coupled variety\cite{jaeger_echo}[Cite Maass].
 In \cite{jaeger_echo} randomly connected neural networks are used to solve
 classification problems, forgoing training the network altogether.
@@ -606,8 +621,8 @@ kernel function.''
 Figure \ref{figRC} shows this setup, in which input perturbs a reservoir and the
 resulting dynamics is classified using a linear filter.
 %
-In order to explain why this works, schrauwen makes a comparison to the the
-machine learning technique of source vector machines work, as shown in fig
+In order to explain why this works, Schrauwen makes a comparison to the the
+machine learning technique of source vector machines (SVMs) work, as shown in fig
 \ref{figSVM}.
 The general idea behind an SVM is to expand the input into a higher dimensional
 ``feature space'', which in the figure is represented by the transition from 2D
