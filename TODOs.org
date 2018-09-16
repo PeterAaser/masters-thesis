@@ -7,6 +7,14 @@
 *** TODO Klipp opp socrates fig på stasjonær
 *** TODO Skriv short hand name
 
+** TODO Finn ut hva som har skjedd i kapittel 3 mtp overview.
+   Virker som om system4 har blitt overskrevet. Oops
+   nvm, tror bare det går til sys3 ifølge git.
+   Fig 3.9 og 3.2 har blitt byttet. (derav navne-oopsen)
+
+** TODO kap 3 fig kaos
+   Labels er feil (figWaves er over alt)
+
 ** TODO bytt til support vector machines (ikke source!)
 ** TODO Rett opp annotering
 ** TODO Gå gjennom gunnar og karl notes
