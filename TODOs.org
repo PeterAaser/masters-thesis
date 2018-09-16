@@ -1,3 +1,11 @@
+* Last stretch 
+** TODO Fiks sitering
+** TODO Bedre figure tekst
+** TODO Rett opp annotering
+** TODO Fiks sitering
+** TODO Gå gjennom gunnar og karl notes
+** TODO Tving figurer på plass
+  
 * Gunnar notes
 ** DONE Intro
 *** DONE Fiks impedans mismatch i intro mellom mitt og motivasjon

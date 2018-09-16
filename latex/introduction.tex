@@ -3,27 +3,17 @@
 They break distances down into concentrations of chemicals. For them, space is a
 range of taste intensities.}{Greg Bear, Blood Music}
 %
-In order to meet the ever rising demand for computing speeds modern processor
-architectures have become increasingly parallel and complex to circumvent
-the inherent physical limitations of single core processors.
+To investigate the computational properties of biological neural networks a
+hybrid biological digital robot has been created in a joint multidisciplinary
+effort. 
+Countless manhours have been spent improving the design and manufacturing
+process of the digital computer, creating more and more complex architectures
+capable of operating at ever greater speeds.
 %
-However, designing complex circuits is a difficult task, especially considering
-the harsh demands on correctness, if even one in a billion instructions are
-executed wrong the program will crash, or worse, give an incorrect result.
-%
-Nature on the other hand does not shy away from complexity, something the human
-brain exemplifies:
-%
-Unlike the processor, it is not the result of some top down design
-philosophy, yet through a process of self organization neurons are capable of
-forming highly complex networks capable of solving complex tasks, with far
-greater energy efficiency, robustness and parallellism than any designed
-processor.
-%
-% Har dette nok med seksjonen over?
-In order to investigate the processes that create the neural networks that makes
-up the brain, a hybrid biological-digital robot has been created in a joint
-multidisciplinary effort. 
+The brain is not subject to this top down design philosophy, yet through a
+process of self organization neurons are capable of forming highly complex
+networks capable of solving complex tasks, with far greater energy efficiency,
+robustness and parallellism than any designed processor.
 %
 Inspired by work done in the field of material computing systems such as the
 mecobo platform of nascence [citation needed], a similar system has implemented
@@ -37,8 +27,8 @@ This system utilizes the theoretical framework of \emph{Reservoir Computing} to
 help translate between the digital and biological parts of the system, allowing
 it to solve simple tasks as a proof of concept.
 %
-The ultimate goal of the neuro-digital hybrid system is to further our understanding
-of the underlying principles that governing how nature computes.
+The ultimate goal of the cyborg is to further our understanding of the
+underlying principles that governing how nature computes.
 \begin{figure}[h!]
   \centering
   \includegraphics[width=1\textwidth]{fig/MEA_overview.png}
@@ -49,16 +39,15 @@ of the underlying principles that governing how nature computes.
 In the 50's and 60's there was much optimism in the burgeoning field of
 artificial intelligence. In 1965 H. A. Simon claimed ``machines will be capable,
 within twenty years, of doing any work a man can
-do.'', while Marvin Minsky boldly claimed in 1967
+do.''\cite{vardi_artificial_nodate} , while Marvin Minsky boldly claimed in 1967
 that ``Within a generation ... the problem of creating 'artificial intelligence'
-will substantially be solved.''.
+will substantially be solved.'' \cite{noauthor_marvin_nodate}.
 Had they chosen to predict any other field, such as logistics, information
 sharing or communications their statements would have been prophetic and
 visionary, so why did artificial intelligence turn out so differently?
 %
-In their quest to make machines that could truly \emph{think}, the researchers
-sought to make machines that could apply logic similar to that of high level
-human thinking. 
+The researchers sought to make machines that could use logic similar to that of
+high level human thinking.
 %
 Therefore, it followed that the machine had to be programmed with rules
 governing logic in order to reach sound conclusions.
@@ -95,10 +84,8 @@ shows this did not work out.
 The human brain is not hiding some underlying logic beneath incidental
 complexity, instead the complexity seems to be the fundamental driving force
 behind intelligence.
-%
-In short, general intelligence does not follow from logic, it is in fact the
-opposite way around, our ability to reason logically is a product of our
-intelligence, and in order to achieve general intelligence it is necessary to
+In short, intelligence does not arise from logic, instead our understanding
+logic arises from our intelligence, and to study intelligence it is necessary to
 focus on the complex behavior of neurons from which it originates.
 \subsubsection{Computation}
 The invention of the digital computer will be remembered as one of, if not the
@@ -110,9 +97,8 @@ some unit of computation.
 %
 This idea of computation is very convenient, and it fails utterly when
 applied to biological systems.
-In a recent example of this from 2005 \cite{kurzweil2005the}
-Ray Kurzweil in his book ``The singularity is near''
-claimed that computers would be as powerful as a
+In a recent example of this from 2005 [Cite The Singularity Is Near: When Humans
+Transcend Biology] Ray Kurzweil claimed that computers would be as powerful as a
 mouse brain by 2020, a prospect that looks rather unlikely in 2018.
 Other than in the head of computer scientists, neurons have no notion of
 floating point operations or branching logic, and measuring the computational
@@ -126,7 +112,7 @@ have been dubbed \emph{Unconventional Computing}.
 %
 Unconvential computing, as implied by the name, comes in many forms such as
 buckets of water \cite{fernando_pattern_2003}, or blobs of carbon nanotubes
-\cite{carbon_nanotube_square}. 
+[cite nascence]. 
 %
 In these unconventional approaches it becomes harder and harder to pin down
 exactly what computation is and what distinguishes it from any ordinary physical
@@ -136,12 +122,11 @@ process.
 The main body of work done for this thesis is the design and development of a
 \emph{Cyborg}\footnote{A portmanteau word stemming from cybernetic organism}
 capable of sensing and maneuvering a simple maze.
-This work has been performed as part of the NTNU cyborg project \cite{ntnu_cyborg}
+This work has been performed as part of the NTNU cyborg project [cite webpage]
 which comprises of researchers from the department of neuroscience, nano
 science, computer science, cybernetics and more.
 More specifically, the contribution to this cross-disciplinary effort presented
-in the thesis is the continuation of the efforts presented in \cite{TMAC},
-focusing on the implementation of software for a closed loop system in which a
+in the thesis is the implementation of software for a closed loop system in which a
 robot is controlled by the neural tissue whose sensors feed data back to the neural
 tissue.
 Both by necessity and by choice most biological details are left out, the focal
@@ -150,6 +135,7 @@ neurons themselves.
 Thus only details that are necessary for the computational model of neural
 tissue will be considered, leaving the intricate complexities of neurons to the
 neuroscientists.
+TODO: mer her?
 \cleardoublepage
 
 
