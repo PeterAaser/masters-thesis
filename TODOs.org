@@ -1,10 +1,18 @@
 * Last stretch 
 ** TODO Fiks sitering
+   Utsett til tirsdag. Kan ikke kompilere på skåbu
 ** TODO Bedre figure tekst
+*** TODO to figurer har figphase som label
+*** TODO Fiks siteringer i figtekst
+*** TODO Klipp opp socrates fig på stasjonær
+*** TODO Skriv short hand name
+
+** TODO bytt til support vector machines (ikke source!)
 ** TODO Rett opp annotering
-** TODO Fiks sitering
 ** TODO Gå gjennom gunnar og karl notes
+** TODO Konsekvent Fig
 ** TODO Tving figurer på plass
+
   
 * Gunnar notes
 ** DONE Intro
