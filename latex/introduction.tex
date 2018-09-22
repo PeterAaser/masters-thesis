@@ -15,13 +15,18 @@ process of self organization neurons are capable of forming highly complex
 networks capable of solving complex tasks, with far greater energy efficiency,
 robustness and parallellism than any designed processor.
 %
-Inspired by work done in the field of material computing systems such as the
-mecobo platform of nascence [citation needed], a similar system has implemented
-using living neural networks grown from human stem cells.
-Neurons are grown \emph{in vitro} \footnote{From latin, literally ``in glass'',
-as opposed to in the body.} on \emph{Micro Electrode Arrays} \ref{neuroIntro}:A,
-C (MEA) are interfaced with a digital computer via voltage spike measurements
-\ref{neuroIntro}:B, forming a hybrid neuro-digital system.
+% Inspired by work done in the field of material computing systems such as the
+% mecobo platform of nascence [citation needed], a similar system has implemented
+% using living neural networks grown from human stem cells.
+% Neurons are grown \emph{in vitro} \footnote{From latin, literally ``in glass'',
+% as opposed to in the body.} on \emph{Micro Electrode Arrays} (figure
+% \ref{neuroIntro}, \ref{frankIntro}), are interfaced with a digital computer via
+% voltage measurements (figure \ref{} \ref{burstIntro}), forming a hybrid neuro-digital system.
+%
+Neurons are grown \emph{in vitro} on \emph{Micro Electrode Arrays}, shown in
+figure \ref{neuroIntro}
+are interfaced with a digital computer throug lab equipment (figure \ref{figEquipmentIntro})
+which can perform highly accurate voltage measurements forming a hybrid neuro-digital system.
 %
 This system utilizes the theoretical framework of \emph{Reservoir Computing} to
 help translate between the digital and biological parts of the system, allowing
@@ -29,19 +34,39 @@ it to solve simple tasks as a proof of concept.
 %
 The ultimate goal of the cyborg is to further our understanding of the
 underlying principles that governing how nature computes.
+%
+%
 \begin{figure}[h!]
   \centering
-  \includegraphics[width=1\textwidth]{fig/MEA_overview.png}
-  \caption{Fix this when back at stationary PC}
-  \label{neuroIntro}
+  \subfloat[an MEA]{{\includegraphics[width=5cm]{fig/MEA_front.jpg}}}%
+  \qquad
+  \subfloat[neural tissue on an MEA seen through a microscope]{{\includegraphics[width=5cm]{fig/frank.png}}}%
+  \label{neuroIntro}%
+  \caption{
+    A micro electrode array (MEA), lined with electrodes that extend to the
+    middle chamber where neural tissue can be grown.
+  }
+\end{figure}
+%
+%
+\begin{figure}[h!]
+  \centering
+  \subfloat[An MEA2100 headstage]{{\includegraphics[width=5cm]{fig/hs_placeholder.png}}}%
+  \qquad
+  \subfloat[Electrical activity measured by a single electrode]{{\includegraphics[width=5cm]{fig/PacemakerBurst.png}}}%
+  \label{figEquipmentIntro}%
+  \caption{
+    MEAs containing neurons are inserted into equipment capable of measuring and
+    inducing electrical activity at high precision.
+  }
 \end{figure}
 \subsubsection{Complexity}
 In the 50's and 60's there was much optimism in the burgeoning field of
 artificial intelligence. In 1965 H. A. Simon claimed ``machines will be capable,
 within twenty years, of doing any work a man can
-do.''\cite{vardi_artificial_nodate} , while Marvin Minsky boldly claimed in 1967
+do.''\cite{DREYFUS92} , while Marvin Minsky boldly claimed in 1967
 that ``Within a generation ... the problem of creating 'artificial intelligence'
-will substantially be solved.'' \cite{noauthor_marvin_nodate}.
+will substantially be solved.'' \cite{DREYFUS92}.
 Had they chosen to predict any other field, such as logistics, information
 sharing or communications their statements would have been prophetic and
 visionary, so why did artificial intelligence turn out so differently?
@@ -97,8 +122,9 @@ some unit of computation.
 %
 This idea of computation is very convenient, and it fails utterly when
 applied to biological systems.
-In a recent example of this from 2005 [Cite The Singularity Is Near: When Humans
-Transcend Biology] Ray Kurzweil claimed that computers would be as powerful as a
+In a recent example of this from 2005 is Ray Kurzweils book The singularity is
+near \cite{KURZWEIL2005}.
+Ray Kurzweil claimed that computers would be as powerful as a
 mouse brain by 2020, a prospect that looks rather unlikely in 2018.
 Other than in the head of computer scientists, neurons have no notion of
 floating point operations or branching logic, and measuring the computational
@@ -111,7 +137,7 @@ problems that humans are bad at, and is so ubiquitus that other approaches
 have been dubbed \emph{Unconventional Computing}.
 %
 Unconvential computing, as implied by the name, comes in many forms such as
-buckets of water \cite{fernando_pattern_2003}, or blobs of carbon nanotubes
+buckets of water \cite{FERNANDO2003}, or blobs of carbon nanotubes
 [cite nascence]. 
 %
 In these unconventional approaches it becomes harder and harder to pin down

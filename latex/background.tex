@@ -72,7 +72,7 @@ become very hard to reason about and design.
 As Strogatz puts it, ``Whenever pants of a system interfere, cooperate or
 compete there are nonlinear interactions going on. ...if you listen to your two
 favorite songs at the same time you won't get double the pleasure!''
-\cite{strogatz_nonlinear_2014}
+\cite{strogatz2014}
 In \emph{complex systems} nonlinear interaction is what shapes the systems
 behavior which becomes greater than the sum of parts.
 %
@@ -166,7 +166,7 @@ There is a third type of attractor which have have no cycles, known as
 Systems in strange attractors exhibits \emph{chaotic} behavior, characterized by
 its sensitivity to initial conditions and unpredictable, seemingly random
 behavior.
-Fig \ref{figStrange} shows one solution for a nonlinear differential equation known
+Figure \ref{figStrange} shows one solution for a nonlinear differential equation known
 as Lorenz attractor.
 Two near-identical initial conditions in a this attractor will quickly diverge in
 behavior, however both will create the ``butterfly'' pattern.
@@ -190,14 +190,14 @@ considered as strange.
     Even miniscule differences in initial conditions will cause two trajectories
     to diverge from each other, however they will both form the butterfly
     pattern.
-    Image taken from Strogatz - Nonlinear dynamics and chaos.
+    Image taken from Strogatz - Nonlinear dynamics and chaos \cite{strogatz2014}.
   }
   \label{figStrange}
 \end{figure}
 %
 \subsubsection{Universality Of Complex Systems}
 Not all complex systems are biological in nature.
-In Dynamics of Complex Systems Yaneer Bar-Yam illustrates this as shown in fig
+In Dynamics of Complex Systems Yaneer Bar-Yam illustrates this as shown in figure
 \ref{figCX}.
 In the classical school of thought different fields are seen as divergent,
 however Bar-Yam points out that each field deals with systems, and it turns out
@@ -217,8 +217,7 @@ simpler models, one such model being \emph{cellular automatons}.
     On the right side the opposing viewpoint where all fields converge towards
     complex systems is shown, hinting that seemingly different fields end up
     having much in common as model complexity increases.
-    The figure taken from Yaneer Bar-Yams Dynamics of Complex Systems.
-    TODO cite
+    The figure taken from Yaneer Bar-Yams Dynamics of Complex Systems \cite{Yaneer97}.
   }
   \label{figCX}
 \end{figure}
@@ -232,8 +231,8 @@ configuration, or ``seed'', which over several steps forms a pattern.
 %
 CAs have many properties that make them ideal as a model for studying complex
 systems and how they can facilitate computation.
-The reasons for this can be seen in \ref{figSipperClass} from
-\cite{sipper_emergence_1999}
+The reasons for this can be seen in figure \ref{figSipperClass} from
+\cite{SIPP99}
 showing how CAs model computation made by simple elements interacting locally in
 a vastly parallel manner.
 %
@@ -264,8 +263,7 @@ does show that more complex rules or models are not inherently more capable.
     locally interacting parallel computations.
     Note that complexity here refers to the complexity of each individual
     computer, the resulting behavior of simple components can be highly complex.
-    Figure taken from Sippers ermergence of cellular computation.
-    TODO cite.
+    Figure taken from Sippers ermergence of cellular computation.\cite{SIPP99}
     }
   \label{figSipperClass}
 \end{figure}
@@ -286,7 +284,7 @@ A pioneer in the field, Stephen Wolfram, was interested not only in expressing
 computations with CAs, but in which conditions computation could spontaneously
 occur.
 He divided CAs into 4 classes based on their behavior, from least to most
-complex, as shown in fig \ref{figPhase}.
+complex, as shown in figure \ref{figCAPhase}.
 Class 1 and 2 quickly resolved to static or simple periodic behavior, which
 corresponds to an attractor landscape with many point and cyclic attractors with
 shallow basins.
@@ -301,7 +299,7 @@ even of the universal\footnote{Not to be confused with
   universality of complex systems} variety.
 %
 In Langton's pioneering paper \emph{Computation on the Edge of Chaos}
-\cite{langton_computation_1990} Langton explores the space of possible
+\cite{LANGTON91} Langton explores the space of possible
 transition tables for one dimensional cellular automata, linking the space of CA
 behavior to phase changes in material.
 %
@@ -313,11 +311,11 @@ $\lambda = 1.0$
 %
 Langton found that the $\lambda$ parameter modeled how rulesets and wolframs CA
 classes interact in a way analogous to how matter changes phase at different
-temperatures, shown in \ref{figCAegg}.
+temperatures, shown in figuer \ref{figCAegg}.
 %
-Fig \ref{figPhase} is a phase diagram for water where the colored lines shows
+Figure \ref{figPhase} is a phase diagram for water where the colored lines shows
 first order phase changes, such as freezing below 0 degrees at ocean-level
-pressure, analogous to how CAs go from fixed to periodic in \ref{figCAegg}.
+pressure, analogous to how CAs go from fixed to periodic in figure \ref{figCAegg}.
 %
 More interesting, the figure also shows a \emph{critical point} where matter
 undergoes a \emph{second order phase change} in which it exhibits properties of
@@ -344,18 +342,18 @@ chaos.
     Class 4 CAs exhibit \emph{complex} behavior.
     Figure source: Stephen Wolfram - A new kind of science.
   }
-  \label{figPhase}
+  \label{figCAPhase}
 \end{figure}
 \begin{figure}[h!]
   \centering
   \includegraphics[width=0.5\textwidth]{fig/Phase.png}
   \caption{
-    The figure shows the phase space of H_{2}O.
-    Under normal pressure and temperature H_{2}O undergoes ordered transitions
+    The figure shows the phase space of $H_2O$.
+    Under normal pressure and temperature $H_2O$ undergoes ordered transitions
     from ice to water, water to vapor and even ice to vapor, known as 1st order
     transitions.
     As temperature and pressure reaches the \emph{critical} point however a
-    \emph{critical point} occurs. At this point H_{2}O is in neither state, but
+    \emph{critical point} occurs. At this point $H_2O$ is in neither state, but
 
     TODO write smart here
 
@@ -383,7 +381,7 @@ chaos.
     As the value of $λ$ goes from 0 to 1 the behavior of the cellular automatas
     go from still to periodic to chaotic, however an additional phase exists
     between order and chaos, analogous to the 2nd order phase in phase
-    transition, shown in Fig \ref{figPhase}.
+    transition, shown in Figure \ref{figPhase}.
     TODO source
     Figure source: 
   }
@@ -402,7 +400,7 @@ the atoms that make up matter locally interact in similar ways to CAs.
 Two pioneers in this field were the british duo Pask and Beer which studied how
 unstructured matter could be used to perform computational tasks.
 %
-In one experiment [cite ???] the duo used silver in an acidic solution which
+In one experiment \cite{PASK59} the duo used silver in an acidic solution which
 would form short-lived silver filaments when subjected to electric currents.
 %
 By tuning the various knobs controlling parameters such as voltage this solution
@@ -416,7 +414,7 @@ in response.
 %
 Tommaso Toffoli argues that ``Nothing makes sense in computing except in the
 light of evolution'' in his eponymous paper
-\cite{tommaso_toffoli_nothing_nodate}, which separates Langtons compute capable
+\cite{TOFFOLI04}, which separates Langtons compute capable
 CAs and the tone discrimination which had been evolved by repeatedly observing
 its performance and altering the parameters accordingly.
 %
@@ -429,18 +427,18 @@ Toffoli would regard as computation, or possibly even as life.\par
 %
 Whereas the pioneers in material computing sought to perform specific tasks with
 their experiments more recent work has been made for general computation. One
-approach is \emph{Evolution In Materio} (EiM) \cite{tufteEiMpaper} where various
+approach is \emph{Evolution In Materio} (EiM) \cite{MILLER_EI2014} where various
 materials have their parameters tuned algorithmically to perform a
 transformation between input and output.
 Figure \ref{figEiM} shows how the properties of a material can be tuned in
 response to its performance on some task.
-A recent effort, realizing the design in \ref{figEiM} is the NASCENCE project
+A recent effort, realizing the design in figure \ref{figEiM} is the NASCENCE project
 which has developed a physical device, ``mecobo'' that can host a variety of
 materials which can then be interacted with using an array of electrodes.
 %
 By using the same basic loop as the early material computing reasearchers the
 Mecobo board has been used to create XOR logic gates using unstructured carbon
-nano-tubes \cite{lykkebo_mecobo:_2014}.
+nano-tubes \cite{MECOBO}.
 %
 % This gives latex error about missing dollarsign, but upon inserting text is no longer
 % bold...
@@ -453,18 +451,15 @@ nano-tubes \cite{lykkebo_mecobo:_2014}.
     applied to the matter in the matter domain, approximates some function
     between input (perturbation) and output (resulting dynamics).
     Each configuration is assigned a fitness based on how well the matter
-    approximates the target function, which is then used by a genetic algorithm
     to provide a new generation of configurations.
-
-    TODO: cite
-    Figure source: \cite{tufteEiMpaper}
+    Figure source: \cite{MILLER_EI2014}
   }
   \label{figEiM}
 \end{figure}
 \subsubsection{(DS)^2}
 %
 In the introduction Fernando's water bucket computer
-\cite{fernando_pattern_2003} was briefly mentioned.
+\cite{FERNANDO2003} was briefly mentioned.
 In their paper they refer to the bucket as a ``liquid brain''\footnote{Also in
   quotation marks in the original paper}, performing calculations by observing
 the resulting wave pattern made by small motors.
@@ -472,20 +467,20 @@ Unlike its biological counterpart the ``liquid brain'' does not evolve over
 time, in fact it has no structure to evolve at all, at least not at the chosen
 scale of observation.
 %
-$(DS)^2$ is shorthand for dynamic systems with \emph{dynamical structure}, and
+$(DS)^2$ is shorthand for dynamic systems with \emph{dynamical structure}\cite{Spicher2004}, and
 materials that exhibit this behavior can be used to study and model biological
 systems.
 In these material systems the \emph{state space}, that is the set of reachable
 states, and the transition function between them evolve over time in tandem with
 the systems dynamics, both shaping them and being shaped by them.
 %
-In \cite{eimDS2} Odd Rune shows that a mixture of table salt and
+In \cite{EIM_DS2_LYKKEBO} Lykkebø shows that a mixture of table salt and
 water exhibits (DS)2 behavior using the mecobo board by showing that the systems
 response to perturbation evolves over time.
 %
-Similarly, experiments using simulated artificial spin ice \cite{joh_ASI}
+Similarly, experiments using simulated artificial spin ice \cite{JENSEN_ASI}
 shows that in a lattice of nano-magnets several underlying microstates map to the
-same macro-state as shown in fig \ref{figJohASI}.
+same macro-state as shown in figure \ref{figJohASI}.
 This highlights the importance of observation level when describing systems.
 In the context of this thesis, the unobservable microstate of neural cultures is the
 inner life of each cell, the chemical gradients of neurotransmitters and the
@@ -499,7 +494,7 @@ study, but a choice made by the experimenter.
   \centering
   \includegraphics[width=1\textwidth]{fig/joh_ASI.png}
   \caption{
-    A simulated lattice of nanomagnets from \cite{joh_ASI} allows us to peer
+    A simulated lattice of nanomagnets from \cite{JENSEN_ASI} allows us to peer
     into the micro state of a lattice of nanomagnets, with a corresponding macro
     state showing what would be measurable in a real system.
 
@@ -555,7 +550,7 @@ models, the fact of the matter is that the cyborg project utilizes real neurons
 rather than a digital approximation, so a cursory introduction of the neuron is
 in order.
 While there exists a multitude of different neurons in the human body it is
-sufficient to consider a simplified model neuron, shown in \ref{figNeuron}
+sufficient to consider a simplified model neuron, shown in figure \ref{figNeuron}
 The three main parts are the body, or \emph{Soma}, the \emph{Dendritic
   network} and the \emph{Axon}. 
 The dendritic network acts as a receptor sensing electrical activity around the
@@ -596,7 +591,7 @@ priority.
 Over time these dynamics evolve in tact with the structure of the network, as
 expected in the section on $(DS)^2$.
 Not only does the dynamics of the neural network change like the table salt
-experiment, it moves in the complexity space as shown in \ref{figDopey} towards
+experiment, it moves in the complexity space as shown in figure \ref{figDopey} towards
 a critical phase as discussed in the section on cellular automata.
 %
 \begin{figure}[h]
@@ -627,9 +622,9 @@ In recent years ANNs\footnote{Or rather, the advent of hardware capable of
 network) have revolutionized AI due to their ability to solve hard
 classification problems such as image recognition.
 The simplest, and most successful variation is the \emph{feed forward} topology
-shown in \ref{figFFANN} in which each layer only interacts with the layer
+shown in figure \ref{figFFANN} in which each layer only interacts with the layer
 directly in front and behind it.
-Shown in \ref{figNeuronModel}, the model for a single neuron consists of a
+Shown in figure \ref{figNeuronModel}, the model for a single neuron consists of a
 summing function that calculates a weighted sum of incoming connections and a
 function that calculates the outbound activation of that neuron.
 More advanced models of neurons often retain state from their previous
@@ -661,7 +656,7 @@ based on this are unable to cope with these topologies.
   \centering
   \includegraphics[width=0.7\textwidth]{fig/feedforward.png}
   \caption{
-    The figure depicts a network of artificial neurons as shown in Fig
+    The figure depicts a network of artificial neurons as shown in Figure
     \ref{figNeuronModel}.
     When the neurons can be ordered into layers such that information only flows
     in one directions, which is the case in the figure, the network is called a
@@ -684,16 +679,16 @@ computational media.''
 %
 As the heading indicates, the ace up our sleeve comes in form of \emph{Reservoir
   Computing} (RC), a technique that fittingly enough originated from the study of
-ANNs of the back-coupled variety\cite{jaeger_echo}\cite{natschlager2002liquid}
+ANNs of the back-coupled variety\cite{JAEGER}\cite{MAASS02}
 (back-coupled here means that the flow of information is not uni-directional as
 is the case with feed forward networks.)
-In \cite{jaeger_echo} randomly connected neural networks are used to solve
+In \cite{JAEGER} randomly connected neural networks are used to solve
 classification problems, forgoing training the network altogether.
 Instead the randomly generated network was used as a \emph{reservoir} of
 dynamics that reacted to the input while a simple linear output function had to
 be trained.
 The principle behind reservoir computing is to employ a complex system as a
-reservoir which, as Schrauwen puts it \cite{schrauwen_overview_2007} ``... acts
+reservoir which, as Schrauwen puts it \cite{Schrauwen2007} ``... acts
 as a complex nonlinear dynamic filter that transforms the input signals using a
 high-dimensional temporal map, not unlike the operation of an explicit, temporal
 kernel function.''
@@ -701,7 +696,7 @@ Figure \ref{figRC} shows this setup, in which input perturbs a reservoir and the
 resulting dynamics is classified using a linear filter.
 %
 In order to explain why this works, Schrauwen makes a comparison to the the
-machine learning technique of source vector machines (SVMs) work, as shown in fig
+machine learning technique of support vector machines (SVMs) work, as shown in figure
 \ref{figSVM}.
 The general idea behind an SVM is to expand the input into a higher dimensional
 ``feature space'', which in the figure is represented by the transition from 2D
@@ -730,7 +725,7 @@ context sensitive.
     translated to a perturbation suitable for the chosen reservoir, while the
     resulting dynamics is interpreted to the resulting value ($y$) by the
     readout layer.
-    In contrast to the EiM approach shown in Fig \ref{figEim} in which the
+    In contrast to the EiM approach shown in Figure \ref{figEim} in which the
     characteristics of the matter is altered to reach the target function, the
     reservoir computer approach only alters the readout layer which is not part
     of the reservoir itself.
@@ -754,7 +749,7 @@ context sensitive.
 \subsection{Linear and nonlinear output layers}
 In classical reservoir computing emphasis is put on the readout layer being
 linear.
-This is important because when solving a classification problem as the one in
+This is important because when solving a classification problem as the one in figure
 \ref{figSVM} a linear classifier ensures that the actual problem-solving happens
 in the reservoir rather than the output layer.
 When using an artificial neural network as readout layer with more than a single

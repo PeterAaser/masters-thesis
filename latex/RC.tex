@@ -8,7 +8,7 @@ Consequentially, the focus on this section is the capabilities for experimentati
 provided by the system, and the parameter space that can be explored.\par
 %
 When leaving out all implementation details the setup for conducting experiments
-provided by SHODAN and MEAME shown in \ref{figExperimentLoop} becomes much simpler.
+provided by SHODAN and MEAME shown in figure \ref{figExperimentLoop} becomes much simpler.
 The setup can be divided into three separate components.
 The first two components are the \emph{primary} and \emph{secondary} dataloop
 which both interact with the third component, the \emph{robot control} module.
@@ -18,10 +18,10 @@ experiment serve, and a survey of the parameter space which can be explored.
   \centering
   \includegraphics[width=1\textwidth]{fig/experimentLoopFull.png}
   \caption{
-    With all implementation detail stripped away the dataflow in the figure is
-    left.
-    By following the arrows two dataloops can be seen, meeting at the readout
-    layer and robot control modules.
+    The figure shows direction of the dataflows that make up an experiment,
+    stripping away all implementation details.
+    By following the arrows two distinct loops are revealed, interersecting at
+    the flow between the readout layer and robot control module.
   }
   \label{figExperimentLoop}
 \end{figure}
@@ -41,7 +41,7 @@ In the classic RC setup the input layer is not altered during an individual run,
 instead it is modified between runs, and the resulting experiment iterates
 towards an input filter capable of solving some task specified by the
 experiment.
-From this angle the classic model is very close to the one shown in
+From this angle the classic model is very close to the one shown in figure
 \ref{figExperimentLoop}, but there is one major difference, namely that the two
 loops run in a \emph{sequential} lockstep fashion 
 rather than in \emph{parallel}, or \emph{on-line} as is the case with the cyborg.
@@ -130,9 +130,11 @@ distance.
   \centering
   \includegraphics[width=0.5\textwidth]{fig/rcLoop.png}
   \caption{
-    The figure shows the primary dataloop.
-    The readout layer and robot control are also part of the secondary dataloop,
-    and are therefore covered separately.
+    The figure shows the primary dataloop in more detail, with focus on the
+    preprocessing transform and the perturbation generator.
+    Since the readout layer and robot control is part of both the primary and
+    secondary loop it is covered separately, thus from the point of view of the
+    primary dataloop these two modules make up a single, opaque data-transform.
   }
   \label{figDataLoop}
 \end{figure}
@@ -142,7 +144,7 @@ The core reservoir computer is at the heart of both the dataloops and is
 comprised of a readout layer and a robot control module.
 In the classical reservoir computer model there is little more than the core
 reservoir computer, a fact that can be illustrated by comparing it to the
-conceptual cyborg \ref{figOverviewSimple} in which the reservoir itself and the
+conceptual cyborg (figure \ref{figOverviewSimple}) in which the reservoir itself and the
 core reservoir computer makes up the entire figure, save for a small interfacing box.
 \subsubsection{Readout Layer}
 The chosen readout layer is a simple feed forward neural network.
@@ -156,7 +158,7 @@ In fact, there is no strict requirement that the readout layer must be an
 artificial neural network at all.
 While it might seem a wise choice to use a readout layer that has similarities
 with the reservoir itself, this line of thinking ignores the ``anonymization''
-that happens between reservoir and reservoir computer, as shown in the fig
+that happens between reservoir and reservoir computer, as shown in the figure
 \ref{figGenericSpecific} in the previous chapter.
 The final word on the choice of readout layer is that the artificial neural
 network approach has the following benefits:
@@ -164,7 +166,7 @@ It can easily be extended from a linear to nonlinear classifier, and it is easy
 to modify during an experiment.
 \subsubsection{Robot Control}
 The robot control is a simulator that controls an agent with 4 ``eyes'' in a box
-world as shown in \ref{figGame}.
+world as shown in figure \ref{figGame}.
 As with all other parts of the system, variables such as the amount of eyes, sight
 range, the function between the output of the reservoir filter and robot
 movement, max turn rate and max speed can be changed on a per-experiment basis,
@@ -197,7 +199,7 @@ is this evaluation that shapes the next readout layer.
 %   \label{cyborgOverviewSimple}
 % \end{figure}
 \section{Reconfiguration Loop}
-The reconfiguration loop, shown in \ref{figReconfLoop} is the dataflow
+The reconfiguration loop, shown in figure \ref{figReconfLoop} is the dataflow
 responsible for the on-line reconfiguration of the reservoir readout layer.
 On experiment start the reservoir filter reconfigurator supplies the readout
 layer module with a set of weights for the artificial neural network and records
