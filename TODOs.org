@@ -1,6 +1,8 @@
 * Last stretch 
 ** TODO Fiks sitering
-   Utsett til tirsdag. Kan ikke kompilere på skåbu
+*** DONE Finn riktig WFA sitering
+*** TODO Få URL sitering til å virke
+
 ** TODO Bedre figure tekst
 *** DONE to figurer har figphase som label
 *** DONE Fiks siteringer i figtekst
