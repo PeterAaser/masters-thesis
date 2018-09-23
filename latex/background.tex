@@ -168,20 +168,12 @@ its sensitivity to initial conditions and unpredictable, seemingly random
 behavior.
 Figure \ref{figStrange} shows one solution for a nonlinear differential equation known
 as Lorenz attractor.
-Two near-identical initial conditions in a this attractor will quickly diverge in
+Two near-identical initial conditions in this attractor will quickly diverge in
 behavior, however both will create the ``butterfly'' pattern.
 For a discrete system a strange attractor is impossible as any discrete system
 can only represent a finite amount of states, however a cyclic attractor with a
 cycle length near the total amount of expressible states may be informally
 considered as strange.
-% 
-% TODO: Something about attractor landscape wrt complex, chaotic and ordered systems.
-% A state space along with its attractor is known as an \emph{attractor
-%   landscape}.
-% Based on the attractor landscape the system can then be classified as ordered,
-% complex or chaotic, however as examplified with the rubiks cube, the choice of
-% macro state and observation scale means that these classifications are not
-% objective as they also depend on the observer.
 \begin{figure}[h!]
   \centering
   \includegraphics[width=0.6\textwidth]{fig/strange.png}
@@ -231,14 +223,14 @@ configuration, or ``seed'', which over several steps forms a pattern.
 %
 CAs have many properties that make them ideal as a model for studying complex
 systems and how they can facilitate computation.
-The reasons for this can be seen in figure \ref{figSipperClass} from
-\cite{SIPP99}
-showing how CAs model computation made by simple elements interacting locally in
-a vastly parallel manner.
+In particular, each individual cell is very simple, each cell only communicates
+with its direct neighbor, and every cell updates in parallel, in short CAs
+are at the extremes of simplicity, parallelism and locality, visualized in
+\ref{figSipperClass}
 %
-In other words, computation in CAs must be self organized, bottom up and driven by
-local interaction which are the features that all complex systems share due to
-universality.
+In other words, any computation spontaneously occuring in CAs must be self
+organized, bottom up and driven by local interaction which are the features that
+all complex systems share due to universality.
 %
 An example of such a computation given by Sipper is contour extraction of an
 image, highlighting how a parallel local computation can yield a global result.
@@ -347,16 +339,15 @@ chaos.
 \begin{figure}[h!]
   \centering
   \includegraphics[width=0.5\textwidth]{fig/Phase.png}
-  \caption{
+  \caption{ 
     The figure shows the phase space of $H_2O$.
     Under normal pressure and temperature $H_2O$ undergoes ordered transitions
     from ice to water, water to vapor and even ice to vapor, known as 1st order
     transitions.
     As temperature and pressure reaches the \emph{critical} point however a
     \emph{critical point} occurs. At this point $H_2O$ is in neither state, but
-
-    TODO write smart here
-
+    exhibits properties from both in a manner similar to that of CAs in the
+    critical phase. 
     Figure source: Wikimedia commons.
     }
   \label{figPhase}
@@ -437,7 +428,7 @@ materials which can then be interacted with, using an array of electrodes.
 %
 By using the same basic loop as the early material computing reasearchers the
 Mecobo board has been used to create XOR logic gates using unstructured carbon
-nano-tubes \cite{MECOBO}.
+nano-tubes \cite{LYKKEBOICES2014}.
 %
 % This gives latex error about missing dollarsign, but upon inserting text is no longer
 % bold...
