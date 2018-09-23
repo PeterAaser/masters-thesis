@@ -22,10 +22,10 @@ A robotic body, responding to movement commands and equipped with a sensor
 allowing it to perceive its environment.
 In this concept neural readouts are transformed into a Left and Right signal by
 a feed forward neural network, controlling the direction of the robot.
-Simultaneously data retrieved from the sensors of the robot are processed in a
+Simultaneously, data retrieved from the sensors of the robot are processed in a
 feedback processor and fed back to the neural network.
 The conceptual cyborg is a closed loop system: The only input to the system is
-what the sensors perceive which the cyborg must act upon.
+what the sensors perceive, which the cyborg in turn acts upon.
 \begin{figure}[h!]
   \centering
   \includegraphics[width=0.7\textwidth]{fig/cyborg_overview.png}
@@ -46,16 +46,15 @@ compared to the initial concept.
 This design expands on the initial concept of figure \ref{figOverviewSimple}, fleshing
 out the ``interface'' box from the conceptual cyborg, juxtaposed in figure
 \ref{figJuxta}.
-As the conceptual cyborg indicates, what goes on in the interface is mostly
-implementation detail, thus the robot control and reservoir readout has been
-dubbed as the \emph{core reservoir loop} to differentiate it from the interface
+As the conceptual cyborg indicates, what goes on in the box labeled interface is
+mostly implementation detail, thus the robot control and reservoir readout is
+known as the \emph{core reservoir computer}, differentiating it from the interface
 components.
 The more detailed overview in figure \ref{figOverview} focuses on the main data loop, depicted as
 red and green lines, with red denoting the data pipeline from the reservoir to
 the core reservoir loop, and green from core reservoir loop to reservoir.
-The expanded architecture reveals a very important detail in the final design,
-which is that the closed data loop between neurons and robot extends over
-network. 
+The expanded architecture reveals a very important detail in the final design:
+The closed data loop between neurons and robot extends over network. 
 This design choice allows the neural cultures to be safely stored in a
 laboratory, which has ramications both in a practical and philosophical sense.
 By decoupling the reservoir and reservior computer, the neurons are not
@@ -63,9 +62,9 @@ restricted to a single robot.
 In fact, the robot does not have to be a physical robot, it can be fully virtual
 without the neurons noticing any difference.
 Additionally, the reservoir computer can interface with any reservoir as long as
-the interfaces are adhered to, allowing other reservoirs to be used in place of
-the neurons, both for testing purposes, and to compare the capabilities of
-different reservoirs.
+the constraints set by the interfaces are satisfied.
+This allows other reservoirs to be used in place of the neurons, both for
+testing purposes, and to compare the capabilities of different reservoirs.
 \begin{figure}[h]
   \centering
   \includegraphics[width=0.5\textwidth]{fig/system3.png}
@@ -99,17 +98,29 @@ different reservoirs.
 As opposed to hardware and software, the term wetware describes system
 components of biological origin, i.e ``wet'' components.
 The wetware of the cyborg is thus the neural networks which are being grown in
-MEAs at the department of neuroscience located at St.Olavs research hospital.
-The MEAs are seeded with neural stem cells of either human or rat origin which
-then spontaneously form networks.
-At seeding there is no network at all, only a ``soup'' of dissociated
+MEAs at the department of neuroscience located at the St.Olavs research hospital.
+The MEAs are \emph{seeded} by introducing a solution containing neurons that
+have formed from stem cells of human origin\cite{TMAC}.
+Just after seeding there is no network at all, only a ``soup'' of dissociated
 neurons which over the course of several weeks start forming networks.
 The activity from these so-called pacemaker neurons can be seen in figure
-\ref{fig:pacemaker}.
+\ref{pacemaker}.
 In the figure each cell in the grid corresponds to one of the
 electrodes as seen in figure \ref{fig:cellular_networks}, however at this stage the
 monotonic spiking activity tends to be transient, starting and stopping
 randomly.
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=1\textwidth]{fig/tonic.png}
+  \caption{
+    A readout showing spikes from a neural network on an MEA measured on a
+    single electrode.
+    The spikes follows a ``pacemaker'' pattern for a while, before petering off,
+    This pattern typically forms after a few weeks.
+    Figure source: \cite{TMAC}
+  }
+  \label{pacemaker}
+\end{figure}
 \subsection{Neural Interface}
 The \emph{Neural Interface} is the bridge between the biological and digital,
 responsible for providing a convenient API (application programming interface)

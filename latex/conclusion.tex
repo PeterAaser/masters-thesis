@@ -3,22 +3,32 @@
 {Vice president Dan Quayle (R)}
 The goal of this thesis has been to produce a working proof of concept for
 a neuro-digital hybrid.
-While this has not been achieved the necessary scaffolding is in place, and the
-system is capable of performing to specification in all cases save apart from
-application of stimuli.
-In addition to the stated goal a relatively sophisticated storage solution has
-been implemented, and a web-based user interface is being worked on, which will
-allow automatisation of the experiment workflow once it is further developed.
-While far from complete the system is already capable of performing most tasks
-currently handled by the vendor supplied software.
-While replacing this software is not a project goal, it gives an idea of the
-effort necessary to make the lab equipment behave.
+The system can record, store and broadcast neural recordings which can be
+accessed not only by the main experimenting platform, but by anyone with a
+working internet connection.
+Furthermore, the experimentation platform hosts an online self-reconfigurable
+reservoir computer capable of handling reservoirs that are ``moving targets'',
+i.e reservoirs whose behavior may change both during and between experiments.
+For ease of experimentation a web front-end is available, currently hosted
+locally only which provides a convenient and portable frontend for visualizing
+and setting up or scheduling experiments.
+Lastly, the reservoir computer can request perturbations to be applied to the
+reservoir, which is translated into stimuli requests which are broadcasted to
+the lab equipment.
+Every step in this process is verified to work, save for the last step in which
+setting the control registers of the stimulus generatior fails to trigger the
+reguested stimuli with the result that the closed loop system is not yet a loop.
+In spite of this, the system can be run as intended, verifying that the
+filtering of data, rendering of waveforms and simulated robot as well as
+perturbation requests are generated as specified.
 \section{Further Work}
 \subsubsection{Finishing the stated goal of the thesis}
 While the lack of results make it hard to draw a scientifically valuable
 conclusion it at least makes the further work section easy to write.
 The obvious first task is to figure out what is causing stimuli to not work
 which is simply a matter of time.
+To this end a special DSP debugger chip has been ordered which should make
+stimuli working a matter of time.
 \subsubsection{Restoring Characteristics of damaged networks}
 In addition to running the experiment sketched described in this thesis, the
 flexibility and genericity of the pipeline allows other research with little

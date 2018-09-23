@@ -5,6 +5,7 @@
 
 ** TODO Fiks Wetware fig ref 
 
+** TODO Skriv ferdig cyborg intro
 ** DONE Bedre figure tekst
 *** DONE to figurer har figphase som label
 *** DONE Fiks siteringer i figtekst
@@ -28,9 +29,11 @@
 **** DONE Skriv no smart på micro/macro
 *** DONE Hybrid ND
 ** TODO Gå gjennom Carl notes
+** TODO Gå gjennom Julia notes
 ** DONE Konsekvent Fig
-** TODO Abstract
+** DONE Gå gjennom Abstract
 ** TODO Tving figurer på plass
+** DONE Gå gjennom conclusio
 
   
 * Gunnar notes
