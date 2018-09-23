@@ -3,41 +3,50 @@
 They break distances down into concentrations of chemicals. For them, space is a
 range of taste intensities.}{Greg Bear, Blood Music}
 %
-To investigate the computational properties of biological neural networks a
-hybrid biological digital robot has been created in a joint multidisciplinary
-effort. 
-Countless manhours have been spent improving the design and manufacturing
-process of the digital computer, creating more and more complex architectures
-capable of operating at ever greater speeds.
+In order to meet the ever rising demand for computing speeds modern processor
+architectures have become increasingly parallel and complex to circumvent
+the inherent physical limitations of single core processors.
 %
-The brain is not subject to this top down design philosophy, yet through a
-process of self organization neurons are capable of forming highly complex
-networks capable of solving complex tasks, with far greater energy efficiency,
-robustness and parallellism than any designed processor.
+However, designing complex circuits is a difficult task, especially considering
+the harsh demands on correctness, if even one in a billion instructions are
+executed wrong the program will crash, or worse, give an incorrect result.
+%
+Nature on the other hand does not shy away from complexity, something the human
+brain exemplifies:
+%
+Unlike the processor, it is not the result of some top down design
+philosophy, yet through a process of self organization neurons are capable of
+forming highly complex networks capable of solving complex tasks, with far
+greater energy efficiency, robustness and parallellism than any designed
+processor.
+%
+% Har dette nok med seksjonen over?
+In order to investigate the processes that create the neural networks that makes
+up the brain, a hybrid biological-digital robot has been created in a joint
+multidisciplinary effort. 
 %
 Neurons are grown \emph{in vitro} on \emph{Micro Electrode Arrays}, shown in
-figure \ref{neuroIntro}
-are interfaced with a digital computer throug lab equipment (figure \ref{figEquipmentIntro})
-which can perform highly accurate voltage measurements forming a hybrid neuro-digital system.
+figure \ref{neuroIntro} are interfaced with a digital computer throug lab
+equipment (figure \ref{figEquipmentIntro}) which can perform highly accurate
+voltage measurements forming a hybrid neuro-digital system. 
 %
-This system utilizes the theoretical framework of \emph{Reservoir Computing} to
-help translate between the digital and biological parts of the system, allowing
-it to solve simple tasks as a proof of concept.
+This system, known as a \emph{Cyborg}\footnote{A portmanteau word stemming from
+  cybernetic organism} is used to control a small robot, allowing it to sense
+and maneuver a simple maze.
 %
 The ultimate goal of the cyborg is to further our understanding of the
 underlying principles that governing how nature computes.
-%
 %
 \begin{figure}[h!]
   \centering
   \subfloat[an MEA]{{\includegraphics[width=5cm]{fig/MEA_front.jpg}}}%
   \qquad
   \subfloat[neural tissue on an MEA seen through a microscope]{{\includegraphics[width=5cm]{fig/frank.png}}}%
-  \label{neuroIntro}%
   \caption{
     A micro electrode array (MEA), lined with electrodes that extend to the
     middle chamber where neural tissue can be grown.
   }
+  \label{neuroIntro}%
 \end{figure}
 %
 %
@@ -46,11 +55,11 @@ underlying principles that governing how nature computes.
   \subfloat[An MEA2100 headstage]{{\includegraphics[width=5cm]{fig/hs_placeholder.png}}}%
   \qquad
   \subfloat[Electrical activity measured by a single electrode]{{\includegraphics[width=5cm]{fig/PacemakerBurst.png}}}%
-  \label{figEquipmentIntro}%
   \caption{
     MEAs containing neurons are inserted into equipment capable of measuring and
     inducing electrical activity at high precision.
   }
+  \label{figEquipmentIntro}%
 \end{figure}
 \subsubsection{Complexity}
 In the 50's and 60's there was much optimism in the burgeoning field of
@@ -63,14 +72,16 @@ Had they chosen to predict any other field, such as logistics, information
 sharing or communications their statements would have been prophetic and
 visionary, so why did artificial intelligence turn out so differently?
 %
-The researchers sought to make machines that could use logic similar to that of
-high level human thinking.
+In their quest to make machines that could truly \emph{think}, being capable of
+learning and reasoning about the world and solve problems they had never seen
+before, the researchers sought to make machines that could apply logic similar
+to that of high level human thinking.
 %
 Therefore, it followed that the machine had to be programmed with rules
 governing logic in order to reach sound conclusions.
 %
 To represent the prior and deduced knowledge, the researchers designed
-programming languages such as lisp that could accurately describe these
+programming languages such as lisp\cite{LISP_WEENIE} that could accurately describe these
 operations.
 %
 In order to actually execute these lisp programs hardware had to be created,
@@ -98,12 +109,14 @@ The early AI researchers believed that to create an intelligent system it was
 sufficient to provide a platform that could reason logically, but as history
 shows this did not work out.
 %
-The human brain is not hiding some underlying logic beneath incidental
-complexity, instead the complexity seems to be the fundamental driving force
-behind intelligence.
-In short, intelligence does not arise from logic, instead our understanding
-logic arises from our intelligence, and to study intelligence it is necessary to
-focus on the complex behavior of neurons from which it originates.
+The human brain, however, is not hiding some underlying logic beneath incidental
+complexity, instead it seems, the complexity itself might be the fundamental
+driving force behind intelligence.
+%
+In short, intelligence does not arise from logic, instead our ability to reason
+logically arises from intelligence, and focusing on the complex interaction of
+neurons from which intelligence emerges could yield greater understanding of
+just what intelligence actually is.
 \subsubsection{Computation}
 The invention of the digital computer will be remembered as one of, if not the
 most significant technological advances of mankind.
@@ -130,30 +143,27 @@ have been dubbed \emph{Unconventional Computing}.
 %
 Unconvential computing, as implied by the name, comes in many forms such as
 buckets of water \cite{FERNANDO2003}, or blobs of carbon nanotubes
-[cite nascence]. 
+\cite{LYKKEBOICES2014}
 %
 In these unconventional approaches it becomes harder and harder to pin down
 exactly what computation is and what distinguishes it from any ordinary physical
 process.
 %
 \subsubsection{Cyborg}
-The main body of work done for this thesis is the design and development of a
-\emph{Cyborg}\footnote{A portmanteau word stemming from cybernetic organism}
-capable of sensing and maneuvering a simple maze.
-This work has been performed as part of the NTNU cyborg project [cite webpage]
-which comprises of researchers from the department of neuroscience, nano
-science, computer science, cybernetics and more.
-More specifically, the contribution to this cross-disciplinary effort presented
-in the thesis is the implementation of software for a closed loop system in which a
-robot is controlled by the neural tissue whose sensors feed data back to the neural
-tissue.
-Both by necessity and by choice most biological details are left out, the focal
+The main body of work done for this thesis is the design and development of a as
+part of the NTNU cyborg project\cite{ntnu_cyborg}, which comprises of
+researchers from the department of neuroscience, nano science, computer science,
+cybernetics and more.
+The work in this thesis is a continuation of the work performed by the cyborg
+project \cite{TMAC}, 
+
+
+Both by necessity and choice, most biological details are left out, the focal
 point of the thesis is the system in which neural tissue is a part, not the
 neurons themselves.
 Thus only details that are necessary for the computational model of neural
 tissue will be considered, leaving the intricate complexities of neurons to the
-neuroscientists.
-TODO: mer her?
+neuroscientists, at least for the time being.
 \cleardoublepage
 
 %%% Local Variables:

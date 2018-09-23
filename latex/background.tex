@@ -100,10 +100,10 @@ recruitment to happen quicker.
 Through the amplification of local effects (one bee finding a food source) the
 bees settle on one type of nectar, a \emph{global behavior} that has
 \emph{emerged} in a \emph{bottom up} fashion, i.e without the need for
-a centralized decisionmaker through the process of \emph{self organization}.
+a centralized decisionmaker, through the process of \emph{self organization}.
 Through collective behavior bees can adapt to changes in their environment, in
-fact a hive may even survive the death of their queen by moving a worker larvae
-to a queen cell.
+fact a hive may even survive the death of their queen by refitting the cell of a
+worker larvae to a queen cell if it senses that the queen is absent or dying.
 To highlight how much of the bees sophistication arise from collective behavior,
 consider the fact that if a hive is moved even a meter, the forager bees will
 not be able to find their way back home, clearly as an individual the bee is not
@@ -139,9 +139,9 @@ The state space of the rubiks cube can be extended to include the current
 rotation the cube has in space, or it can be observed at a finer scale where two
 solved cubes occupy different states if the face of one cube has been slightly
 rotated.
-These states are known as \emph{macro states} and have been chosen specifically
+These states can be viewed as \emph{macro states} and have been chosen specifically
 by the observer as opposed to the \emph{micro state} which is the ground truth
-of the system.
+of the system\cite{JENSEN_ASI}.
 For physical systems the micro state is not only intractable, but impossible to
 measure due to the uncertainity principle, and generally what happens at a
 subatomic level is not very relevant when describing a rubiks cube.\par
@@ -205,7 +205,7 @@ that complex systems have much in common regardless of how and where they
 originate.
 This \emph{universality} is a powerful tool when studying systems such as neural
 networks because it allows us to explain and study much of the behavior with far
-simpler models, one such model being \emph{cellular automatons}.
+simpler models, one such model being \emph{cellular automatons}\cite{von66BURKS}.
 \begin{figure}[h!]
   \centering
   \includegraphics[width=1\textwidth]{fig/BarYamCX.png}
@@ -305,9 +305,9 @@ behavior to phase changes in material.
 %
 Langton ascribed a parameter, $\lambda$, to each ruleset which described how evenly
 matched rules leading to the dead state was vs the live state.
-When all configurations lead to one type of cell the ruleset $\lambda = 0$, while
-the ruleset where the amount of states leading to dead and live are equal 
-$\lambda = 1.0$
+When all configurations lead to one type of cell the rulesets $\lambda$
+parameter was set to 0, while the rulesets where the amount of states leading to
+dead and live were equal obtained a $\lambda$ of 1.0.
 %
 Langton found that the $\lambda$ parameter modeled how rulesets and wolframs CA
 classes interact in a way analogous to how matter changes phase at different
@@ -382,8 +382,7 @@ chaos.
     go from still to periodic to chaotic, however an additional phase exists
     between order and chaos, analogous to the 2nd order phase in phase
     transition, shown in Figure \ref{figPhase}.
-    TODO source
-    Figure source: 
+    Figure source: \cite{LANGTON91}
   }
   \label{figCAegg}
 \end{figure}
@@ -434,7 +433,7 @@ Figure \ref{figEiM} shows how the properties of a material can be tuned in
 response to its performance on some task.
 A recent effort, realizing the design in figure \ref{figEiM} is the NASCENCE project
 which has developed a physical device, ``mecobo'' that can host a variety of
-materials which can then be interacted with using an array of electrodes.
+materials which can then be interacted with, using an array of electrodes.
 %
 By using the same basic loop as the early material computing reasearchers the
 Mecobo board has been used to create XOR logic gates using unstructured carbon
@@ -478,29 +477,35 @@ In \cite{EIM_DS2_LYKKEBO} Lykkebø shows that a mixture of table salt and
 water exhibits (DS)2 behavior using the mecobo board by showing that the systems
 response to perturbation evolves over time.
 %
-Similarly, experiments using simulated artificial spin ice \cite{JENSEN_ASI}
+Similarly, experiments using simulated artificial spin ice \cite{JENSEN_ASI} (ASI)
 shows that in a lattice of nano-magnets several underlying microstates map to the
-same macro-state as shown in figure \ref{figJohASI}.
-This highlights the importance of observation level when describing systems.
+same macro-state as shown in figure \ref{microMacro}.
+%
+In the figure the ASI has been simulated on a computer, which necessitates
+simulating the micro-statese in order to calculate the correct macrostates,
+however on a physical ASI lattice only the macrostates would have been observable.
 In the context of this thesis, the unobservable microstate of neural cultures is the
-inner life of each cell, the chemical gradients of neurotransmitters and the
-acivation of various genes, whereas the macrostate is the observable properties
-of a network, such as its topology and electrical activity.
+inner life of each cell, the chemical gradients of neurotransmitters both inside
+and between neurons, and the activation of various genes, while the macrostate
+is the observable properties of the network which is its topology and electrical
+activity. 
 If the focus of the study were on single neurons a different definition of macro
 and micro state would be useful, highlighting the fact that the choice of micro
 and macro state is not necessarily an intrinsic property of the subject of
-study, but a choice made by the experimenter.
-\begin{figure}[h]
+study, but a choice made by the experimenter and method of observation.
+\begin{figure}[h!]
   \centering
-  \includegraphics[width=1\textwidth]{fig/joh_ASI.png}
+  \subfloat[Microstate of a nanomagnetic lattice]{{\includegraphics[width=3.5cm]{fig/johannes_ASI_micro.png}}}%
+  \quad
+  \subfloat[The correspondence microstate color and magnet direction]{{\includegraphics[width=3.5cm]{fig/macroMicroLegend.png}}}%
+  \quad
+  \subfloat[Macrostate of a nanomagnetic lattice]{{\includegraphics[width=3.5cm]{fig/johannes_ASI_macro.png}}}%
   \caption{
-    A simulated lattice of nanomagnets from \cite{JENSEN_ASI} allows us to peer
-    into the micro state of a lattice of nanomagnets, with a corresponding macro
-    state showing what would be measurable in a real system.
-
-    TODO: figure should be changed
+    A simulated lattice of nanomagnets. The color of each magnet in (a)
+    corresponds to the direction of its magnetic field shown in (b).
+    The corresponding macrostate for (a) is shown in (c).
   }
-  \label{figJohASI}
+  \label{microMacro}%
 \end{figure}
 \section{Computing Neural Networks}
 Material computing provides both a theoretical framework and practical
@@ -573,7 +578,6 @@ networks is not a priority from a compuational perspective.
     other neurons close to the axon.
     After a pulse a cell must undergo a short refactory period before it can
     fire again.
-
     Figure source: Wikimedia commons.
   }
   \label{figNeuron}
@@ -581,7 +585,7 @@ networks is not a priority from a compuational perspective.
 \subsubsection{Neural Dynamics}
 The ``medium'' of communication between neurons chosen as the observable macro
 state, that is the dynamics we are interested in measuring for the neural
-network are electrical bursts of activity, known as spikes.
+network, are electrical bursts of activity, known as \emph{spikes}.
 Figure \ref{figWave} shows recorded activity from an electrode.
 Each electrode measures the activity of the surrounding neurons rather than the
 state of a single neuron.

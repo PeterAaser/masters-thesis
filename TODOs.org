@@ -3,7 +3,9 @@
 *** DONE Finn riktig WFA sitering
 *** TODO Få URL sitering til å virke
 
-** TODO Bedre figure tekst
+** TODO Fiks Wetware fig ref 
+
+** DONE Bedre figure tekst
 *** DONE to figurer har figphase som label
 *** DONE Fiks siteringer i figtekst
 *** DONE Klipp opp socrates fig på stasjonær
@@ -14,14 +16,20 @@
    nvm, tror bare det går til sys3 ifølge git.
    Fig 3.9 og 3.2 har blitt byttet. (derav navne-oopsen)
 
-** TODO kap 3 fig kaos
+** DONE kap 3 fig kaos
 *** DONE Labels er feil (figWaves er over alt)
-*** TODO Mangler 2 firuger? i Wetware
+*** DONE Mangler 2 firuger? i Wetware
 
 ** DONE bytt til support vector machines (ikke source!)
-** TODO Rett opp annotering(?)
-** TODO Gå gjennom gunnar og karl notes
+** DONE Gå gjennom Gunnar notes
+*** DONE Intro
+    Skriv no smart om Cyborg
+*** DONE Background
+**** DONE Skriv no smart på micro/macro
+*** DONE Hybrid ND
+** TODO Gå gjennom Carl notes
 ** DONE Konsekvent Fig
+** TODO Abstract
 ** TODO Tving figurer på plass
 
   

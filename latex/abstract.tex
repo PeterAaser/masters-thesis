@@ -1,31 +1,41 @@
 \section*{\Huge Abstract}
 \addcontentsline{toc}{chapter}{Abstract}
-
-% The human brain is a vastly complex network of neurons capable of computing in a
-% robust, vastly parallel and energy efficient manner 
 The human brain is a vastly parallel, energy efficient and robust computing
 machine that arises from the self-organizing capabilities of billions of neurons.
-However, in spite of over a century of study, the fundamental principles that
-gives rise to the complex networks that make up the brain is still poorly
-understood.
+In contrast, digital computers are brittle devices whose exponential growth in
+processing power is now waning even as moore's law is coming to an end.
+The main issues faced by processors is the energy consumption and design
+complexity of attempting to parallelize the inherently sequential underlying
+von-neumann architecture.\par
+This work is part of an interdisciplinary effort to investigate and exploit the
+properties of biological substrates, i.e neurons, for computation.
 %
-By cultivating neural tissue from human stem cells in special special petri
-dishes lined with electrodes capable of measuring and inducing electrical
-signals, small neural networks can be studied and interacted with.
+A cyborg, short for cybernetic organism, is being created as part of the NTNU
+cyborg project, targeting a hybrid biological digital system connected to a
+robot, serving as a proof of principle of such a system.
 %
-To study how neural tissue self-organizes into computationally capable networks
-a cyborg (short for cybernetic organism, a hybrid between biological and
-mechanical) is being created by the NTNU cyborg project.
+The cyborg is a real world robot, controlled by a hybrid neuro-digital system,
+consisting on neural tissue cultivated in the lab, an interface between the
+analog domain of neurons and digital computer logic through electrical signals,
+and a flexible framework for utilizing reservoir computing to provide a bridge
+between the digital logic of the robot control system and the dynamics of the
+neural tissue.\par
 %
 The focus of this thesis is the design and implementation of a closed loop
 system where a digital computer interfaces with the neural tissue, forming a
 two-way bridge allowing the cyborg to learn how to navigate a simulated robot
 through a maze with no human intervention.
-%
-The theoretical framework of reservoir computing is presented, providing a
-technique for communicating with neural cultures which is then used to implement
-a working proof of concept system allowing neural tissue located at the st.olavs
-hospital to control a small simulated robot over an internet connection.
+The theoretical framework of reservoir computing is presented, providing a technique
+for communicating with neural cultures which is then used to implement a working
+proof of concept system, allowing neural tissue located at the neuroscience lab
+at the medical faculty at NTNU to control a small simulated robot remotely over an
+internet connection.
+All the nessesery software for interfacing with neurons, from the low level
+analog-digital level to the high-level interpretation of signals has been
+implemented as part of a platform for experimentation which handles networking,
+recording and playback of experiments, and the configuration of parameters for
+the embedded reservoir computer which is now available as the end product.
+A first experimental set-up is included as a working example.
 %%% Local Variables:
 %%% mode: latex
 %%% TeX-master: "../main"
