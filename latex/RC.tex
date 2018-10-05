@@ -1,4 +1,6 @@
 \chapter{Experimental System and Setup}
+\epigraph{“I guess cyborgs like myself have a tendency to be paranoid about our origins.”}
+{Motoko Kusanagi - Ghost In The Shell}
 Because of the unresolved issues with stimuli generation the experiment setup has not been
 employed on living neural tissue.
 As a consequence, the current experimental setup is designed to be easy to
@@ -17,7 +19,7 @@ experiment serve, and a survey of the parameter space which can be explored.
 \begin{figure}[h!]
   \centering
   \includegraphics[width=1\textwidth]{fig/experimentLoopFull.png}
-  \caption{
+  \caption[Overview of experiment dataflow]{
     The figure shows direction of the dataflows that make up an experiment,
     stripping away all implementation details.
     By following the arrows two distinct loops are revealed, interersecting at
@@ -131,7 +133,7 @@ distance.
 \begin{figure}[h!]
   \centering
   \includegraphics[width=0.5\textwidth]{fig/rcLoop.png}
-  \caption{
+  \caption[Overview of primary dataloop]{
     The figure shows the primary dataloop in more detail, with focus on the
     preprocessing transform and the perturbation generator.
     Since the readout layer and robot control is part of both the primary and
@@ -184,7 +186,7 @@ is this evaluation that shapes the next readout layer.
 \begin{figure}[h!]
   \centering
   \includegraphics[width=1\textwidth]{fig/TAC/game2.png}
-  \caption{
+  \caption[The agent in its box world]{
     The cyborg maneuvering the simple walled world. In the first pane none of
     the cyborgs sensors are in range, thus no perturbation is generated.
     In the second pane the sensors detect a wall which is then relayed back to
@@ -197,7 +199,7 @@ is this evaluation that shapes the next readout layer.
 \begin{figure}[h!]
   \centering
   \includegraphics[width=1\textwidth]{fig/challenges.png}
-  \caption{
+  \caption[Evaluation strategy for agent performance]{
     The evaluation strategy for a readout layer.
     In order to ensure that a given agent isn't avoiding walls simply by running
     in circles the agent is placed near a wall at different angles to see if it
@@ -218,8 +220,8 @@ The chosen method of readout layer generation is a \emph{genetic algorithm}
 because of its ease of implementation and relative lack of bias.
 \begin{figure}[h!]
   \centering
-  \includegraphics[width=0.5\textwidth]{fig/reconfigLoop.png}
-  \caption{
+  \includegraphics[width=0.8\textwidth]{fig/confLoop.png}
+  \caption[Overview of reconfiguration loop]{
     The reconfiguration loop evaluates the performance of the robot when using a
     given readout layer.
     The best performing readout layers are then used as a base in order to
